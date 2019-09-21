@@ -5,8 +5,6 @@
     <title></title>
   </head>
   <body>
-      <footer>
-        
-      </footer>
+    <p>hola hola </p>
   </body>
 </html>

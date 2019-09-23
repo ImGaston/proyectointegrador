@@ -7,15 +7,15 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+    <link href="estilos.css" rel="stylesheet">
     <!-- Formulario de contacto -->
 
     <title>Contacto</title>
   </head>
-  <body>
+  <body class "form-contact">
     <div class="container align-items-center mt-4">
     <div class="row justify-content-center">
-        <div class="col-md-8">
+        <div class="col-md-4">
             <div class="well well-sm">
                 <form class="form-horizontal justify-content-center" method="post">
                     <fieldset>
@@ -47,7 +47,7 @@
                         <div class="form-group form-horizontal justify-content-center">
                             <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
                             <div class="col-md-12">
-                                <textarea class="form-control" id="message" name="message" placeholder="Dejanos tu consulta acá." rows="7"></textarea>
+                                <textarea class="form-control" id="message" name="message" placeholder="Deja tu consulta acá" rows="7"></textarea>
                             </div>
                         </div>
                         <div class="form-group text-center">

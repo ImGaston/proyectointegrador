@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <title>Página de registro</title>
+    <title>Contacto</title>
   </head>
   <body>
     <div class="container">
@@ -17,7 +17,7 @@
             <div class="well well-sm">
                 <form class="form-horizontal justify-content-center" method="post">
                     <fieldset>
-                        <legend class="text-center header">Contactanos</legend>
+                        <legend class="text-center header">Contáctanos</legend>
                         <div class="form-group">
                             <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
                             <div class="col-md-12">
@@ -61,15 +61,15 @@
                         <div class="col-md-12 text-center">
                             <ul class="list-unstyled mb-0">
                                 <li><i class="fas fa-map-marker-alt fa-2x"></i>
-                                    <p>San Francisco, CA 94126, USA</p>
+                                    <p>Buenos Aires, República Argentina</p>
                                 </li>
 
                                 <li><i class="fas fa-phone mt-4 fa-2x"></i>
-                                    <p>+ 01 234 567 89</p>
+                                    <p>+ 11 1234-5678</p>
                                 </li>
 
                                 <li><i class="fas fa-envelope mt-4 fa-2x"></i>
-                                    <p>contact@mdbootstrap.com</p>
+                                    <p>contacto@proyectointegrador.com</p>
                                 </li>
                             </ul>
 

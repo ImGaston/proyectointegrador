@@ -11,8 +11,13 @@
 
   <body>
     <footer class="container">
-      <div class="d-flex justify-content-center">
-        Dirección: Proycto Integrador 2019, Digital House, Nordelta. Whatsapp: <link rel="stylesheet" href="/css/master.css"> +54 911 4568-9873.
+      <div class="d-flex">
+        <address class="address fas fa-envelope mt-4 fa-2x">
+        Proycto Integrador 2019, Bella Vista, Buenos Aires <br>
+        +54 911 4568-9873  <br>
+
+        proyectointegrador@digitalhouse.com
+        </address>
       </div>
       <p class="float-right"><a href="#">Back to top</a></p>
       <p>&copy; 2017-2019 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>

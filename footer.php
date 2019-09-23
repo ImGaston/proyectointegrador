@@ -12,19 +12,14 @@
   <body>
     <footer class="container">
       <div class="d-flex">
-        <address class="address fas fa-envelope mt-4 fa-2x">
+        <address class="address fas fa-envelope mt-1 fa-2x">
         Proycto Integrador 2019, Bella Vista, Buenos Aires <br>
         +54 911 4568-9873  <br>
-
         proyectointegrador@digitalhouse.com
         </address>
       </div>
       <p class="float-right"><a href="#">Back to top</a></p>
       <p>&copy; 2017-2019 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-      <div class="social-bar d-flex justify-content-center">
-    <a href="https://www.facebook.com/UNIFORMES" class="icon icon-facebook" target="_blank"></a>
-    <a href="https://twitter.com/UNIFORMES" class="icon icon-twitter" target="_blank"></a>
-    <a href="https://www.instagram.com/UNIFORMES/" class="icon icon-instagram" target="_blank"></a>
   </div>
     </footer>
   </body>

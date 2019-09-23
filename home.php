@@ -52,7 +52,7 @@
          <div class="carousel-caption text-left">
            <h1>Los mejores uniformes escolares</h1>
            <p>Visite nuestra tienda de artículos</p>
-           <p><a class="btn btn-lg btn-primary" href="#" role="button">Visitar Galería</a></p>
+           <p><a class="btn btn-lg btn-primary" href="#" role="button">Visitar galería</a></p>
          </div>
        </div>
      </div>
@@ -62,7 +62,7 @@
          <div class="carousel-caption">
            <h1>Todos los modelos</h1>
            <p>Tenemos los uniformes para todos los colegios de Buenos Aires</p>
-           <p><a class="btn btn-lg btn-primary" href="#" role="button">Ver Listado</a></p>
+           <p><a class="btn btn-lg btn-primary" href="#" role="button">Ver listado</a></p>
          </div>
        </div>
      </div>
@@ -70,8 +70,8 @@
        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
        <div class="container">
          <div class="carousel-caption text-right">
-           <h1>Promociones!</h1>
-           <p>Visite nuestra sección de promociones!</p>
+           <h1>¡Promociones!</h1>
+           <p>Visite nuestra sección de promociones</p>
            <p><a class="btn btn-lg btn-primary" href="#" role="button">Visitar</a></p>
          </div>
        </div>
@@ -139,9 +139,7 @@
 
  <!-- FOOTER -->
  <footer class="container">
-   <p> HOLA PRUEBA DONDE APARECD ESTO </p>
-   <p class="float-right"><a href="#">Back to top</a></p>
-   <p>&copy; 2017-2019 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+   <?php include_once 'footer.php'; ?>
  </footer>
 </main>
 

@@ -47,7 +47,7 @@
              </ol>
              <div class="carousel-inner">
                <div class="carousel-item active">
-                 <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
+                 <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#341f97"/></svg>
                  <div class="container">
                    <div class="carousel-caption text-left">
                      <h1>Los mejores uniformes escolares</h1>
@@ -57,7 +57,7 @@
                  </div>
                </div>
                <div class="carousel-item">
-                 <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
+                 <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#341f97"/></svg>
                  <div class="container">
                    <div class="carousel-caption">
                      <h1>Todos los modelos</h1>
@@ -67,7 +67,7 @@
                  </div>
                </div>
                <div class="carousel-item">
-                 <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
+                 <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#341f97"/></svg>
                  <div class="container">
                    <div class="carousel-caption text-right">
                      <h1>¡Promociones!</h1>
@@ -86,7 +86,7 @@
                <span class="sr-only">Next</span>
              </a>
           </div>
-          
+
           <div class="container mb-4">
             <div class="row">
               <div class="col-12 col-md-6 col-lg-4 mb-4">
@@ -141,7 +141,6 @@
 
        <!-- FOOTER -->
       <footer class="container">
-
         <?php include_once 'footer.php'; ?>
     </footer>
 

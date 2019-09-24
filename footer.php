@@ -7,7 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    
+
     </head>
 
   <body>
@@ -19,8 +19,8 @@
         proyectointegrador@digitalhouse.com
         </address>
       </div>
-      <p class="float-right"><a href="#">Back to top</a></p>
-      <p>&copy; 2017-2019 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      <p class="float-right"><a href="#">Volver arriba</a></p>
+      <p>&copy; Proyecto Integrador S.A.. &middot; <a href="#">Política de Calidad</a> &middot; <a href="#">Términos y Condiciones</a></p>
   </div>
     </footer>
   </body>

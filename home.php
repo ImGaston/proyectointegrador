@@ -99,6 +99,43 @@
               </div>
             </div>
           </div>
+          <div class="container mb-4">
+            <div class="row">
+                <div class="col-lg-6">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3580.359336531267!2d-58.172174942535975!3d-26.184986630439457!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd5031f0cb4bceefa!2sPitagoras&#39;c!5e0!3m2!1ses-419!2sar!4v1569293921813!5m2!1ses-419!2sar" width=450px height=376px frameborder="0" style="border:0;" allowfullscreen ></iframe>
+                </div>
+                <div class="col-lg-6">
+                    <div class="heading">
+                        <h3>Lorem Ipsum Dolor</h3>
+                        <div class="rating">
+                            <i class="fa fa-star icon"></i>
+                            <i class="fa fa-star icon"></i>
+                            <i class="fa fa-star icon"></i>
+                            <i class="fa fa-star icon"></i>
+                            <i class="fa fa-star-o icon"></i>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ornare leo porta cursus porttitor. Proin quis tempor lectus. Cras sodales nisi ut felis tincidunt suscipit. Nullam consectetur odio et lacus tempor vestibulum.</p>
+                        <p>Aenean convallis, tortor eget vehicula vestibulum, sem nibh rutrum sem, vel sodales nisl velit eu ex. Sed hendrerit efficitur sollicitudin. Maecenas tempus augue lacus.</p>
+                    </div>
+                    <div class="gallery">
+                        <h4>Local</h4>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <a href="#"><img class="img-fluid image" src="img/img-2.jpg"></a>
+                            </div>
+                            <div class="col-md-4">
+                                <a href="#"><img class="img-fluid image" src="img/img-1.png"></a>
+                            </div>
+                            <div class="col-md-4">
+                                <a href="#"><img class="img-fluid image" src="img/img-3.png"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
        <!-- FOOTER -->

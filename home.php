@@ -38,7 +38,7 @@
       </header>
 
       <main role="main">
-
+          <!-- CAROUSEL -->
            <div id="myCarousel" class="carousel slide" data-ride="carousel">
              <ol class="carousel-indicators">
                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -86,20 +86,21 @@
                <span class="sr-only">Next</span>
              </a>
           </div>
-
+          <!-- CATEGORIAS -->
           <div class="container mb-4">
             <div class="row">
               <div class="col-12 col-md-6 col-lg-4 mb-4">
-                <img src="img/hospitalario.jpg" alt="" class="img-fluid">
+                <img src="img/hospitalario.jpg" alt="" class="img-fluid rounded">
               </div>
               <div class="col-12 col-md-6 col-lg-4 mb-4">
-                <img src="img/hospitalario.jpg" alt="" class="img-fluid">
+                <img src="img/hospitalario.jpg" alt="" class="img-fluid rounded">
               </div>
               <div class="col-12 col-md-6 col-lg-4 mb-4">
-                <img src="img/egresados.jpg" alt="" class="img-fluid">
+                <img src="img/egresados.jpg" alt="" class="img-fluid rounded">
               </div>
             </div>
           </div>
+          <!-- DATOS LOCAL -->
           <div class="container mb-4">
             <div class="row">
                 <div class="col-lg-6">
@@ -124,13 +125,13 @@
                         <h4>Local</h4>
                         <div class="row">
                             <div class="col-md-4">
-                                <a href="#"><img class="img-fluid image" src="img/img-2.jpg"></a>
+                                <a href="#"><img class="img-fluid image rounded" src="img/img-2.jpg"></a>
                             </div>
                             <div class="col-md-4">
-                                <a href="#"><img class="img-fluid image" src="img/img-1.png"></a>
+                                <a href="#"><img class="img-fluid image rounded" src="img/img-1.png"></a>
                             </div>
                             <div class="col-md-4">
-                                <a href="#"><img class="img-fluid image" src="img/img-3.png"></a>
+                                <a href="#"><img class="img-fluid image rounded" src="img/img-3.png"></a>
                             </div>
                         </div>
                     </div>

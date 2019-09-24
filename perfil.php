@@ -12,68 +12,48 @@
 
     <title>Formulario de Registro</title>
   </head>
-  <body class "form-contact">
-    <div class="container align-items-center mt-4">
-    <div class="row justify-content-center">
-        <div class="col-md-4">
-            <div class="well well-sm">
-                <form class="form-horizontal justify-content-center" method="post">
-                    <fieldset>
-                        <legend class="text-center header">Registrarse</legend>
-                        <div class="form-group">
-                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
-                            <div class="col-md-12">
-                                <input id="fname" name="name" type="text" placeholder="Nombre" class="form-control">
-                            </div>
-                        </div>
-                        <div class="form-group ">
-                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
-                            <div class="col-md-12">
-                                <input id="lname" name="name" type="text" placeholder="Apellido" class="form-control">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-envelope-o bigicon"></i></span>
-                            <div class="col-md-12">
-                                <input id="email" name="email" type="text" placeholder="Dirección de correo electrónico" class="form-control">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-phone-square bigicon"></i></span>
-                            <div class="col-md-12">
-                                <input id="phone" name="phone" type="password" placeholder="Contraseña" class="form-control">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-phone-square bigicon"></i></span>
-                            <div class="col-md-12">
-                                <input id="phone" name="phone" type="password" placeholder="Confirmar contraseña" class="form-control">
-                            </div>
-                        </div>
-                        <div class="form-group text-center">
-                            <div class="col-md-12 text-center">
-                                <button type="submit" class="btn btn-primary btn-lg"> Registrarse </button>
-                            </div>
-                        </div>
-                        <div class="col-md-12 text-center">
-                            <ul class="list-unstyled mb-0">
-                                <li><i class="fas fa-map-marker-alt fa-2x"></i>
-                                    <p>Buenos Aires, República Argentina</p>
-                                </li>
-                                <li><i class="fas fa-phone mt-4 fa-2x"></i>
-                                    <p>+ 11 1234-5678</p>
-                                </li>
-                                <li><i class="fas fa-envelope mt-4 fa-2x"></i>
-                                    <p>contacto@proyectointegrador.com</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </fieldset>
-                </form>
-            </div>
+  <body>
+       <!-- VA PEGADO EL HEADER DE TERSY -->
+      <header id="header" class="">
+      <div class="container">
+        <div class="row" >
+          <div class="col-12">
+      <nav class="navbar navbar-expand-lg navbar-light navbar-gaston">
+        <a class="navbar-titulo" href="#">FREELANCE PORTFOLIO</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="navbar-collapse collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto w-100 justify-content-end">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">PORTFOLIO <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">CONTACT</a>
+            </li>
+          </ul>
         </div>
-    </div>
-    </div>
+      </nav>
+            </div>
+          </div>
+        </div>
+    </header>
+      <main role="main" class="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2>Hola, <br>$nombre!</h2>
+
+                </div>
+            </div>
+
+        </div>
+      </main>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

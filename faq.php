@@ -17,21 +17,18 @@
 <!--esto corresponde a la FAQ-->
 
 
+
+<h1>!!!PUEDEN COMPRAR  UNIFORMES AQUI *****</h1>
+<img src="img/colectivito.jpg"width=800px" height="300px"alt="colectivo zona oeste">
 <div class="preguntas frecuentes ">
-
-<p> Aqui encontraran el uniforme escolar para sus hijos </p>
-<p>Uniformes para Alumnos Colegiales o profesionales de Servicios</p>
-<p>Confeccionados con Excelente Calidad y terminacion con detalles practicos</p>
+<p> Encontraran el uniforme escolar para sus hijos </p>
+<p>Uniformes para Alumnos <b> Colegiales <b> o profesionales de <b>SERVICIOS<b></p>
+<p>Confeccionados con Excelente <b>CALIDAD<b> y terminacion con detalles practicos</p>
 <p>Podran hacer su pedido y consultar formas de pago en<b> VENTAS <b></p>
-<p>Durante el año promovemos un SALE de prendas de temporadas </p>
-<p>EGRESADOS podran obtener sus prendas elegidas para destacarse de este fianal</p>
-<h1></h1>
+<p>Durante el año promovemos un <b>SALE<b>de prendas de temporadas </p>
+<p><b>EGRESADOS <b>podran obtener sus prendas elegidas para destacarse de esta etapa</p>
+<h2>YA ESTAN  INCLUIDOS COMO CLIENTES....</h2>
 </div>
+</body>
 
-
-
-
-
-
-  </body>
 </html>

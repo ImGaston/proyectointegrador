@@ -8,6 +8,18 @@ body {
   color: #5a5a5a;
 }
 
+.izquierda {
+  color: black;
+}
+
+h1 {
+  color: black;
+}
+
+p {
+  color:black;
+}
+
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
@@ -20,6 +32,7 @@ body {
 .carousel-caption {
   bottom: 3rem;
   z-index: 10;
+  color:black;
 }
 
 /* Declare heights because of positioning of img element */

@@ -7,7 +7,7 @@
 
       <!-- Bootstrap CSS -->
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-      <link rel="stylesheet" href="carrousel.css">
+      <link rel="stylesheet" href="css/carrousel.css">
       <title>E-Commerce</title>
 </head>
   <body>
@@ -62,49 +62,64 @@
      </a>
        </div>
        </div>
- <!-- Marketing messaging and featurettes
- ================================================== -->
- <!-- Wrap the rest of the page in another container to center all the content. -->
- <div class="container marketing">
-   <!-- START THE FEATURETTES -->
-   <div class="row featurette">
-     <div class="col-md-7">
-       <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your mind.</span></h2>
-       <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-     </div>
-     <div class="col-md-5">
-       <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-     </div>
-   </div>
-   <hr class="featurette-divider">
-   <div class="row featurette">
-     <div class="col-md-7 order-md-2">
-       <h2 class="featurette-heading">Oh yeah, it’s that good. <span class="text-muted">See for yourself.</span></h2>
-       <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-     </div>
-     <div class="col-md-5 order-md-1">
-       <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-     </div>
-   </div>
-   <hr class="featurette-divider">
-   <div class="row featurette">
-     <div class="col-md-7">
-       <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-       <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-     </div>
-     <div class="col-md-5">
-       <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-     </div>
-   </div>
-   <hr class="featurette-divider">
-   <!-- /END THE FEATURETTES -->
- </div><!-- /.container -->
- <!-- FOOTER -->
- <footer class="container">
-   <p class="float-right"><a href="#">Back to top</a></p>
-   <p>&copy; 2017-2019 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
- </footer>
+       <!-- CATEGORIAS -->
+      <div class="container mb-4">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <img src="img/hospitalario.jpg" alt="" class="img-fluid rounded">
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <img src="img/hospitalario.jpg" alt="" class="img-fluid rounded">
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <img src="img/egresados.jpg" alt="" class="img-fluid rounded">
+          </div>
+        </div>
+      </div>
+      <!-- DATOS LOCAL -->
+      <div class="container mb-4">
+        <div class="row">
+            <div class="col-lg-6">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3580.359336531267!2d-58.172174942535975!3d-26.184986630439457!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd5031f0cb4bceefa!2sPitagoras&#39;c!5e0!3m2!1ses-419!2sar!4v1569293921813!5m2!1ses-419!2sar" width=450px height=376px frameborder="0" style="border:0;" allowfullscreen ></iframe>
+            </div>
+            <div class="col-lg-6">
+                <div class="heading">
+                    <h3>Lorem Ipsum Dolor</h3>
+                    <div class="rating">
+                        <i class="fa fa-star icon"></i>
+                        <i class="fa fa-star icon"></i>
+                        <i class="fa fa-star icon"></i>
+                        <i class="fa fa-star icon"></i>
+                        <i class="fa fa-star-o icon"></i>
+                    </div>
+                </div>
+                <div class="info">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ornare leo porta cursus porttitor. Proin quis tempor lectus. Cras sodales nisi ut felis tincidunt suscipit. Nullam consectetur odio et lacus tempor vestibulum.</p>
+                    <p>Aenean convallis, tortor eget vehicula vestibulum, sem nibh rutrum sem, vel sodales nisl velit eu ex. Sed hendrerit efficitur sollicitudin. Maecenas tempus augue lacus.</p>
+                </div>
+                <div class="gallery">
+                    <h4>Local</h4>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <a href="#"><img class="img-fluid image rounded" src="img/img-2.jpg"></a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="#"><img class="img-fluid image rounded" src="img/img-1.png"></a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="#"><img class="img-fluid image rounded" src="img/img-3.png"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </main>
+
+   <!-- FOOTER -->
+  <footer class="container">
+    <?php include_once 'footer.php'; ?>
+</footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

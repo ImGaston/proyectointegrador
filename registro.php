@@ -16,7 +16,10 @@
     <title>Página de registro</title>
   </head>
   <body class="text-align:center">
-
+    <header>
+ <!--saque la nav a la navbar.php -->
+ <?php include("navbar.php")?>
+</header>
     <!-- Formulario de registro -->
 
       <form class="col-md-4 modal-dialog-centered mx-auto" action="index.html" method="post">

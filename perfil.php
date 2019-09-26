@@ -1,67 +1,25 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/perfil.css">
-    <!-- Formulario de contacto -->
-
+    <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
     <title>Formulario de Registro</title>
   </head>
   <body>
-       <!-- VA PEGADO EL HEADER DE TERSY -->
-      <header id="header" class="">
-        <div class="container">
-          <div class="row" >
-            <div class="col-12">
-              <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                    <a class="navbar-brand" href="#">Navbar</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                    </button>
-
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                      <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Dropdown
-                          </a>
-                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                          </div>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                        </li>
-                      </ul>
-                      <form class="form-inline my-2 my-lg-0">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                      </form>
-                  </div>
-            </nav>
-          </div>
-        </div>
-      </div>
-    </header>
+   <!-- NAVBAR -->
+       <header>
+    <?php include("navbar.php")?>
+   </header>
       <main role="main" class="main">
         <div class="container">
           <div class="row">
               <div class="col">
-                  <h2>Hola, <br>$nombre!</h2>
+                  <h1>Hola, <br>$nombre!</h1>
               </div>
               <div class="col col-lg-2 text-right">
                 <a href="#">Cerrar sesión</a>
@@ -78,34 +36,43 @@
                   <a class="nav-link" href="#">Datos Personales</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Pedidos</a>
+                  <a class="nav-link" href="#">Wishlist</a>
                 </li>
             </ul>
           </div>
         </div>
     <!-- Aca es donde va la magia del php para cargar distintas paginas segun el nav -->
         <div class="container">
-          <div class="row">
+          <div class="row border mt-2 mb-1">
             <div class="col">
-              <h2 class="pedido">Ultimo Pedido $fecha</h2><br>
-              <a href="#" class="link-envio">DURNF28240</a>
+              <h2 class="pedido mt-2">Ultimo Pedido $fecha</h2><br>
+              <a href="#" class="link-envio"><b>DURNF28240</b></a>
+              <p><b>2 articulos</b> total <b>$ 2890</b> </p>
+              <hr class="featurette-divider">
+              <p class="mb-0">Enviado el <b>$fecha</b></p>
+              <p class="mb-0">Número de seguimiento: $número</p>
+              <a href="#">REALIZAR SEGUIMIENTO DE PEDIDO </a><br>
+            </div>
+          <div class="row m-0 mt-2">
+            <div class="col-3 col-md-2">
+              <img src="img/compra-1.jpg" class="img-thumbnail rounded img-fluid" alt="Responsive image">
+            </div>
+            <div class="col-3 col-md-2">
+              <img src="img/compra-2.jpg" class="img-thumbnail rounded img-fluid" alt="Responsive image">
             </div>
           </div>
-
-        </div>
-        <!-- ULTIMO PEDIDO -->
-        <div class="container">
           <div class="row">
             <div class="col">
-              
+              <button type="button" class="btn btn-primary btn-lg btn-block m-3">Ver Pedido<ion-icon name="cart"></ion-icon></ion-icon></button>
             </div>
+          </div>
           </div>
         </div>
         <!-- SEGUIMIENTO PEDIDO -->
         <div class="container">
           <div class="row">
             <div class="col">
-              <button type="button" class="btn btn-primary btn-lg btn-block">Ver Pedido</button>
+              <hr class="featurette-divider">
             </div>
           </div>
         </div>
@@ -113,22 +80,34 @@
         <div class="container">
           <div class="row">
             <div class="col">
-
+              <h2>Te puede interesar...</h2>
             </div>
+          <div class="row m-0">
+              <div class="col-3 col-md-2">
+                <img src="img/compra-1.jpg" class="img-thumbnail rounded img-fluid" alt="Responsive image">
+              </div>
+              <div class="col-3 col-md-2">
+                <img src="img/compra-2.jpg" class="img-thumbnail rounded img-fluid" alt="Responsive image">
+              </div>
+              <div class="col-3 col-md-2">
+                <img src="img/compra-2.jpg" class="img-thumbnail rounded img-fluid" alt="Responsive image">
+              </div>
           </div>
         </div>
         <!-- ENCUESTA -->
         <div class="container">
-          <div class="row">
+          <div class="row border mt-4 mb-4 rounded">
             <div class="col">
-
+              <h3 class="m-2 text-center">Tu opinión nos interesa!</h3>
+              <p class="text-center">Nuestro objetivo es mejorar y valoramos mucho tus comentarios</p>
+              <p class="text-center"><a href="#">Este formulario nos ayuda, muchas gracias </a></p>
             </div>
           </div>
         </div>
       </main>
-      <footer>
-
-      </footer>
+      <footer class="container">
+        <?php include_once 'footer.php'; ?>
+    </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

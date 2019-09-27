@@ -14,7 +14,7 @@
     <footer class="container">
       <div class="d-flex">
         <address class="address fas fa-envelope mt-1 fa-2x">
-        Proycto Integrador 2019, Bella Vista, Buenos Aires <br>
+        Proyecto Integrador 2019, Bella Vista, Buenos Aires <br>
         +54 911 4568-9873  <br>
         proyectointegrador@digitalhouse.com
         </address>

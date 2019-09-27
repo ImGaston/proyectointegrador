@@ -8,20 +8,21 @@
     <link rel="stylesheet" href="css/estilos.css">
   </head>
 
-  <body class="text-center">
+  <body>
     <header>
       <div class="container">
          <?php include_once 'navbar.php'?>
       </div>
 </header>
-  <div class="container">
+  <div class="container text-center">
     <form class="form-signin">
-  <img class="mb-4" src="img/alf.jpg" alt="" width="200" height="200">
-  <h1 class="h3 mb-3 font-weight-normal">Login de Usuario</h1>
+    <h1 class="h3 mb-3 font-weight-normal">Login de Usuario</h1>
+    <br>
   <label for="inputEmail" class="sr-only">Direccion de email</label>
   <input type="email" id="inputEmail" class="form-control" placeholder="Dirección de e-mail" required autofocus>
+<br>
   <label for="inputPassword" class="sr-only">Contraseña</label>
-  <input type="password" id="inputPassword" class="form-control" placeholder="Cont" required>
+  <input type="password" id="inputPassword" class="form-control" placeholder="Contraseña" required>
   <div class="checkbox mb-3">
     <label>
       <input type="checkbox" value="remember-me"> Recuerdame

@@ -13,7 +13,11 @@
     <title>Contacto</title>
   </head>
   <body class="form-contact">
-    <div class="container align-items-center mt-4">
+    <header>
+      <div class="container">
+         <?php include_once 'navbar.php'?>
+      </div>
+    <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-4">
             <div class="well well-sm">

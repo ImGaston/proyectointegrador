@@ -18,17 +18,19 @@
         <a class="nav-link" href="home.php">HOME<span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
+        <a class="nav-link" href="productos.php">PRODUCTOS</a>
+      </li>
+      <li class="nav-item">
         <a class="nav-link" href="faq.php">PREGUNTAS FRECUENTES</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="Servicios.php">SERVICIOS</a>
-      </li>
-
-      <li class="nav-item">
+          <li class="nav-item">
       <a class="nav-link" href="contacto.php">CONTACTO</a>
     </li>
     <li class="nav-item">
     <a class="nav-link" href="registro.php">REGISTRO</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="login.php">LOGIN</a>
   </li>
     </ul>
     <form class="form-inline mt-2 mt-md-0">

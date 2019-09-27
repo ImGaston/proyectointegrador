@@ -5,21 +5,15 @@ body {
 }
 
 body.form-contact{
-
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-  align-items: center;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  background-color: #0abde3;
 }
 .form-signin {
   width: 50%;
-  max-width: 330px;
+  /* max-width: 330px; */
   padding: 15px;
   margin: auto;
 }
+
+
 /
 /* .form-signin .form-control {
   position: relative;
@@ -28,7 +22,7 @@ body.form-contact{
   padding: 10px;
   font-size: 16px;
 } */
-.form-signin .form-control:focus {
+/* .form-signin .form-control:focus {
   z-index: 2;
 }
 .form-signin input[type="email"] {
@@ -40,7 +34,7 @@ body.form-contact{
   margin-bottom: 10px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
-}
+} */
 
 
 .bd-placeholder-img {

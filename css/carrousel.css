@@ -3,9 +3,21 @@
 /* Padding below the footer and lighter body text */
 
 body {
-  padding-top: 3rem;
+  /* //padding-top: 3rem; */
   padding-bottom: 3rem;
   color: #5a5a5a;
+}
+
+.izquierda {
+  color: black;
+}
+
+h1 {
+  color: black;
+}
+
+p {
+  color:black;
 }
 
 
@@ -20,6 +32,7 @@ body {
 .carousel-caption {
   bottom: 3rem;
   z-index: 10;
+  color:black;
 }
 
 /* Declare heights because of positioning of img element */
@@ -55,9 +68,9 @@ body {
 /* Featurettes
 ------------------------- */
 
-.featurette-divider {
+/* .featurette-divider {
   margin: 5rem 0; /* Space out the Bootstrap <hr> more */
-}
+} */
 
 /* Thin out the marketing headings */
 .featurette-heading {

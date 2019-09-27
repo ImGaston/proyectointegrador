@@ -1,3 +1,4 @@
+
 body {
   height: 100%;
   padding-top:0;
@@ -13,23 +14,20 @@ body.form-contact{
   padding-bottom: 40px;
   background-color: #0abde3;
 }
-
 .form-signin {
-  width: 100%;
+  width: 50%;
   max-width: 330px;
   padding: 15px;
   margin: auto;
 }
-.form-signin .checkbox {
-  font-weight: 400;
-}
-.form-signin .form-control {
+/
+/* .form-signin .form-control {
   position: relative;
   box-sizing: border-box;
   height: auto;
   padding: 10px;
   font-size: 16px;
-}
+} */
 .form-signin .form-control:focus {
   z-index: 2;
 }

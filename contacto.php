@@ -12,7 +12,7 @@
 
     <title>Contacto</title>
   </head>
-  <body class "form-contact">
+  <body class="form-contact">
     <div class="container align-items-center mt-4">
     <div class="row justify-content-center">
         <div class="col-md-4">

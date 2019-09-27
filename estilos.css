@@ -1,8 +1,10 @@
 body {
   height: 100%;
+  padding-top:0;
 }
 
-body {
+body.form-contact{
+
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
@@ -57,3 +59,10 @@ body {
     font-size: 3.5rem;
   }
 }
+.navbar-container{
+  background-image:url(../img/ricepaper_v3.png)            ;
+
+
+
+
+    }

@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/shop-homepage.css">
-    <title>Formulario de Registro</title>
+    <title>Productos</title>
   </head>
 
 <body>

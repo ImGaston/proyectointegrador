@@ -13,7 +13,10 @@
   <body>
    <!-- NAVBAR -->
        <header>
-    <?php include("navbar.php")?>
+         <div class="container">
+             <?php include("navbar.php")?>
+         </div>
+  
    </header>
       <main role="main" class="main">
         <div class="container">

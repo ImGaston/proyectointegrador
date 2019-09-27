@@ -11,13 +11,16 @@
   <body>
 
     <header>
+      <div class="container">
+         <?php include("navbar.php")?>
+      </div>
  <!--saque la nav a la navbar.php -->
- <?php include("navbar.php")?>
+
 </header>
 <!--esto corresponde a la FAQ-->
 
 
-<div class="preguntas frecuentes ">
+<div class="container preguntas frecuentes ">
 
 <p> Aqui encontraran el uniforme escolar para sus hijos </p>
 <p>Uniformes para Alumnos Colegiales o profesionales de Servicios</p>

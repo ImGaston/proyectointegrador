@@ -10,15 +10,18 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="estilos.css" rel="stylesheet">
-    
+    <link href="css/estilos.css" rel="stylesheet">
+
 
     <title>Página de registro</title>
   </head>
   <body class="text-align:center">
     <header>
+      <div class="container">
+         <?php include("navbar.php")?>
+      </div>
  <!--saque la nav a la navbar.php -->
- <?php include("navbar.php")?>
+
 </header>
     <!-- Formulario de registro -->
 

@@ -9,15 +9,24 @@
         <a class="nav-link" href="home.php">HOME<span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
+        <a class="nav-link" href="productos.php">Productos</a>
+      </li>
+      <li class="nav-item">
         <a class="nav-link" href="faq.php">FAQ</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
+        <a class="nav-link" href="perfil.php">Mi Cuenta</a>
       </li>
-    </ul>
+      <li class="nav-item">
+        <a class="nav-link" href="Registro.php">Regístrese</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="login.php">Login</a>
+      </li>
+      </ul>
     <form class="form-inline mt-2 mt-md-0">
-      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      <input class="form-control mr-sm-2" type="text" placeholder="Buscar" aria-label="Buscar">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
     </form>
   </div>
 </nav>

@@ -12,8 +12,9 @@
 </head>
   <body>
     <header>
- <!--saque la nav a la navbar.php -->
- <?php include("navbar.php")?>
+      <div class="container">
+         <?php include_once 'navbar.php'?>
+      </div>
 </header>
 <div class="container">
  <div id="myCarousel" class="carousel slide" data-ride="carousel">

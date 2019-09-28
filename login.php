@@ -14,7 +14,7 @@
       <div class="container">
          <?php include_once 'navbar.php'?>
       </div>
-</header>
+    </header>
   <div class="container text-center">
     <form class="form-signin">
     <h1 class="h3 mb-3 font-weight-normal">Login de Usuario</h1>

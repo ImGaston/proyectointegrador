@@ -16,7 +16,7 @@
          <div class="container">
              <?php include("navbar.php")?>
          </div>
-  
+
    </header>
       <main role="main" class="main">
         <div class="container">
@@ -45,8 +45,8 @@
           </div>
         </div>
     <!-- Aca es donde va la magia del php para cargar distintas paginas segun el nav -->
-        <div class="container">
-          <div class="row border mt-2 mb-1">
+        <div class="container border mt-2 mb-1">
+          <div class="row mt-2 mb-1">
             <div class="col">
               <h2 class="pedido mt-2">Ultimo Pedido $fecha</h2><br>
               <a href="#" class="link-envio"><b>DURNF28240</b></a>
@@ -56,19 +56,19 @@
               <p class="mb-0">Número de seguimiento: $número</p>
               <a href="#">REALIZAR SEGUIMIENTO DE PEDIDO </a><br>
             </div>
+          </div>
           <div class="row m-0 mt-2">
-            <div class="col-3 col-md-2">
+            <div class="col col-md-2">
               <img src="img/compra-1.jpg" class="img-thumbnail rounded img-fluid" alt="Responsive image">
             </div>
-            <div class="col-3 col-md-2">
+            <div class="col col-md-2">
               <img src="img/compra-2.jpg" class="img-thumbnail rounded img-fluid" alt="Responsive image">
             </div>
           </div>
           <div class="row">
             <div class="col">
-              <button type="button" class="btn btn-primary btn-lg btn-block m-3">Ver Pedido<ion-icon name="cart"></ion-icon></ion-icon></button>
+              <button type="button" class="btn btn-primary btn-lg btn-block mt-3 mb-3">Ver Pedido<ion-icon name="cart"></ion-icon></ion-icon></button>
             </div>
-          </div>
           </div>
         </div>
         <!-- SEGUIMIENTO PEDIDO -->
@@ -85,6 +85,7 @@
             <div class="col">
               <h2>Te puede interesar...</h2>
             </div>
+          </div>
           <div class="row m-0">
               <div class="col-3 col-md-2">
                 <img src="img/compra-1.jpg" class="img-thumbnail rounded img-fluid" alt="Responsive image">

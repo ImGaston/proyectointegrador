@@ -6,14 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/perfil.css">
+    <link rel="stylesheet" href="css/estilos.css">
     <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
-    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     <title>Formulario de Registro</title>
   </head>
   <body>
    <!-- NAVBAR -->
-       <header>
-         <div class="container">
+    <header>
+         <div class="container pl-0 pr-0 pb-2">
              <?php include("navbar.php")?>
          </div>
 
@@ -30,8 +31,10 @@
           </div>
         </div>
         <div class="container">
+          <div class="nav-scroller py-1 mb-2">
+          <nav class="nav d-flex justify-content-between">
           <div class="row">
-            <ul class="nav nav-tabs">
+            <ul class="nav nav-tabs ">
                 <li class="nav-item">
                   <a class="nav-link active" href="#">Mi cuenta</a>
                 </li>
@@ -39,10 +42,15 @@
                   <a class="nav-link" href="#">Datos Personales</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Wishlist</a>
+                  <a class="nav-link" href="#">Tus preferencias</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Historial de Pedidos</a>
                 </li>
             </ul>
           </div>
+        </nav>
+        </div>
         </div>
     <!-- Aca es donde va la magia del php para cargar distintas paginas segun el nav -->
         <div class="container border mt-2 mb-1">

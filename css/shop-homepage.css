@@ -3,3 +3,9 @@ body {
   padding-bottom: 3rem;
   color: #5a5a5a;
 }
+.perfil {
+  text-decoration: none;
+  color: black;
+  padding-left: 7px;
+  padding-top: 8px;
+}

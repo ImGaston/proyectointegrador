@@ -1,4 +1,5 @@
 
+
 body {
   height: 100%;
   padding-top:0;
@@ -12,7 +13,12 @@ body.form-contact{
   padding: 15px;
   margin: auto;
 }
-
+.perfil {
+  text-decoration: none;
+  color: black;
+  padding-left: 7px;
+  padding-top: 8px;
+}
 
 /
 /* .form-signin .form-control {

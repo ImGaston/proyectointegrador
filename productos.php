@@ -8,13 +8,15 @@
     <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/shop-homepage.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     <title>Productos</title>
   </head>
 
 <body>
 
   <!-- Nhavigation -->
-  <div class="container">
+  <div class="container pl-0 pr-0">
   <?php include_once ("navbar.php") ?>
 </div>
 

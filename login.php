@@ -5,13 +5,14 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     <link rel="stylesheet" href="css/estilos.css">
     <title>Login</title>
   </head>
 
   <body>
     <header>
-      <div class="container">
+      <div class="container pl-0 pr-0">
          <?php include_once 'navbar.php'?>
       </div>
     </header>
@@ -32,7 +33,10 @@
   <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
 </form>
   </div>
-
+  <!-- FOOTER -->
+ <footer class="container">
+   <?php include_once 'footer.php'; ?>
+</footer>
 
  <!-- Optional JavaScript -->
  <!-- jQuery first, then Popper.js, then Bootstrap JS -->

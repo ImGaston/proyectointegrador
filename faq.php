@@ -20,37 +20,48 @@
 <!--esto corresponde a la FAQ-->
 
 
+</section>
+</div>
+
 <nav>
 <div class="container text-center" >
   <br>
-<img class="irc_mi" src="http://www.buscadoresdeplenitud.com/uploads/casas/kd/buscadoresdeplenitud/webs/Diferencias_entre_problemas_y_conflictos.jpg" width="500" height="300" style="" alt="Imagen relacionada">
+  <article class="Imagen">
+  </article>
+  <br>
+
 <details>
-   <summary>¿Que tipo de uniformes FABRICAN?</summary>
-   <p>fabricamos uniformes escolares y para servicios profesionales</p>
+   <summary>¿Qué tipo de uniformes fabrican?</summary>
+   <br>
+   <p> Hacemos uniformes escolares, para servicios profesionales y para egresados.</p>
 </details>
 <br>
 <details>
-   <summary>Se puede hacer pedidos AL POR MAYOR?</summary>
-   <p>Si, los pedidos pueden hacerlo online a contacto.</p>
+   <summary>¿Hacen pedidos al por mayor?</summary>
+   <br>
+   <p>Si, hacemos pedidos al por mayor y al por menor.</p>
 </details>
 <br>
 <details>
-   <summary>¿Los EGRESADOS pueden solicitar sus prendas destacadas?</summary>
-   <p>si, pueden contar con nuestro asesoramiento y diseño personalizado.</p>
+   <summary>¿Los egresados pueden solicitar sus prendas personalizadas?</summary>
+   <br>
+   <p>Si, ofrecemos asesoramiento para grupos.</p>
 </details>
 <br>
 <details>
-   <summary>Disponen diferentes FORMAS DE PAGO?</summary>
-   <p>Descuentos  por pago CONTADO.(Consulte porcentajes) y 'SALE'
-   promocionales en prendas de temporadas.</p>
+   <summary>¿Disponen de diferentes formas de pago?</summary>
+   <br>
+   <p>Sí, se puede abonar en efectivo, con débito o crédio. Contamos con descuentos por pago al contado y promociones con tarjeta.</p>
 </details>
 <br>
    <details>
-      <summary>Que MEDIOS DE PAGO disponen?</summary>
-      <p>tarjetas de Credito y Debito</p>
+      <summary>¿Con qué colegios trabajan?</summary>
+      <br>
+      <p>Trabajamos con colegios de zona norte.</p>
     </details>
    </div>
 </nav>
+</div>
 <br>
 <br>
 

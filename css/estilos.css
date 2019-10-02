@@ -20,7 +20,10 @@ body.form-contact{
   padding-top: 8px;
 }
 
-/
+.boton {
+margin: auto;
+box-sizing: border-box;
+}
 /* .form-signin .form-control {
   position: relative;
   box-sizing: border-box;

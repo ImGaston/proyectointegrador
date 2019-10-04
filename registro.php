@@ -15,13 +15,13 @@
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 
 
-    <title>Página de registro</title>
+    <title>Crear Cuenta</title>
   </head>
   <body class="text-align:center">
     <header>
-      <div class="container pl-0 pr-0">
+
          <?php include("navbar.php")?>
-      </div>
+
  <!--saque la nav a la navbar.php -->
 
 </header>

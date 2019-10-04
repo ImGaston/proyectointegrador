@@ -15,9 +15,9 @@
   </head>
   <body class="form-contact">
     <header>
-      <div class="container pl-0 pr-0">
+
          <?php include_once 'navbar.php'?>
-      </div>
+      
     <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-4">
@@ -77,6 +77,7 @@
                 </form>
             </div>
         </div>
+
     </div>
     </div>
     <!-- FOOTER -->

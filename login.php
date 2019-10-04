@@ -1,4 +1,4 @@
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -7,31 +7,37 @@
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     <link rel="stylesheet" href="css/estilos.css">
-    <title>Login</title>
+    <title>Iniciar Sesión</title>
   </head>
-
   <body>
     <header>
-      <div class="container pl-0 pr-0">
+
          <?php include_once 'navbar.php'?>
-      </div>
+
     </header>
   <div class="container text-center">
     <form class="form-signin">
-    <h1 class="h3 mb-3 font-weight-normal">Login de Usuario</h1>
-    <br>
-  <label for="inputEmail" class="sr-only">Direccion de email</label>
-  <input type="email" id="inputEmail" class="form-control" placeholder="Dirección de e-mail" required autofocus>
-<br>
-  <label for="inputPassword" class="sr-only">Contraseña</label>
-  <input type="password" id="inputPassword" class="form-control" placeholder="Contraseña" required>
-  <div class="checkbox mb-3">
-    <label>
-      <input type="checkbox" value="remember-me"> Recuerdame
-    </label>
-  </div>
-  <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
-</form>
+        <h1 class="h3 mb-3 font-weight-normal">Iniciar Sesión</h1>
+        <br>
+      <label for="inputEmail" class="sr-only">Direccion de email</label>
+      <input type="email" id="inputEmail" class="form-control" placeholder="Dirección de e-mail" required autofocus>
+        <br>
+      <label for="inputPassword" class="sr-only">Contraseña</label>
+      <input type="password" id="inputPassword" class="form-control" placeholder="Contraseña" required>
+      <div class="checkbox mb-3">
+        <label>
+          <input type="checkbox" value="remember-me"> Recuerdame
+        </label>
+      </div>
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
+    </form>
+    <div class="row">
+      <div class="col">
+        <p>Todavia no sos cliente?,<a href="registro.php"> crea una Cuenta</a></p>
+
+      </div>
+
+    </div>
   </div>
   <!-- FOOTER -->
  <footer class="container">

@@ -14,9 +14,9 @@
   <body>
    <!-- NAVBAR -->
     <header>
-         <div class="container pl-0 pr-0 pb-2">
+
              <?php include("navbar.php")?>
-         </div>
+         
 
    </header>
       <main role="main" class="main">

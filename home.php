@@ -66,7 +66,7 @@
     <div class="container">
       <div class="row">
         <div class="col-12 d-none d-block d-sm-block d-md-none">
-          <img src="img/compra-7.png" alt="">
+          <img src="img/compra-7.png" class="img-fluid"alt="">
         </div>
       </div>
     </div>
@@ -100,13 +100,13 @@
      <div class="container mb-4 mt-4">
             <div class="row">
               <div class="col-12 col-md-6 col-lg-4 mb-4">
-                <img src="img/hospitalario.jpg" alt="" class="img-fluid rounded">
+                <img src="img/colegial-1.png" alt="" class="img-fluid rounded">
               </div>
               <div class="col-12 col-md-6 col-lg-4 mb-4">
-                <img src="img/hospitalario.jpg" alt="" class="img-fluid rounded">
+                <img src="img/egresados-1.png" alt="" class="img-fluid rounded">
               </div>
               <div class="col-12 col-md-6 col-lg-4 mb-4">
-                <img src="img/egresados.jpg" alt="" class="img-fluid rounded">
+                <img src="img/hospitalario-1.png" alt="" class="img-fluid rounded">
               </div>
             </div>
     </div>
@@ -149,6 +149,40 @@
                </div>
             </div>
     </div>
+    <!-- LISTADO COLEGIOS -->
+    <div class="container d-none d-sm-none d-md-block">
+      <div class="row justify-content-md-center">
+        <h3 class="mb-4 mt-6">Algunos de los colegios que confían en nosotros</h3>
+      </div>
+      <div class="row justify-content-md-center">
+        <div class="col-12 col-md-6 col-lg-3 mb-3 text-center">
+          <img src="img/colegio-1.png" alt="">
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 mb-3 text-center">
+          <img src="img/colegio-2.png" alt="">
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 mb-3 text-center">
+          <img src="img/colegio-3.png" alt="">
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 mb-3 text-center">
+          <img src="img/colegio-4.png" alt="">
+        </div>
+      </div>
+    </div>
+    <!-- BENEFICIOS IMAGEN PARA MOBILE -->
+    <div class="container d-none d-block d-sm-block d-md-none">
+      <div class="row justify-content-md-center">
+        <h3 class="mb-4 mt-6 text-center">Algunos de los colegios que confían en nosotros</h3>
+      </div>
+      <div class="row">
+        <div class="col-12 text-center">
+          <img src="img/colegio-xs.jpg" class="img-fluid"alt="">
+        </div>
+      </div>
+    </div>
+
+
+
        <!-- FOOTER -->
     <footer class="container">
         <?php include_once 'footer.php'; ?>

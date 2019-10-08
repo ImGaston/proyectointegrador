@@ -16,7 +16,7 @@
 <body>
        <?php include_once ("navbar.php") ?>
       <!--saque la nav a la navbar.php -->
-      
+
      <div id="myCarousel" class="carousel slide" data-ride="carousel">
                <ol class="carousel-indicators">
                  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -62,8 +62,42 @@
                    <span class="sr-only color">Próxima</span>
                  </a>
     </div>
+    <!-- BENEFICIOS IMAGEN PARA MOBILE -->
+    <div class="container">
+      <div class="row">
+        <div class="col-12 d-none d-block d-sm-block d-md-none">
+          <img src="img/compra-7.png" alt="">
+        </div>
+      </div>
+    </div>
+    <!-- BENEFICIOS DESKTOPS  -->
+    <div class="container mt-4 mb-4 d-none d-sm-none d-md-block">
+      <div class="row justify-content-md-center">
+        <div class="col-2 text-center">
+          <img src="img/compra-1-1.png" class="mb-2" alt="">
+          <p>Los mejores precios y ofertas.</p>
+        </div>
+        <div class="col-2 text-center">
+          <img src="img/compra-2-1.png" class="mb-2"alt="">
+          <p>Compra online y retira en el local.</p>
+        </div>
+        <div class="col-2 text-center">
+          <img src="img/compra-3-1.png" class="mb-2"alt="">
+          <p>Servicio de entrega rápido y económico.</p>
+        </div>
+        <div class="col-2 text-center">
+          <img src="img/compra-6-1.png" class="mb-2"alt="">
+          <p>Cambios y devoluciones simples.</p>
+        </div>
+        <div class="col-2 text-center">
+          <img src="img/compra-5-1.png" class="mb-2"alt="">
+          <p>Compra facil y 100% seguro.</p>
+        </div>
+      </div>
+
+    </div>
            <!-- CATEGORIAS -->
-     <div class="container mb-4">
+     <div class="container mb-4 mt-4">
             <div class="row">
               <div class="col-12 col-md-6 col-lg-4 mb-4">
                 <img src="img/hospitalario.jpg" alt="" class="img-fluid rounded">

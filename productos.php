@@ -24,9 +24,9 @@
 
         <h1 class="my-4">Categorias</h1>
         <div class="list-group">
-          <a href="#" class="list-group-item">Uniformes varones</a>
-          <a href="#" class="list-group-item">Uniformes chicas</a>
-          <a href="#" class="list-group-item">Accesorios</a>
+          <a href="#" class="list-group-item">Colegial</a>
+          <a href="#" class="list-group-item">Egresados</a>
+          <a href="#" class="list-group-item">Hospitalario</a>
         </div>
 
       </div>
@@ -42,13 +42,13 @@
           </ol>
           <div class="carousel-inner" role="listbox">
             <div class="carousel-item active">
-              <img class="d-block img-fluid" src="http://placehold.it/900x350" alt="First slide">
+              <img class="d-block img-fluid" src="img/productos-01.jpg" alt="First slide">
             </div>
             <div class="carousel-item">
-              <img class="d-block img-fluid" src="http://placehold.it/900x350" alt="Second slide">
+              <img class="d-block img-fluid" src="img/productos-02.jpg" alt="Second slide">
             </div>
             <div class="carousel-item">
-              <img class="d-block img-fluid" src="http://placehold.it/900x350" alt="Third slide">
+              <img class="d-block img-fluid" src="img/productos-03.jpg" alt="Third slide">
             </div>
           </div>
           <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -65,12 +65,12 @@
 
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="card h-100">
-              <a href="producto1.php"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+              <a href="producto1.php"><img class="card-img-top" src="img/producto-1.jpg" alt=""></a>
               <div class="card-body">
                 <h4 class="card-title">
-                  <a href="producto1.php">Item One</a>
+                  <a href="producto1.php">Chomba</a>
                 </h4>
-                <h5>$24.99</h5>
+                <h5>$720</h5>
                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
               </div>
               <div class="card-footer">
@@ -81,12 +81,12 @@
 
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="card h-100">
-              <a href="producto1.php"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+              <a href="producto1.php"><img class="card-img-top" src="img/producto-2.jpg" alt=""></a>
               <div class="card-body">
                 <h4 class="card-title">
-                  <a href="producto1.php">Item Two</a>
+                  <a href="producto1.php">Ambo Spandex</a>
                 </h4>
-                <h5>$24.99</h5>
+                <h5>$890</h5>
                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur! Lorem ipsum dolor sit amet.</p>
               </div>
               <div class="card-footer">
@@ -97,12 +97,12 @@
 
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="card h-100">
-              <a href="producto1.php"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+              <a href="producto1.php"><img class="card-img-top" src="img/producto-3.jpg" alt=""></a>
               <div class="card-body">
                 <h4 class="card-title">
-                  <a href="producto1.php">Item Three</a>
+                  <a href="producto1.php">Campera</a>
                 </h4>
-                <h5>$24.99</h5>
+                <h5>$1800</h5>
                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
               </div>
               <div class="card-footer">
@@ -110,55 +110,6 @@
               </div>
             </div>
           </div>
-
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card h-100">
-              <a href="producto1.php"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-              <div class="card-body">
-                <h4 class="card-title">
-                  <a href="producto1.php">Item Four</a>
-                </h4>
-                <h5>$24.99</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card h-100">
-              <a href="producto1.php"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-              <div class="card-body">
-                <h4 class="card-title">
-                  <a href="producto1.php">Item Five</a>
-                </h4>
-                <h5>$24.99</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur! Lorem ipsum dolor sit amet.</p>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card h-100">
-              <a href="producto1.php"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-              <div class="card-body">
-                <h4 class="card-title">
-                  <a href="producto1.php">Item Six</a>
-                </h4>
-                <h5>$24.99</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-              </div>
-            </div>
-          </div>
-
         </div>
         <!-- /.row -->
 

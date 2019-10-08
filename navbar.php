@@ -16,6 +16,16 @@
            <li class="nav-item">
              <a class="nav-link" href="productos.php">Tienda </a>
            </li>
+           <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Tienda
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Colegios</a>
+                <a class="dropdown-item" href="#">Egresados</a>
+                <a class="dropdown-item" href="#">Hospitalario</a>
+              </div>
+           </li>
            <li class="nav-item">
              <a class="nav-link" href="contacto.php">Contacto</a>
            </li>

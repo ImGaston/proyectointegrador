@@ -4,14 +4,12 @@
       <!-- Required meta tags -->
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
       <!-- Bootstrap CSS -->
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-      <link rel="stylesheet" href="css/carrousel.css">
       <link rel="stylesheet" href="css/estilos.css">
       <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
       <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
-      <title>E-Commerce</title>
+      <title>Pitagoras'c</title>
 </head>
 <body>
        <?php include_once ("navbar.php") ?>
@@ -24,8 +22,8 @@
                  <li data-target="#myCarousel" data-slide-to="2"></li>
                </ol>
           <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="img/carousel-11.jpg" alt="Carousel1">
+            <div class="carousel-item active carousel-home">
+                <img src="img/carousel-11.jpg" alt="Carousel1"class="d-block w-100">
                 <div class="container">
                   <div class="carousel-caption izquierda">
                     <h1 >Los mejores uniformes escolares</h1>
@@ -34,8 +32,8 @@
                   </div>
                 </div>
             </div>
-            <div class="carousel-item">
-                  <img src="img/carousel-21.jpg" alt="Carousel2">
+            <div class="carousel-item carousel-home">
+                  <img src="img/carousel-21.jpg" alt="Carousel2"class="d-block w-100">
                   <div class="container">
                     <div class="carousel-caption izquierda">
                       <h1>Todos los modelos</h1>
@@ -44,8 +42,8 @@
                     </div>
                   </div>
             </div>
-            <div class="carousel-item">
-                   <img src="img/carousel-31.jpg" alt="Carousel3">
+            <div class="carousel-item carousel-home">
+                   <img src="img/carousel-31.jpg" alt="Carousel3"class="d-block w-100">
                    <div class="carousel-caption text-right izquierda">
                      <h1>Promociones!</h1>
                      <p>Visite nuestra sección de promociones!</p>
@@ -114,7 +112,7 @@
           <!-- DATOS LOCAL -->
     <div class="container mb-4">
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-lg-6 mb-4 mt-4">
                     <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3580.359336531267!2d-58.172174942535975!3d-26.184986630439457!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd5031f0cb4bceefa!2sPitagoras&#39;c!5e0!3m2!1ses-419!2sar!4v1569293921813!5m2!1ses-419!2sar" width=100% height=100% frameborder="0" style="border:0;" allowfullscreen ></iframe>
                </div>
                 <div class="col-lg-6">
@@ -132,9 +130,9 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ornare leo porta cursus porttitor. Proin quis tempor lectus. Cras sodales nisi ut felis tincidunt suscipit. Nullam consectetur odio et lacus tempor vestibulum.</p>
                         <p>Aenean convallis, tortor eget vehicula vestibulum, sem nibh rutrum sem, vel sodales nisl velit eu ex. Sed hendrerit efficitur sollicitudin. Maecenas tempus augue lacus.</p>
                     </div>
-                    <div class="gallery">
+                    <div class="gallery d-none d-sm-none d-md-block">
                         <h4>Local</h4>
-                        <div class="row">
+                        <div class="row ">
                             <div class="col-md-4">
                                 <a href="#"><img class="img-fluid image rounded" src="img/img-2.jpg"></a>
                             </div>
@@ -184,7 +182,7 @@
 
 
        <!-- FOOTER -->
-    <footer class="container">
+    <footer>
         <?php include_once 'footer.php'; ?>
     </footer>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

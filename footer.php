@@ -1,5 +1,5 @@
   <footer class="footer_part">
-        <div class="container">
+        <div class="container mt-4">
             <div class="row justify-content-between">
                 <div class="col-sm-6 col-lg-2">
                     <div class="single_footer_part">

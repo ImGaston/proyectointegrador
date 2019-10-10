@@ -1,3 +1,12 @@
+<?php
+	// Incluimos el controlador del registro-login
+	// De esta manera tengo el scope a la funciones que necesito
+	require_once 'register-login-controller.php';
+	$pageTitle = 'Home';
+//	require_once 'partials/head.php';
+?>
+	<?php require_once 'navbar.php'; ?>
+
 <!doctype html>
 <html lang="es">
   <head>
@@ -12,7 +21,6 @@
       <title>Pitagoras'c</title>
 </head>
 <body>
-       <?php include_once ("navbar.php") ?>
       <!--saque la nav a la navbar.php -->
 
      <div id="myCarousel" class="carousel slide" data-ride="carousel">

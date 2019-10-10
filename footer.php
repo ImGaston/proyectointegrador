@@ -3,7 +3,7 @@
             <div class="row justify-content-between">
                 <div class="col-sm-6 col-lg-2">
                     <div class="single_footer_part">
-                        <h4>Categorias</h4>
+                        <h4>Categorías</h4>
                         <ul class="list-unstyled">
                             <li><a class="text-dark" href="#">Colegios</a></li>
                             <li><a class="text-dark" href="#">Egresados</a></li>
@@ -24,7 +24,7 @@
                 </div>
                 <div class="col-sm-6 col-lg-3">
                     <div class="single_footer_part">
-                        <h4>Direción</h4>
+                        <h4>Dirección</h4>
                         <ul class="list-unstyled">
                             <li><a href="#"class="text-dark">Padre Patiño 847, Formosa</a></li>
                             <li><a class="text-dark" href="#">(370) 4627924</a></li>

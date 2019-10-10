@@ -1,3 +1,46 @@
+<?php
+	// Incluimos el controlador del registro-login
+	// De esta manera tengo el scope a la funciones que necesito
+	require_once 'register-login-controller.php';
+
+	// Si está logueda la persona la redirijo al profile
+	if ( isLogged() ) {
+		header('location: profile.php');
+		exit;
+	}
+
+	// Generamos nuestro array de errores interno
+	$errorsInLogin = [];
+
+	// Persistimos el email
+	$email = '';
+
+	if ($_POST) {
+		// Persistimos el email con lo vino por $_POST
+		$email = trim($_POST['email']);
+
+		// La función loginValidate() nos retorna el array de errores que almacenamos en esta variable
+		$errorsInLogin = loginValidate();
+
+		if ( !$errorsInLogin ) {
+			// Traemos al usuario que vamos a loguear
+			$userToLogin = getUserByEmail($email);
+
+			// Preguntamos si quiere ser recordado
+			if ( isset($_POST['rememberUser']) ) {
+				setcookie('userLoged', $email, time() + 3000);
+			}
+
+			// Logeamos al usuario
+			login($userToLogin);
+		}
+	}
+
+	$pageTitle = 'Login';
+
+	require_once 'navbar.php'; ?>
+
+
 <html lang="es">
   <head>
     <meta charset="utf-8">
@@ -12,19 +55,37 @@
   <body>
     <header>
 
-         <?php include_once 'navbar.php'?>
+      </header>
 
-    </header>
+			<div class="container" style="margin-top:30px; margin-bottom: 30px;">
+				<div class="row justify-content-center">
+					<div class="col-md-10">
+						<?php if (count($errorsInLogin) > 0): ?>
+							<div class="alert alert-danger">
+								<ul>
+									<?php foreach ($errorsInLogin as $oneError): ?>
+										<li> <?= $oneError; ?> </li>
+									<?php endforeach; ?>
+								</ul>
+							</div>
+						<?php endif; ?>
+
   <div class="container text-center">
-    <form class="form-signin">
+    <form class="form-signin" method="post">
         <h1 class="h3 mb-3 font-weight-normal">Iniciar Sesión</h1>
         <br>
       <label for="inputEmail" class="sr-only">Direccion de email</label>
-      <input type="email" id="inputEmail" class="form-control" placeholder="Dirección de e-mail" required autofocus>
+      <input type="email"
+			name= "email"
+				value="<?= $email; ?>"
+			id="inputEmail" class="form-control" placeholder="Dirección de e-mail" required autofocus>
         <br>
       <label for="inputPassword" class="sr-only">Contraseña</label>
-      <input type="password" id="inputPassword" class="form-control" placeholder="Contraseña" required>
+      <input type="password"
+			name= "password"
+			id="inputPassword" class="form-control" placeholder="Contraseña" required>
       <div class="checkbox mb-3">
+				<br>
         <label>
           <input type="checkbox" value="remember-me"> Recuerdame
         </label>
@@ -33,7 +94,7 @@
     </form>
     <div class="row">
       <div class="col">
-        <p>Todavia no sos cliente?,<a href="registro.php"> crea una Cuenta</a></p>
+        <p>¿Todavía no sos cliente?<a href="registro.php"> ¡Crea una Cuenta!</a></p>
 
       </div>
 

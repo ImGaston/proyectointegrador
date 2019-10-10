@@ -1,3 +1,11 @@
+<?php
+	// Incluimos el controlador del registro-login
+	// De esta manera tengo el scope a la funciones que necesito
+	require_once 'register-login-controller.php';
+	$pageTitle = 'Home';
+//	require_once 'partials/head.php';
+?>
+	<?php require_once 'navbar.php'; ?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -17,7 +25,7 @@
     <header>
 
          <?php include_once 'navbar.php'?>
-      
+
     <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-4">

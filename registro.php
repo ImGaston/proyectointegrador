@@ -1,3 +1,61 @@
+<?php
+	// Incluimos el controlador del registro-login
+	// De esta manera tengo el scope a la funciones que necesito
+	require_once 'register-login-controller.php';
+
+	// Si está logueda la persona la redirijo al profile
+	if ( isLogged() ) {
+		header('location: profile.php');
+		exit;
+	}
+
+	$pageTitle = 'Register';
+	//require_once 'partials/head.php';
+
+		// Creamos esta variable con Array vacío para que no de error al entrar por GET
+	$errorsInRegister = [];
+
+	// Variables para persitir
+	$name = '';
+  $lastName='';
+	$email = '';
+
+	if ($_POST) {
+		// Las variables de persistencia les asigno el valor que vino de $_POST
+		$name = trim($_POST['name']);
+		$email = trim($_POST['email']);
+    $lastName = trim($_POST['lastName']);
+
+		// La función registerValidate() nos retorna el array de errores que almacenamos en esta variable
+		$errorsInRegister = registerValidate();
+
+		// Si no hay errores en el registro
+		// Cuando no hay errores guardo la imagen y los datos
+		// if ( count($errorsInRegister) == 0 ) {
+		if ( !$errorsInRegister ) {
+
+			// Guardo la imagen y obtengo el nombre aleatorio creado
+			$imgName = saveImage();
+
+			// Creo en $_POST una posición "avatar" para guardar el nombre de la imagen
+			$_POST['avatar'] = $imgName;
+
+			// Guardo al usuario en el archivo JSON, y me devuelve al usuario que guardó en array
+			$theUser = saveUser();
+
+			// Al momento en que se registar vamos a mantener la sesión abierta
+			setcookie('userLoged', $theUser['email'], time() + 3000);
+
+			// Logueo al usuario
+			login($theUser);
+		}
+	}
+
+	//require_once 'partials/navbar.php';
+?>
+
+
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -27,33 +85,85 @@
 </header>
     <!-- Formulario de registro -->
 
-      <form class="col-md-4 modal-dialog-centered mx-auto" action="index.html" method="post">
+      <form class="col-md-4 modal-dialog-centered mx-auto" action="registro.php" method="post" enctype="multipart/form-data">
         <div class= "container align-items-center">
         <fieldset>
             <legend class="text-center header">Registrate</legend>
             <div class="row">
                <div class="col">
                  <label for="exampleInputName">Nombre</label>
-                 <input type="text" class="form-control" placeholder="First name">
-               </div>
+                 <input type="text"
+                 name = "name"
+                 class="form-control <?= isset($errorsInRegister['name']) ? 'is-invalid' : null ?>"
+                 value="<?= $name; ?>"
+                 >
+                 <div class="invalid-feedback">
+           				<?= isset($errorsInRegister['name']) ? $errorsInRegister['name'] : null; ?>
+         				</div>
+                 </div>
+
                <div class="col">
                  <label for="exampleInputLastName">Apellido</label>
-                 <input type="text" class="form-control" placeholder="Last name">
-               </div>
+                 <input type="text"
+                 name = "lastName"
+                 class="form-control <?= isset($errorsInRegister['lastName']) ? 'is-invalid' : null ?>"
+                 value="<?= $lastName; ?>"
+                 >
+                 <div class="invalid-feedback">
+                  <?= isset($errorsInRegister['lastName']) ? $errorsInRegister['lastName'] : null; ?>
+                </div>
+                 </div>
             </div>
+
             <div class="form-group">
             <label for="exampleInputEmail1">Dirección de correo electrónico</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-            <small id="emailHelp" class="form-text text-muted">No compartiremos tu mail con nadie</small>
+            <input type="email"
+            name="email"
+            class="form-control <?= isset($errorsInRegister['email']) ? 'is-invalid' : null ?>"
+            value="<?= $email; ?>"
+          >
+          <div class="invalid-feedback">
+            <?= isset($errorsInRegister['email']) ? $errorsInRegister['email'] : null; ?>
           </div>
+          </div>
+
           <div class="form-group">
             <label for="exampleInputPassword1">Contraseña</label>
-            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            <input type="password"
+            name="password"
+            class="form-control <?= isset($errorsInRegister['password']) ? 'is-invalid' : null ?>"
+          >
+          <div class="invalid-feedback">
+            <?= isset($errorsInRegister['password']) ? $errorsInRegister['password'] : null; ?>
           </div>
+          </div>
+
           <div class="form-group">
             <label for="exampleInputPassword1">Confirmar contraseña</label>
-            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            <input type="password"
+            name="rePassword"
+            class="form-control <?= isset($errorsInRegister['rePassword']) ? 'is-invalid' : null; ?>"
+          >
+          <div class="invalid-feedback">
+            <?= isset($errorsInRegister['rePassword']) ? $errorsInRegister['rePassword'] : null; ?>
           </div>
+          </div>
+
+          <div class="form-group">
+            <label><b>Imagen de perfil:</b></label>
+            <div class="custom-file">
+              <input
+                type="file"
+                name="avatar"
+                class="custom-file-input <?= isset($errorsInRegister['avatar']) ? 'is-invalid' : null; ?>"
+              >
+              <label class="custom-file-label">Suba una Imagen...</label>
+              <div class="invalid-feedback">
+                <?= isset($errorsInRegister['avatar']) ? $errorsInRegister['avatar'] : null; ?>
+              </div>
+            </div>
+          </div>
+
           <div class="form-group text-center">
               <div class="col-md-12 text-center">
                   <button type="submit" class="btn btn-primary btn-lg"> Enviar </button>

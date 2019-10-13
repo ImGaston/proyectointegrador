@@ -1,11 +1,22 @@
 
-/* PERFIL */
 * {
   font-family: 'Merriweather', serif;
 }
 p {
   margin-bottom: 1px;
+  color:black;
 }
+body {
+  height: 100%;
+  padding-top: 0;
+}
+h1 {
+  color: black;
+}
+a {
+  text-decoration: none;
+}
+
 .tabbable .nav-tabs {
    overflow-x: auto;
    overflow-y: hidden;
@@ -18,20 +29,12 @@ p {
   padding-top: 8px;
 }
 /* HOME */
-body {
-  height: 100%;
-  padding-top:0;
-}
-a {
-  text-decoration: none;
-}
 .form-signin {
   width: 50%;
   /* max-width: 330px; */
   padding: 15px;
   margin: auto;
 }
-
 .perfil {
   text-decoration: none;
   color: black;
@@ -52,25 +55,17 @@ box-sizing: border-box;
   -ms-user-select: none;
   user-select: none;
 }
+/* MAYORISTA */
+
 
 @media (min-width: 768px) {
   .bd-placeholder-img-lg {
     font-size: 3.5rem;
   }
 }
-
-
 /* CARROUSEL */
 .izquierda {
   color: black;
-}
-
-h1 {
-  color: black;
-}
-
-p {
-  color:black;
 }
 /* Declare heights because of positioning of img element */
 .carousel-home {

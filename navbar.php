@@ -30,7 +30,7 @@
              <a class="nav-link" href="contacto.php">Contacto</a>
            </li>
            <li class="nav-item">
-             <a class="nav-link" href="#" >Mayorista</a>
+             <a class="nav-link" href="mayorista.php" >Mayorista</a>
            </li>
      </ul>
 

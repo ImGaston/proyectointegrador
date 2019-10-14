@@ -46,7 +46,7 @@
              <?= $_SESSION['userLoged']['name'] ?>
            </a>
            <div class="dropdown-menu" aria-labelledby="dropNavBar">
-             <a class="dropdown-item" href="profile.php">Mi perfil</a>
+             <a class="dropdown-item" href="perfil.php">Mi perfil</a>
              <a class="dropdown-item" href="checkout.php">Mi Cuenta</a>
              <a class="dropdown-item" href="logout.php">Salir</a>
            </div>

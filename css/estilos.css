@@ -1,7 +1,7 @@
 
 * {
   font-family: 'Merriweather', serif;
-}
+  }
 p {
   margin-bottom: 1px;
   color:black;
@@ -17,6 +17,9 @@ a {
   text-decoration: none;
 }
 
+#img{
+  margin: 0 auto;
+}
 .tabbable .nav-tabs {
    overflow-x: auto;
    overflow-y: hidden;
@@ -47,6 +50,20 @@ margin: auto;
 box-sizing: border-box;
 }
 
+col-md-6 {
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+col-12 {
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .bd-placeholder-img {
   font-size: 1.125rem;
   text-anchor: middle;
@@ -61,6 +78,9 @@ box-sizing: border-box;
 @media (min-width: 768px) {
   .bd-placeholder-img-lg {
     font-size: 3.5rem;
+  }
+  .Imagenfaq {
+    display:none;
   }
 }
 /* CARROUSEL */
@@ -111,7 +131,6 @@ box-sizing: border-box;
     font-size: 1.25rem;
     line-height: 1.4;
   }
-
   .featurette-heading {
     font-size: 50px;
   }
@@ -121,4 +140,5 @@ box-sizing: border-box;
   .featurette-heading {
     margin-top: 7rem;
   }
+    }
 }

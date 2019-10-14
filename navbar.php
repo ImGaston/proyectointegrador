@@ -27,10 +27,10 @@
           </div>
         </li>
         <li class="nav-item">
-          <a href="#myModal" data-toggle="modal" data-target="#myModal" class="nav-link">Contacto</a>
+          <a class="nav-link" href="mayorista.php">Mayorista</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="mayorista.php">Mayorista</a>
+          <a href="#myModal" data-toggle="modal" data-target="#myModal" class="nav-link">Contacto</a>
         </li>
       </ul>
 

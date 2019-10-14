@@ -5,7 +5,7 @@
 
 	// Si está logueda la persona la redirijo al profile
 	if ( isLogged() ) {
-		header('location: profile.php');
+		header('location: perfil.php');
 		exit;
 	}
 
@@ -87,7 +87,7 @@
       <div class="checkbox mb-3">
 				<br>
         <label>
-          <input type="checkbox" value="remember-me"> Recuerdame
+          <input type="checkbox" name="rememberUser" value="remember-me"> Recuerdame
         </label>
       </div>
       <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>

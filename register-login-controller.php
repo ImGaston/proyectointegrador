@@ -184,7 +184,7 @@
 		$_SESSION['userLoged'] = $user;
 
 		// Redirecciono al perfil del usuario
-		header('location: profile.php');
+		header('location: perfil.php');
 		exit; // Siempre, después de una redirección se recomienda hacer un exit.
 	}
 

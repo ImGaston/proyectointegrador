@@ -34,24 +34,25 @@
         </li>
       </ul>
 
-      <ul class="navbar-nav ml-auto" style="display: flex; align-items: center;">
-        <!-- Preguntamos si NO está logueado el usuario para mostrar los enlaces Register y Login -->
-        <?php if (!isLogged()) : ?>
-          <li class="nav-item"><a class="nav-link" href="registro.php">Registrate</a></li>
-          <li class="nav-item"><a class="nav-link" href="login.php">Login</a></li>
-        <?php else : ?>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="dropNavBar" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <img src="data/avatars/<?= $_SESSION['userLoged']['avatar']; ?>" width="40" style="border-radius: 50%; background-color: #ffffff; padding: 5px;">
-              <?= $_SESSION['userLoged']['name'] ?>
-            </a>
-            <div class="dropdown-menu" aria-labelledby="dropNavBar">
-              <a class="dropdown-item" href="profile.php">Mi perfil</a>
-              <a class="dropdown-item" href="logout.php">Salir</a>
-            </div>
-          </li>
-        <?php endif ?>
-      </ul>
+     <ul class="navbar-nav ml-auto" style="display: flex; align-items: center;">
+       <!-- Preguntamos si NO está logueado el usuario para mostrar los enlaces Register y Login -->
+       <?php if ( !isLogged() ) : ?>
+         <li class="nav-item"><a class="nav-link" href="registro.php">Registrate</a></li>
+         <li class="nav-item"><a class="nav-link" href="login.php">Login</a></li>
+       <?php else: ?>
+         <li class="nav-item dropdown">
+           <a class="nav-link dropdown-toggle" href="#" id="dropNavBar" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+             <img src="data/avatars/<?= $_SESSION['userLoged']['avatar']; ?>" width="40" style="border-radius: 50%; background-color: #ffffff; padding: 5px;">
+             <?= $_SESSION['userLoged']['name'] ?>
+           </a>
+           <div class="dropdown-menu" aria-labelledby="dropNavBar">
+             <a class="dropdown-item" href="perfil.php">Mi perfil</a>
+             <a class="dropdown-item" href="checkout.php">Mi Cuenta</a>
+             <a class="dropdown-item" href="logout.php">Salir</a>
+           </div>
+         </li>
+       <?php endif ?>
+     </ul>
 
       <!-- <form class="form-inline mt-2 mb-0 mt-md-0">
          <input class="form-control mr-sm-2" type="text" placeholder="Buscar" aria-label="BUSCAR">

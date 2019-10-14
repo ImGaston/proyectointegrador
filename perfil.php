@@ -3,9 +3,9 @@
 	// De esta manera tengo el scope a la funciones que necesito
 	require_once 'register-login-controller.php';
 	$pageTitle = 'Home';
+		$theUser = $_SESSION['userLoged'];
 //	require_once 'partials/head.php';
 ?>
-	<?php require_once 'navbar.php'; ?>
 <!doctype html>
 <html lang="es">
   <head>
@@ -23,20 +23,17 @@
     <header>
 
              <?php include("navbar.php")?>
-
-
    </header>
       <main role="main" class="main">
-        <div class="container">
-          <div class="row">
-              <div class="col">
-                  <h1>Hola, <br>$nombre!</h1>
-              </div>
-              <div class="col col-lg-2 text-right">
-                <a href="#">Cerrar sesión</a>
-              </div>
-          </div>
-        </div>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4">
+							<br>
+							<h2>Bienvenido <?= $theUser['name']; ?></h2>
+							<br>
+							</div>
+					</div>
+				</div>
         <div class="container">
           <div class="nav-scroller py-1 mb-2">
           <nav class="nav d-flex justify-content-between">

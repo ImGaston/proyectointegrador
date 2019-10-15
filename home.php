@@ -122,11 +122,11 @@ $pageTitle = 'Home';
   <!-- DATOS LOCAL -->
   <div class="container mb-4">
     <div class="row">
-      <div class="col-lg-6 mb-4 mt-4">
-        <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3580.359336531267!2d-58.172174942535975!3d-26.184986630439457!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd5031f0cb4bceefa!2sPitagoras&#39;c!5e0!3m2!1ses-419!2sar!4v1569293921813!5m2!1ses-419!2sar" width=100% height=100% frameborder="0" style="border:0;" allowfullscreen></iframe>
+      <div class="col-12 col-lg-6 text-center">
+        <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3580.359336531267!2d-58.172174942535975!3d-26.184986630439457!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd5031f0cb4bceefa!2sPitagoras&#39;c!5e0!3m2!1ses-419!2sar!4v1569293921813!5m2!1ses-419!2sar" width=100% height=300px frameborder="0" style="border:0;" allowfullscreen></iframe>
       </div>
-      <div class="col-lg-6">
-        <div class="heading">
+      <div class="col-12 col-lg-6">
+        <div class="heading mt-3">
           <h3>Local</h3>
         </div>
         <div class="info">

@@ -134,6 +134,9 @@ col-12 {
   .featurette-heading {
     font-size: 50px;
   }
+  .carousel-home {
+    height: 32rem;
+  }
 }
 
 @media (min-width: 62em) {

@@ -75,6 +75,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 
+		<script
+			src="https://code.jquery.com/jquery-3.3.1.min.js"
+			integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			crossorigin="anonymous"></script>
 
     <title>Crear Cuenta</title>
   </head>
@@ -160,10 +164,18 @@
                 name="avatar"
                 class="custom-file-input <?= isset($errorsInRegister['avatar']) ? 'is-invalid' : null; ?>"
               >
-              <label class="custom-file-label">Suba una Imagen...</label>
+              <label class="custom-file-label">Subí tu foto...</label>
               <div class="invalid-feedback">
                 <?= isset($errorsInRegister['avatar']) ? $errorsInRegister['avatar'] : null; ?>
               </div>
+							<script type="application/javascript">
+							$('.custom-file-input').on('change', function(event) {
+									var inputFile = event.currentTarget;
+									$(inputFile).parent()
+											.find('.custom-file-label')
+											.html(inputFile.files[0].name);
+							});
+							</script>
             </div>
           </div>
 

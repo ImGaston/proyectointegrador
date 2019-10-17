@@ -20,6 +20,10 @@ a {
 #img{
   margin: 0 auto;
 }
+
+
+}
+
 .tabbable .nav-tabs {
    overflow-x: auto;
    overflow-y: hidden;
@@ -144,4 +148,3 @@ col-12 {
     margin-top: 7rem;
   }
     }
-

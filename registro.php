@@ -98,8 +98,8 @@
             <legend class="text-center header">Registrate</legend>
             <div class="row">
                <div class="col">
-                 <label for="exampleInputName">Nombre</label>
-                 <input type="text"
+                 <label for="name">Nombre</label>
+                 <input id = "name" type="text" placeholder="Nombre"
                  name = "name"
                  class="form-control <?= isset($errorsInRegister['name']) ? 'is-invalid' : null ?>"
                  value="<?= $name; ?>"
@@ -110,8 +110,8 @@
                  </div>
 
                <div class="col">
-                 <label for="exampleInputLastName">Apellido</label>
-                 <input type="text"
+                 <label for="lastName">Apellido</label>
+                 <input id = "lastName" type="text" placeholder="Apellido"
                  name = "lastName"
                  class="form-control <?= isset($errorsInRegister['lastName']) ? 'is-invalid' : null ?>"
                  value="<?= $lastName; ?>"
@@ -121,10 +121,10 @@
                 </div>
                  </div>
             </div>
-
+<br>
             <div class="form-group">
-            <label for="exampleInputEmail1">Dirección de correo electrónico</label>
-            <input type="email"
+            <label for="email">Dirección de correo electrónico</label>
+            <input id = "email" type="email" placeholder="Ingresa tu Email"
             name="email"
             class="form-control <?= isset($errorsInRegister['email']) ? 'is-invalid' : null ?>"
             value="<?= $email; ?>"
@@ -135,8 +135,8 @@
           </div>
 
           <div class="form-group">
-            <label for="exampleInputPassword1">Contraseña</label>
-            <input type="password"
+            <label for="Password">Contraseña</label>
+            <input id = "Password" type="password" placeholder="Ingresa tu contraseña"
             name="password"
             class="form-control <?= isset($errorsInRegister['password']) ? 'is-invalid' : null ?>"
           >
@@ -146,8 +146,9 @@
           </div>
 
           <div class="form-group">
-            <label for="exampleInputPassword1">Confirmar contraseña</label>
-            <input type="password"
+            <label for="rePassword">Confirmar contraseña</label>
+            <input id ="rePassword" type="Password"
+						placeholder="Confirmá tu Contraseña"
             name="rePassword"
             class="form-control <?= isset($errorsInRegister['rePassword']) ? 'is-invalid' : null; ?>"
           >
@@ -160,7 +161,7 @@
             <label><b>Imagen de perfil:</b></label>
             <div class="custom-file">
               <input
-                type="file"
+                type="file" 
                 name="avatar"
                 class="custom-file-input <?= isset($errorsInRegister['avatar']) ? 'is-invalid' : null; ?>"
               >

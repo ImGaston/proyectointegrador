@@ -15,8 +15,7 @@
                     <div class="single_footer_part">
                         <h4>Nosotros</h4>
                         <ul class="list-unstyled">
-                            <li><a class="text-dark" href="">Nuestra Historia</a></li>
-                            <li><a class="text-dark" href="">Novedades</a></li>
+                            <li><a class="text-dark" href="">Nosotros</a></li>
                             <li><a class="text-dark" href="faq.php">FAQ</a></li>
                             <li><a class="text-dark" href="contacto.php">Contacto</a></li>
                         </ul>
@@ -34,6 +33,19 @@
                 </div>
                 <div class="col-sm-6 col-lg-4">
                     <div class="single_footer_part">
+                        <h4>Newsletter</h4>
+                        <div id="mc_embed_signup">
+                            <form target="_blank"
+                                action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
+                                method="get" class="subscribe_form relative mail_part">
+                                <input type="email" name="email" id="newsletter-form-email" placeholder="Email"
+                                    class="placeholder hide-on-focus" onfocus="this.placeholder = ''"
+                                    onblur="this.placeholder = ' Email Address '">
+                                <button type="submit" class="btn btn-light" name="submit" id="newsletter-submit"
+                                    class="email_icon newsletter-submit button-contactForm">Suscribite</button>
+                                <div class="mt-10 info"></div>
+                            </form>
+                        </div>
                         <div class="social_icon">
                             <a href="#"><i class="ti-facebook"></i></a>
                             <a href="#"><i class="ti-twitter-alt"></i></a>

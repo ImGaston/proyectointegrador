@@ -25,16 +25,18 @@
   <!-- Nhavigation -->
       <?php include_once ("navbar.php") ?>
   <!-- Page Content -->
-  <div class="container">
+<header>
+
+	<div class="container">
     <div class="row"></div>
 
       <div class="col-lg-3"></div>
 
         <h1 class="my-4">Categorias</h1>
         <div class="list-group">
-          <a href="#" class="list-group-item">Colegial</a>
-          <a href="#" class="list-group-item">Egresados</a>
-          <a href="#" class="list-group-item">Hospitalario</a>
+          <a href="#colegial" class="list-group-item">Colegial</a>
+          <a href="#egresados" class="list-group-item">Egresados</a>
+          <a href="#servicios" class="list-group-item">Servicios</a>
         </div>
 
       </div>
@@ -68,8 +70,9 @@
             <span class="sr-only">Next</span>
           </a>
         </div>
+			</header>
 				<br>
-				<p>LINEA COLEGIAL</p>
+				<h2 id="colegial">LINEA COLEGIAL</h2>
 <div class="card-group">
   <div class="card">
     <img src="img/chomba.jpeg" class="card-img-top" alt="chomba colegial">
@@ -107,7 +110,8 @@
   </div>
 </div>
 <br>
-<p>  LINEA exclusiva para EGRESADOS </p>
+
+<h2 id="egresados">LINEA exclusiva para EGRESADOS </h2>
 <div class="card-group">
   <div class="card">
     <img src="img/egresados.jpeg" class="card-img-top" alt="equipos para egresados">
@@ -148,7 +152,7 @@
   </div>
 </div>
 <br>
-<p>AMBOS PARA SERVICIOS
+<h2 id="servicios">AMBOS PARA SERVICIOS</h2>
 <div class="card-group">
   <div class="card">
     <img src="img/chaquetilla.jpeg" class="card-img-top" alt="chaquetilla">

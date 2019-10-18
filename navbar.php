@@ -19,7 +19,7 @@
             Tienda
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="productos.php">Ver Todo</a>
+            <a class="dropdown-item" href="productos.php">Ver todo</a>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="#">Colegios</a>
             <a class="dropdown-item" href="#">Egresados</a>
@@ -47,7 +47,7 @@
            </a>
            <div class="dropdown-menu" aria-labelledby="dropNavBar">
              <a class="dropdown-item" href="perfil.php">Mi perfil</a>
-             <a class="dropdown-item" href="checkout.php">Mi Cuenta</a>
+             <a class="dropdown-item" href="checkout.php">Mi cuenta</a>
              <a class="dropdown-item" href="logout.php">Salir</a>
            </div>
          </li>

@@ -19,7 +19,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
     <!-- Formulario de contacto -->
 
-    <title>Contacto</title>
+    <title>Contacto | Pitagoras'c</title>
   </head>
   <body class="form-contact">
     <header>

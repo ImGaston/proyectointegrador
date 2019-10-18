@@ -33,7 +33,7 @@
 	    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 
 
-	    <title>Crear Cuenta</title>
+	    <title>Crear cuenta | Pitagoras'c</title>
 	  </head>
 	<body>
 

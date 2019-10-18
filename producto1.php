@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="css/shop-homepage.css">
     <link rel="stylesheet" href="css/estilos.css">
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-    <title>Productos</title>
+    <title>Productos | Pitagoras'c</title>
   </head>
 
 <body>

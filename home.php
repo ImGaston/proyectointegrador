@@ -19,7 +19,7 @@ $pageTitle = 'Home';
   <link rel="stylesheet" href="css/estilos.css">
   <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
-  <title>Pitagoras'c</title>
+  <title>Página de inicio | Pitagoras'c</title>
 </head>
 
 <body>

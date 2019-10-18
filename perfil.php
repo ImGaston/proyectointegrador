@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="css/estilos.css">
     <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-    <title>Formulario de Registro</title>
+    <title>Página de registro | Pitagoras'c</title>
   </head>
   <body>
    <!-- NAVBAR -->
@@ -29,7 +29,7 @@
 					<div class="row">
 						<div class="col-md-4">
 							<br>
-							<h2>Bienvenido <?= $theUser['name']; ?></h2>
+							<h2>Bienvenido, <?= $theUser['name']; ?></h2>
 							<br>
 							</div>
 					</div>

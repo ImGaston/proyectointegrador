@@ -20,7 +20,7 @@
 
 	<!-- Bootstrap CSS -->
 
-<title>checkout</title>
+<title>Carrito de compras | Pitagoras'c</title>
   </head>
   <body class="checkout">
 

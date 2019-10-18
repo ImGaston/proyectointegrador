@@ -33,7 +33,7 @@ $pageTitle = 'Home';
     </ol>
     <div class="carousel-inner">
       <div class="carousel-item active carousel-home">
-        <img src="img/carousel-11.jpg" alt="Carousel1" class="d-block w-100">
+        <img src="img/carousel-11.jpg" alt="Carousel1" class="d-block w-100 opct opacity-30">
         <div class="container">
           <div class="carousel-caption izquierda">
             <h1>Los mejores uniformes escolares</h1>
@@ -43,7 +43,7 @@ $pageTitle = 'Home';
         </div>
       </div>
       <div class="carousel-item carousel-home">
-        <img src="img/carousel-21.jpg" alt="Carousel2" class="d-block w-100">
+        <img src="img/carousel-21.jpg" alt="Carousel2" class="d-block w-100 opct opacity-30">
         <div class="container">
           <div class="carousel-caption izquierda">
             <h1>Todos los modelos</h1>
@@ -53,7 +53,7 @@ $pageTitle = 'Home';
         </div>
       </div>
       <div class="carousel-item carousel-home">
-        <img src="img/carousel-31.jpg" alt="Carousel3" class="d-block w-100">
+        <img src="img/carousel-31.jpg" alt="Carousel3" class="d-block w-100 opct opacity-30">
         <div class="carousel-caption text-right izquierda">
           <h1>Promociones!</h1>
           <p>Visite nuestra sección de promociones!</p>

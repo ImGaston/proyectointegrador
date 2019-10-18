@@ -37,16 +37,16 @@
 
 		// Si está vació el campo: $name
 		if ( empty($name) ) {
-			$errors['name'] = 'El campo nombre no puede estar vacío';
+			$errors['name'] = 'Campo obligatorio';
 		}
 
 		if ( empty($lastName) ) {
-			$errors['lastName'] = 'El campo apellido no puede estar vacío';
+			$errors['lastName'] = 'Campo obligatorio';
 		}
 
 		// Si está vació el campo: $email
 		if ( empty($email) ) {
-			$errors['email'] = 'El campo email es obligatorio';
+			$errors['email'] = 'Campo obligatorio';
 		} elseif ( !filter_var($email, FILTER_VALIDATE_EMAIL) ) { // Si el campo $email NO es un formato de email válido
 			$errors['email'] = 'Introducí un formato de email válido';
 		} elseif ( emailExist($email) ) { // Si el email ya existe, es porque alguien ya se registró con el mismo
@@ -55,12 +55,12 @@
 
 		// Si está vació el campo: $password
 		if ( empty($password) ) {
-			$errors['password'] = 'El campo password es obligatorio';
+			$errors['password'] = 'Campo obligatorio';
 		}
 
 		// Si está vació el campo: $rePassword
 		if ( empty($rePassword) ) {
-			$errors['rePassword'] = 'El campo repetir password es obligatorio';
+			$errors['rePassword'] = 'Campo obligatorio';
 		} elseif ($password != $rePassword) { // Si el valor de los campos $password y $rePassword son distintos
 			$errors['password'] = 'Las contraseñas no coinciden';
 			$errors['rePassword'] = 'Las contraseñas no coinciden';
@@ -68,7 +68,7 @@
 
 				// Si no cargaron ningún archivo
 		if ( $avatar['error'] != UPLOAD_ERR_OK ) {
-		$errors['avatar'] = 'Subí una imagen';
+		$errors['avatar'] = 'Subí tu imagen';
 	 } else {
 			// Si cargaron algún archivo, obtengo su extensión
 		$ext = pathinfo($avatar['name'], PATHINFO_EXTENSION);

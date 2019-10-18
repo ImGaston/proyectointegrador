@@ -21,7 +21,8 @@ a {
   margin: 0 auto;
 }
 
-
+.opacity-30 {
+  opacity: 0.6; }
 }
 
 .tabbable .nav-tabs {

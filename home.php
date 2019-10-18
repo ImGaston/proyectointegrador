@@ -38,7 +38,7 @@ $pageTitle = 'Home';
           <div class="carousel-caption izquierda">
             <h1>Los mejores uniformes escolares</h1>
             <p>Visite nuestra tienda de artículos</p>
-            <p><a class="btn btn-lg btn-primary" href="#" role="button">Visitar Galería</a></p>
+            <p><a class="btn btn-lg btn-primary" href="#" role="button">Visitar galería</a></p>
           </div>
         </div>
       </div>
@@ -47,16 +47,16 @@ $pageTitle = 'Home';
         <div class="container">
           <div class="carousel-caption izquierda">
             <h1>Todos los modelos</h1>
-            <p>Tenemos los uniformes para todos los colegios de Buenos Aires</p>
-            <p><a class="btn btn-lg btn-primary" href="#" role="button">Ver Listado</a></p>
+            <p>Tenemos los uniformes para todos los colegios de Zona Norte</p>
+            <p><a class="btn btn-lg btn-primary" href="#" role="button">Ver listado</a></p>
           </div>
         </div>
       </div>
       <div class="carousel-item carousel-home">
         <img src="img/carousel-31.jpg" alt="Carousel3" class="d-block w-100 opct opacity-30">
         <div class="carousel-caption text-right izquierda">
-          <h1>Promociones!</h1>
-          <p>Visite nuestra sección de promociones!</p>
+          <h1>Promociones</h1>
+          <p>Visite nuestra sección de promociones</p>
           <p><a class="btn btn-lg btn-primary" href="#" role="button">Visitar</a></p>
         </div>
       </div>

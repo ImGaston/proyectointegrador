@@ -114,7 +114,7 @@
         <div class="container">
           <div class="row border mt-4 mb-4 rounded">
             <div class="col">
-              <h3 class="m-2 text-center">Tu opinión nos interesa!</h3>
+              <h3 class="m-2 text-center">¡Tu opinión nos interesa!</h3>
               <p class="text-center">Nuestro objetivo es mejorar y valoramos mucho tus comentarios</p>
               <p class="text-center"><a href="#">Este formulario nos ayuda, muchas gracias </a></p>
             </div>

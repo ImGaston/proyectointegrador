@@ -41,7 +41,7 @@
 		<div class="row">
 			<div class="col-md-4">
 				<br>
-				<h2>Bienvenido <?= $theUser['name']; ?></h2>
+				<h2>Bienvenid@, <?= $theUser['name']; ?></h2>
 				<img src="data/avatars/<?= $theUser['avatar']; ?>" alt="imagen usuario">
 				<br><br>
 				</div>

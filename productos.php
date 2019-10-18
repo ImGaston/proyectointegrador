@@ -143,8 +143,8 @@
     <img src="img/egresadosgrupo.jpeg" class="card-img-top" alt="Egresados grupo">
     <div class="card-body">
       <h5 class="card-title">Para TODO EL GRUPO</h5>
-      <p class="card-text">La sensacion de plasmar en sus buzos , gorros o accesorios  lo disfrutan los grupos
-				y nosotros como  empresa por ayudarlos a hacer posible sus sueños.</p>
+      <p class="card-text">La sensacion de plasmar en sus buzos , gorros o accesorios.  Los grupos lo disfrutan
+				y nosotros como  empresa, por ayudarlos a hacer posible sus sueños.</p>
 				<p> CONSULTAR $PRECIO</p>
 				<img src="img/carrito.jpeg" alt="carrito" >
       <p class="card-text"><small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small></p>

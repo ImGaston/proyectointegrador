@@ -29,7 +29,7 @@
 					<div class="row">
 						<div class="col-md-4">
 							<br>
-							<h2>Bienvenido, <?= $theUser['name']; ?></h2>
+							<h2>Bienvenid@, <?= $theUser['name']; ?></h2>
 							<br>
 							</div>
 					</div>
@@ -43,13 +43,13 @@
                   <a class="nav-link active" href="#">Mi cuenta</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Datos Personales</a>
+                  <a class="nav-link" href="#">Datos personales</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">Tus preferencias</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Historial de Pedidos</a>
+                  <a class="nav-link" href="#">Historial de pedidos</a>
                 </li>
             </ul>
           </div>
@@ -60,7 +60,7 @@
         <div class="container border mt-2 mb-1">
           <div class="row mt-2 mb-1">
             <div class="col">
-              <h2 class="pedido mt-2">Ultimo Pedido $fecha</h2><br>
+              <h2 class="pedido mt-2">Mi último pedido $fecha</h2><br>
               <a href="#" class="link-envio"><b>DURNF28240</b></a>
               <p><b>2 articulos</b> total <b>$ 2890</b> </p>
               <hr class="featurette-divider">

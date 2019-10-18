@@ -96,7 +96,7 @@
     </form>
     <div class="row">
       <div class="col">
-        <p>¿Todavía no sos cliente?<a href="registro.php"> ¡Crea una Cuenta!</a></p>
+        <p>¿Todavía no sos cliente?<a href="registro.php">¡Crea una Cuenta!</a></p>
 
       </div>
 			</div>
@@ -113,7 +113,7 @@
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h5 class="modal-title" id="exampleModalLabel">Qué tip@ olvidadiz@...</h5>
+					<h5 class="modal-title" id="exampleModalLabel">¡Qué tip@ olvidadiz@!</h5>
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 						<span aria-hidden="true">&times;</span>
 					</button>

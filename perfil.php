@@ -46,7 +46,7 @@
                   <a class="nav-link" href="#">Datos personales</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Tus preferencias</a>
+                  <a class="nav-link" href="#">Mis preferencias</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">Historial de pedidos</a>
@@ -79,7 +79,7 @@
           </div>
           <div class="row">
             <div class="col">
-              <button type="button" class="btn btn-primary btn-lg btn-block mt-3 mb-3">Ver Pedido<ion-icon name="cart"></ion-icon></ion-icon></button>
+              <button type="button" class="btn btn-primary btn-lg btn-block mt-3 mb-3">Ver mi pedido<ion-icon name="cart"></ion-icon></ion-icon></button>
             </div>
           </div>
         </div>
@@ -115,8 +115,8 @@
           <div class="row border mt-4 mb-4 rounded">
             <div class="col">
               <h3 class="m-2 text-center">¡Tu opinión nos interesa!</h3>
-              <p class="text-center">Nuestro objetivo es mejorar y valoramos mucho tus comentarios</p>
-              <p class="text-center"><a href="#">Este formulario nos ayuda, muchas gracias </a></p>
+              <p class="text-center">Nuestro objetivo es ofrecer un servicio de calidad y valoramos mucho tus comentarios</p>
+              <p class="text-center"><a href="#">Este formulario nos ayuda a mejorar, muchas gracias </a></p>
             </div>
           </div>
         </div>

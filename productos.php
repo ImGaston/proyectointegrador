@@ -25,16 +25,18 @@
   <!-- Nhavigation -->
       <?php include_once ("navbar.php") ?>
   <!-- Page Content -->
-  <div class="container">
-    <div class="row">
+<header>
 
-      <div class="col-lg-3">
+	<div class="container">
+    <div class="row"></div>
+
+      <div class="col-lg-3"></div>
 
         <h1 class="my-4">Categorias</h1>
         <div class="list-group">
-          <a href="#" class="list-group-item">Colegial</a>
-          <a href="#" class="list-group-item">Egresados</a>
-          <a href="#" class="list-group-item">Hospitalario</a>
+          <a href="#colegial" class="list-group-item">Colegial</a>
+          <a href="#egresados" class="list-group-item">Egresados</a>
+          <a href="#servicios" class="list-group-item">Servicios</a>
         </div>
 
       </div>
@@ -68,57 +70,134 @@
             <span class="sr-only">Next</span>
           </a>
         </div>
+			</header>
+				<br>
+				<h2 id="colegial">LINEA COLEGIAL</h2>
+<div class="card-group">
+  <div class="card">
+    <img src="img/chomba.jpeg" class="card-img-top" alt="chomba colegial">
+    <div class="card-body">
+      <h5 class="card-title">Chomba</h5>
+      <p class="card-text">De varios colores , tela pique colegial algodon/polyester. Cuellos y puños con tejeduria con mezcla
+				de hilo acrilico.Cartera a la vista y logos bordados .</p>
+			<p> $720</p>
+			<img src="img/carrito.jpeg" alt="carrito" >
+      <p class="card-text"><small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small></p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="img/joggins.jpeg" class="card-img-top" alt="joggins deportivos">
+    <div class="card-body">
+      <h5 class="card-title">Joggins deportivos</h5>
+      <p class="card-text">Confeccionados con frisas deportivas de algodon /polyester, colores fijos y terminaciones reforzadas.
+			Amplia gama de colores en tela de verano e invierno</p>
+			<p>$1.600</p>
+			<img src="img/carrito.jpeg" alt="carrito" >
+      <p class="card-text"><small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small></p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="img/images.jpeg" class="card-img-top" alt="delantales de jardin ">
+    <div class="card-body">
+      <h5 class="card-title">Equipos infantiles </h5>
+      <p class="card-text">Diseños muy divertidos y comodos para los mas chiquitos. Logos bordados y superpuestos.
+			Detalles encantadores en telas resistentes y muy lavables .</p>
+				<p>$600</p>
+				<img src="img/carrito.jpeg" alt="carrito" >
+      <p class="card-text"><small class="text-muted"></small>&#9733; &#9733; &#9733; &#9733; &#9734;</p>
 
-        <div class="row">
+    </div>
+  </div>
+</div>
+<br>
 
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card h-100">
-              <a href="producto1.php"><img class="card-img-top" src="img/producto-1.jpg" alt=""></a>
-              <div class="card-body">
-                <h4 class="card-title">
-                  <a href="producto1.php">Chomba</a>
-                </h4>
-                <h5>$720</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-              </div>
-            </div>
-          </div>
+<h2 id="egresados">LINEA exclusiva para EGRESADOS </h2>
+<div class="card-group">
+  <div class="card">
+    <img src="img/egresados.jpeg" class="card-img-top" alt="equipos para egresados">
+    <div class="card-body">
+      <h5 class="card-title">Conjuntos para Egresados</h5>
+      <p class="card-text">A ellos les dedicamos especial dedicacion en buscar un diseño de preferencia.
+				En todos los talles, telas y  combinaciones que logran un efecto acorde al perfil de los egresados .</p>
+				 <p>$ 980</p>
+				 <img src="img/carrito.jpeg" alt="carrito" >
+      <p class="card-text"><small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small></p>
+    </div>
+  </div>
 
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card h-100">
-              <a href="producto1.php"><img class="card-img-top" src="img/producto-2.jpg" alt=""></a>
-              <div class="card-body">
-                <h4 class="card-title">
-                  <a href="producto1.php">Ambo Spandex</a>
-                </h4>
-                <h5>$890</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur! Lorem ipsum dolor sit amet.</p>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-              </div>
-            </div>
-          </div>
 
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card h-100">
-              <a href="producto1.php"><img class="card-img-top" src="img/producto-3.jpg" alt=""></a>
-              <div class="card-body">
-                <h4 class="card-title">
-                  <a href="producto1.php">Campera</a>
-                </h4>
-                <h5>$1800</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-              </div>
-            </div>
-          </div>
-        </div>
+
+  <div class="card">
+    <img src="img/egresadospromojpeg.jpeg" class="card-img-top" alt="egresados promos">
+    <div class="card-body">
+      <h5 class="card-title">Promos Egresados</h5>
+      <p class="card-text">Los grupos de egresados tienen posibilidades de crear su equipo para distinguirlos.
+			Pudeden elegir colores, menciones en logos, identificaciones de año, división etc. Podemos asesorarlos
+		y sugerirles ideas innovadoras.</p>
+			<p> $2000</p>
+			<img src="img/carrito.jpeg" alt="carrito" >
+      <p class="card-text"><small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small></p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="img/egresadosgrupo.jpeg" class="card-img-top" alt="Egresados grupo">
+    <div class="card-body">
+      <h5 class="card-title">Para TODO EL GRUPO</h5>
+      <p class="card-text">La sensacion de plasmar en sus buzos , gorros o accesorios.  Los grupos lo disfrutan
+				y nosotros como  empresa, por ayudarlos a hacer posible sus sueños.</p>
+				<p> CONSULTAR $PRECIO</p>
+				<img src="img/carrito.jpeg" alt="carrito" >
+      <p class="card-text"><small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small></p>
+    </div>
+  </div>
+</div>
+<br>
+<h2 id="servicios">AMBOS PARA SERVICIOS</h2>
+<div class="card-group">
+  <div class="card">
+    <img src="img/chaquetilla.jpeg" class="card-img-top" alt="chaquetilla">
+    <div class="card-body">
+      <h5 class="card-title">Chaquetilla de SERVICIOS </h5>
+      <p class="card-text">Las chaquetillas para servicios hospitalarios, domesticos, u otras profesiones son prendas .
+				 que deben ofrecer practicidad , comodidad y buen gusto. Se fabrican en diferentes tamaños.</p>
+				 <p> $ 900</p>
+				 <img src="img/carrito.jpeg" alt="carrito" >
+      <p class="card-text"><small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small></p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="img/sanidadduo.jpeg" class="card-img-top" alt="sanidad duo">
+    <div class="card-body">
+      <h5 class="card-title">Ambo HOMBRE/ MUJER Para Servicios</h5>
+      <p class="card-text">Son Ambos que  tienen caracteristicas esenciales de acuerdo a normas de uso (caso hospitalario) .
+			Los pantalones  de hombre tienen diferente corte por ello puedes mencionar en tu solicitud el genero H/M.</p>
+			<p> $ 1350 </p>
+			<img src="img/carrito.jpeg" alt="carrito" >
+
+      <p class="card-text"><small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small></p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="img/amboliberty.jpeg" class="card-img-top" alt="chaquetilla liberty">
+    <div class="card-body">
+      <h5 class="card-title">Chaquetilla LIBERTY</h5>
+      <p class="card-text">Algunos servicios requieren diseños mas divertidos y referidos a la actividad .
+			que realizan. Ese distintivo se logra con telas liberty que hacen posible lograr este aspecto.</p>
+				<p> $ 980 </p>
+				<img src="img/carrito.jpeg" alt="carrito" >
+      <p class="card-text"><small class="text-muted"></small>&#9733; &#9733; &#9733; &#9733; &#9734;</p>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+</div>
+
         <!-- /.row -->
 
       </div>

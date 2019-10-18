@@ -25,7 +25,7 @@ $pageTitle = 'Home';
 <body>
   <!--CARRUSEL -->
 
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <div id="myCarousel" class="carousel slide d-none d-sm-none d-md-block" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
       <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -70,6 +70,13 @@ $pageTitle = 'Home';
       <span class="sr-only color">Próxima</span>
     </a>
   </div>
+
+  <div class="container">
+    <div class="row" id="prueba">
+      <div class="col-12 col-md-6 col-lg-4 text-center services-section hidden-md-down">
+        <img src="img/img-1.png" class="img-fluid d-block d-sm-block d-md-none" alt="">
+          </div>
+
   <!-- BENEFICIOS IMAGEN PARA MOBILE -->
   <div class="container">
     <div class="row">

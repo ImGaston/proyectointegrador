@@ -161,7 +161,7 @@
             <label><b>Imagen de perfil:</b></label>
             <div class="custom-file">
               <input
-                type="file" 
+                type="file"
                 name="avatar"
                 class="custom-file-input <?= isset($errorsInRegister['avatar']) ? 'is-invalid' : null; ?>"
               >
@@ -185,6 +185,15 @@
                   <button type="submit" class="btn btn-primary btn-lg"> Enviar </button>
               </div>
           </div>
+					<div class="container">
+
+					<div class="row text-center">
+						<div class="col">
+							<p>¿Ya tenés cuenta?   <a href="Login.php">Ingresá</a></p>
+
+						</div>
+						</div>
+						</div>
           </fieldset>
         </div>
       </form>

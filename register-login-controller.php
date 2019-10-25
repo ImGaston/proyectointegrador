@@ -6,7 +6,7 @@
 	// Definimos las constantes que necesitamos en nuestro proyecto, de esta manera puedo usar las mismas dentro de las funciones sin tener que usar una variable global o pasarla por parámetro
 	define('ALLOWED_IMAGE_FORMATS', ['jpg', 'jpeg', 'png', 'gif']);
 	define('IMAGE_PATH', dirname(__FILE__) . '/data/avatars/');
-	define('USERS_JSON_PATH', dirname(__FILE__) . '/data/users.json');
+	define('USERS_JSON_PATH', dirname(__FILE__) . '/usuarios.json');
 
 
 	// Si está la cookie almacenada y si NO está logueda la persona:
@@ -77,6 +77,64 @@
 			if ( !in_array($ext, ALLOWED_IMAGE_FORMATS) ) {
 				$errors['avatar'] = 'Los formatos permitidos son JPG, PNG y GIF';
 		 	}
+		 }
+
+		// Finalmente retornamos el array de errores
+		return $errors;
+	}
+
+	function registerEdit(){
+		// Defino el array local de errores que voy a retornar
+		$errors = [];
+
+		// Definimos las variables locales que almacenan lo que nos llegó por $_POST y $_FILES
+		$name = trim($_POST['name']);
+		$email = trim($_POST['email']);
+		$lastName = trim($_POST['lastName']);
+		$password = trim($_POST['password']);
+		$rePassword = trim($_POST['rePassword']);
+		$avatar = $_FILES['avatar'];
+
+		// Si está vació el campo: $name
+		if ( empty($name) ) {
+			$errors['name'] = 'Campo obligatorio';
+		}
+
+		if ( empty($lastName) ) {
+			$errors['lastName'] = 'Campo obligatorio';
+		}
+
+		// Si está vació el campo: $email
+		if ( empty($email) ) {
+			$errors['email'] = 'Campo obligatorio';
+		} elseif ( !filter_var($email, FILTER_VALIDATE_EMAIL) ) { // Si el campo $email NO es un formato de email válido
+			$errors['email'] = 'Introducí un formato de email válido';
+		}  // Si el email ya existe, es porque alguien ya se registró con el mismo
+
+		// Si está vació el campo: $password
+		if ( empty($password) ) {
+			$errors['password'] = 'Campo obligatorio';
+		}
+
+		// Si está vació el campo: $rePassword
+		if ( empty($rePassword) ) {
+			$errors['rePassword'] = 'Campo obligatorio';
+		} elseif ($password != $rePassword) { // Si el valor de los campos $password y $rePassword son distintos
+			$errors['password'] = 'Las contraseñas no coinciden';
+			$errors['rePassword'] = 'Las contraseñas no coinciden';
+		}
+
+				// Si no cargaron ningún archivo
+		if ( $avatar['error'] != UPLOAD_ERR_OK ) {
+		$errors['avatar'] = 'Subí una nueva imagen';
+	 } else {
+			// Si cargaron algún archivo, obtengo su extensión
+		$ext = pathinfo($avatar['name'], PATHINFO_EXTENSION);
+
+			// Si la extesión del archivo que cargaron NO está en mi array de formatos permitidos
+			if ( !in_array($ext, ALLOWED_IMAGE_FORMATS) ) {
+				$errors['avatar'] = 'Los formatos permitidos son JPG, PNG y GIF';
+			}
 		 }
 
 		// Finalmente retornamos el array de errores
@@ -203,7 +261,7 @@
 	function emailExist($email) {
 		// Traigo a todos los usuarios
 		$allUsers = getAllUsers();
-
+		if(!empty ($allUsers)){
 		// Recorro el array de usuarios
 		foreach ($allUsers as $oneUser) {
 			// Si la posición "email" del usuario en la iteración coincide con el email que pasé como parámetro
@@ -215,6 +273,7 @@
 		// Si termino de recorrer el array y no se encontró al email que pasé como parámetro
 		return false;
 	}
+}
 
 
 	// Función para validar el login
@@ -236,7 +295,7 @@
 			$errors['email'] = 'Introducí un formato de email válido';
 		} elseif ( !emailExist($email) ) { // Si no existe el email
 			// $errors['email'] = 'Ese correo no está registrado en nuestra base de datos';
-			$errors['email'] = 'Las credenciales no coinciden';
+			$errors['email'] = 'El usuario y contraseña no coinciden';
 		} else {
 			// Si pasamos las 3 validaciones anteriores, busco y  obtengo al usuario con el email que llegó por $_POST
 			$theUser = getUserByEmail($email);

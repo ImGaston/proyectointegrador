@@ -40,68 +40,49 @@
           <div class="row">
             <ul class="nav nav-tabs ">
                 <li class="nav-item">
-                  <a class="nav-link active" href="perfil.php">Mi cuenta</a>
+                  <a class="nav-link" href="perfil.php">Mi cuenta</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link " href="perfil_datos.php">Datos personales</a>
+                  <a class="nav-link" href="perfil_datos.php">Datos personales</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="preferencias.php">Mis preferencias</a>
+                  <a class="nav-link active" href="preferencias.php">Mis preferencias</a>
                 </li>
-              
-            </ul>
+                          </ul>
           </div>
         </nav>
         </div>
         </div>
     <!-- Aca es donde va la magia del php para cargar distintas paginas segun el nav -->
-        <div class="container border mt-2 mb-1">
-          <div class="row mt-2 mb-1">
-            <div class="col">
-              <h2 class="pedido mt-2">Mi último pedido</h2><br>
-              <a href="#" class="link-envio"><b>DURNF28240</b></a>
-              <p><b>2 articulos</b> total <b>$ 2890</b> </p>
-              <hr class="featurette-divider">
-              <p class="mb-0">Enviado el <b><?php echo date('l \t\h\e jS') ?></b></p>
-              <p class="mb-0">Número de seguimiento: número <?php echo rand(100, 200) ?></p>
-              <a href="#">REALIZAR SEGUIMIENTO DE PEDIDO </a><br>
-            </div>
-          </div>
-          <div class="row m-0 mt-2">
-            <div class="col col-md-2">
-              <img src="img/compra-1.jpg" class="img-thumbnail rounded img-fluid" alt="Responsive image">
-            </div>
-            <div class="col col-md-2">
-              <img src="img/compra-2.jpg" class="img-thumbnail rounded img-fluid" alt="Responsive image">
-            </div>
-          </div>
-          <div class="row">
-            <div class="col">
-              <button type="button" class="btn btn-primary btn-lg btn-block mt-3 mb-3">Ver mi pedido<ion-icon name="cart"></ion-icon></ion-icon></button>
-            </div>
-          </div>
-        </div>
-        <!-- SEGUIMIENTO PEDIDO -->
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <hr class="featurette-divider">
-            </div>
-          </div>
-        </div>
-        <!-- RECOMENDACION -->
-
-        <!-- ENCUESTA -->
-        <div class="container">
-          <div class="row border mt-4 mb-4 rounded">
-            <div class="col">
-              <h3 class="m-2 text-center">¡Tu opinión nos interesa!</h3>
-              <p class="text-center">Nuestro objetivo es ofrecer un servicio de calidad y valoramos mucho tus comentarios</p>
-              <p class="text-center"><a href="#">Este formulario nos ayuda a mejorar, muchas gracias </a></p>
-            </div>
-          </div>
-        </div>
-      </main>
+        <main>
+					<div class="container">
+	          <div class="row">
+	            <div class="col">
+	              <h2>Te puede interesar...</h2>
+	            </div>
+	          </div>
+	          <div class="row m-0">
+	              <div class="col-3 col-md-2">
+	                <img src="img/compra-1.jpg" class="img-thumbnail rounded img-fluid" alt="Responsive image">
+	              </div>
+	              <div class="col-3 col-md-2">
+	                <img src="img/compra-2.jpg" class="img-thumbnail rounded img-fluid" alt="Responsive image">
+	              </div>
+	              <div class="col-3 col-md-2">
+	                <img src="img/compra-2.jpg" class="img-thumbnail rounded img-fluid" alt="Responsive image">
+	              </div>
+	          </div>
+	        </div>
+					<div class="container">
+						<div class="row border mt-4 mb-4 rounded">
+							<div class="col">
+								<h3 class="m-2 text-center">¡Tu opinión nos interesa!</h3>
+								<p class="text-center">Nuestro objetivo es ofrecer un servicio de calidad y valoramos mucho tus comentarios</p>
+								<p class="text-center"><a href="#">Este formulario nos ayuda a mejorar, muchas gracias </a></p>
+							</div>
+						</div>
+					</div>
+        </main>
       <footer class="container">
         <?php include_once 'footer.php'; ?>
     </footer>

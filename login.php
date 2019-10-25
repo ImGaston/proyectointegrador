@@ -11,9 +11,10 @@
 
 	// Generamos nuestro array de errores interno
 	$errorsInLogin = [];
-
+	$errorsInForget = [];
 	// Persistimos el email
 	$email = '';
+	$email1 = '';
 
 	if ($_POST) {
 		// Persistimos el email con lo vino por $_POST
@@ -36,7 +37,22 @@
 		}
 	}
 
-	$pageTitle = 'Login';
+	if ($_GET) {
+		// Persistimos el email con lo vino por $_POST
+		$email1 = trim($_GET['email1']);
+		// La función loginValidate() nos retorna el array de errores que almacenamos en esta variable
+		$errorsInForget = loginForget();
+		$userToForget = getUserByEmail($email1);
+
+	  if (empty($userToForget)) {
+		header('location: Nocoincide.php');
+	} else {
+		header('location: olvido.php');
+				}
+		}
+
+
+
 
 	require_once 'navbar.php';
 
@@ -109,7 +125,9 @@
 				</div>
   </div>
 
-	<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<form class="" action="login.php" method="get">
+
+		<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
@@ -121,21 +139,27 @@
 				<div class="modal-body">
 				Ingresá tu correo electrónico y te la enviamos.
 			</div>
-							<div class="modal-body">
-					<label for="consulta1"></label>
-					<div class="form-label-group">
-						<input type="Email" id="inputEmail" class="form-control" name = "email1" method="post" placeholder="Email" required>
-					</div>
-					</div>
+
+
+		<div class="form-label-group modal-body">
+
+		<label for="inputEmail" class="sr-only">Direccion de email</label>
+		<input type="email"
+		name= "email1"
+			value="<?= $email1; ?>"
+		id="inputEmail" class="form-control" placeholder="Dirección de e-mail" required autofocus>
+
 				<div class="modal-footer">
 					<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
 					<a href="olvido.php">
-					<button type="button" class="btn btn-primary">Enviar</button>
+					<button type="submit" class="btn btn-primary">Enviar</button>
 					</a>
 						</div>
 			</div>
 		</div>
+		</div>
 	</div>
+	</form>
   <!-- FOOTER -->
  <footer class="container">
    <?php include_once 'footer.php'; ?>

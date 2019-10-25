@@ -269,8 +269,21 @@
 				return true;
 			}
 		}
+	}
+}
 
-		// Si termino de recorrer el array y no se encontró al email que pasé como parámetro
+		function emailExist1($email1) {
+			// Traigo a todos los usuarios
+			$allUsers = getAllUsers();
+			if(!empty ($allUsers)){
+			// Recorro el array de usuarios
+			foreach ($allUsers as $oneUser) {
+				// Si la posición "email" del usuario en la iteración coincide con el email que pasé como parámetro
+				if ($oneUser['email'] == $email1) {
+					return true;
+				}
+			}
+	// Si termino de recorrer el array y no se encontró al email que pasé como parámetro
 		return false;
 	}
 }
@@ -315,6 +328,25 @@
 		return $errors;
 	}
 
+	function loginForget() {
+		// Genero el array local de errores que retornaré al final
+		$errors = [];
+
+		// Trimeo los campos que recibo por $_POST
+		$email1 = trim($_GET['email1']);
+		// Si está vacío el campo: $email
+		if ( empty($email1) ) {
+			$errors['email1'] = 'El campo email es obligatorio';
+		} elseif ( !filter_var($email1, FILTER_VALIDATE_EMAIL) ) { // Si el campo $email no es un email válido
+			$errors['email1'] = 'Introducí un formato de email válido';
+		} elseif (emailExist1($email1) ) { // Si no existe el email
+			// $errors['email'] = 'Ese correo no está registrado en nuestra base de datos';
+			$errors['email1'] = 'El email no se encuentra registrado';
+		} else {
+			// Si pasamos las 3 validaciones anteriores, busco y  obtengo al usuario con el email que llegó por $_POST
+			return $errors;
+	}
+}
 
 	// Función para traer a 1 usuario por email
 	/*

@@ -1,6 +1,6 @@
 
 * {
-  font-family: 'Merriweather', serif;
+  font-family:'Open Sans', sans-serif;
   }
 p {
   margin-bottom: 1px;
@@ -12,6 +12,8 @@ body {
 }
 h1 {
   color: black;
+  font-family:'Montserrat', sans-serif;
+
 }
 a {
   text-decoration: none;

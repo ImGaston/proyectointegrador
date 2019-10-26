@@ -5,7 +5,6 @@ require_once 'register-login-controller.php';
 $pageTitle = 'Home';
 //	require_once 'partials/head.php';
 ?>
-<?php require_once 'navbar.php'; ?>
 
 <!doctype html>
 <html lang="es">
@@ -19,12 +18,15 @@ $pageTitle = 'Home';
   <link rel="stylesheet" href="css/estilos.css">
   <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&display=swap" rel="stylesheet">  <link href="https://fonts.googleapis.com/css?family=Faster+One|IBM+Plex+Sans:400,700&display=swap" rel="stylesheet">
+
   <title>Página de inicio | Pitagoras'c</title>
 </head>
 
 <body>
+  <?php require_once 'navbar.php'; ?>
   <!--CARRUSEL -->
-
   <div id="myCarousel" class="carousel slide d-none d-sm-none d-md-block" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>

@@ -25,6 +25,8 @@
 			<link rel="stylesheet" href="css/estilos.css">
 			<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 			<link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+			<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&display=swap" rel="stylesheet">  <link href="https://fonts.googleapis.com/css?family=Faster+One|IBM+Plex+Sans:400,700&display=swap" rel="stylesheet">
+			<link href="https://fonts.googleapis.com/css?family=Montserrat:600&display=swap" rel="stylesheet">
 
 
 	    <!-- Bootstrap CSS -->

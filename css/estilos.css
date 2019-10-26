@@ -102,6 +102,7 @@ col-12 {
   height: 32rem;
 }
 .carousel-home > img {
+  object-fit: cover;
   position: absolute;
   top: 0;
   left: 0;

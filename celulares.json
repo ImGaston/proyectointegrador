@@ -1,0 +1,4 @@
+[{"modelo":"X","marca":"iPhone","capacidad":256,"color":"blanco","precio":1200,"imagen":"iphonex.jpg"},
+  {"modelo":"S10","marca":"Samsung","capacidad":256,"color":"negro","precio":950,"imagen":"samsungs10.png"},
+  {"modelo":"S10+","marca":"Samsung","capacidad":256,"color":"blanco","precio":1050,"imagen":"samsungs10.png"},
+  {"modelo":"","marca":"","imagen":"img_5db74cc5cff49.jpg"}]

@@ -2,7 +2,8 @@
 	// Incluimos el controlador del registro-login
 	// De esta manera tengo el scope a la funciones que necesito
 	require_once 'register-login-controller.php';
-	$pageTitle = 'Home';
+	include("navbar.php");
+		$theUser = $_SESSION['userLoged'];
 //	require_once 'partials/head.php';
 ?>
 
@@ -22,98 +23,209 @@
 
 <title>Carrito de compras | Pitagoras'c</title>
   </head>
-  <body class="checkout">
+	  <main role="main" class="main">
+	<body class="bg-white">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<br>
+					<h2> ¡Hola, <?= $theUser['name'] ?>!</h2>
+					<br>
+					</div>
+			</div>
+		</div>
 
-    <header>
-      <div class="container pl-0 pr-0">
-         <?php include("navbar.php")?>
-      </div>
-    <!--saque la nav a la navbar.php -->
+		<div class="container">
+			<div class="nav-scroller py-1 mb-2">
+			<nav class="nav d-flex justify-content-between">
+			<div class="row">
+				<ul class="nav nav-tabs ">
+						<li class="nav-item">
+							<a class="nav-link" href="perfil.php">Mi cuenta</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link " href="perfil_datos.php">Datos personales</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="preferencias.php">Mis preferencias</a>
+						</li>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" href="checkout.php">Mi Carrito de Compras</a>
+					</li>
 
-    </header>
-<div class="row-check checkout-form">
-  <div class="col-75">
-    <div class="container-check">
-      <form action="/action_page.php">
+				</ul>
+			</div>
+		</nav>
+		</div>
+		</div>
+	    <div class="container">
+	  <div class="py-5 text-center">
+	    <h2>Mi Carrito de Compras</h2>
+	  </div>
+	  <div class="row">
+	    <div class="col-md-4 order-md-2 mb-4">
+	      <h4 class="d-flex justify-content-between align-items-center mb-3">
+	        <span class="text-muted">Tu Carrito de Compras</span>
+	        <span class="badge badge-secondary badge-pill">3</span>
+	      </h4>
+	      <ul class="list-group mb-3">
+	        <li class="list-group-item d-flex justify-content-between lh-condensed">
+	          <div>
+	            <h6 class="my-0">Nombre de Producto</h6>
+	            <small class="text-muted">Descripción</small>
+	          </div>
+	          <span class="text-muted">$12</span>
+	        </li>
+	        <li class="list-group-item d-flex justify-content-between lh-condensed">
+	          <div>
+	            <h6 class="my-0">Segundo Producto</h6>
+	            <small class="text-muted">Descripción</small>
+	          </div>
+	          <span class="text-muted">$8</span>
+	        </li>
+	        <li class="list-group-item d-flex justify-content-between lh-condensed">
+	          <div>
+	            <h6 class="my-0">Tercer Producto</h6>
+	            <small class="text-muted">Descripción</small>
+	          </div>
+	          <span class="text-muted">$5</span>
+	        </li>
+	        <li class="list-group-item d-flex justify-content-between bg-light">
+	          <div class="text-success">
+	            <h6 class="my-0">Códido de Promoción</h6>
+	            <small>XSFEFF</small>
+	          </div>
+	          <span class="text-success">-$5</span>
+	        </li>
+	        <li class="list-group-item d-flex justify-content-between">
+	          <span>Total (ARS)</span>
+	          <strong>$20</strong>
+	        </li>
+	      </ul>
 
-        <div class="row-check">
-          <div class="col-50">
-            <h3>Direccion de Envio</h3>
-            <label for="fname"><i class="fa fa-user"></i> nombre completo</label>
-            <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
-            <label for="email"><i class="fa fa-envelope"></i> Email</label>
-            <input type="text" id="email" name="email" placeholder="john@example.com">
-            <label for="adr"><i class="fa fa-address-card-o"></i> Direccion </label>
-            <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
-            <label for="city"><i class="fa fa-institution"></i> Ciudad</label>
-            <input type="text" id="city" name="city" placeholder="Buenos Aires ">
+	      <form class="card p-2">
+	        <div class="input-group">
+	          <input type="text" class="form-control" placeholder="Código de Promoción">
+	          <div class="input-group-append">
+	            <button type="submit" class="btn btn-secondary">Ingresar</button>
+	          </div>
+	        </div>
+	      </form>
+	    </div>
+	    <div class="col-md-8 order-md-1">
+	      <h4 class="mb-3">Completa tus datos de Facturación</h4>
+	      <form class="needs-validation" novalidate>
+	        <div class="row">
+	          <div class="col-md-6 mb-3">
+	            <label for="firstName">Nombre</label>
+	            <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+	            <div class="invalid-feedback">
+	             Campo requerido.
+	            </div>
+	          </div>
+	          <div class="col-md-6 mb-3">
+	            <label for="lastName">Apellido</label>
+	            <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+	            <div class="invalid-feedback">
+	             Campo requerido.
+	            </div>
+	          </div>
+	        </div>
 
-            <div class="row-check">
-              <div class="col-50">
-                <label for="state">Estado</label>
-                <input type="text" id="Estado" name="Estado" placeholder="Ar">
-              </div>
-              <div class="col-50">
-                <label for="codigo">Codigo</label>
-                <input type="text" id="codigo" name="codigo" placeholder="10001">
-              </div>
-            </div>
-          </div>
+	        <div class="mb-3">
+	          <label for="username">Ingresa tu mail de registro</label>
+	          <div class="input-group">
+	            <div class="input-group-prepend">
+	              <span class="input-group-text">@</span>
+	            </div>
+	            <input type="text" class="form-control" id="username" placeholder="Mail de registro" required>
+	            <div class="invalid-feedback" style="width: 100%;">
+	              Campo requerido.
+	            </div>
+	          </div>
+	        </div>
 
-          <div class="col-50">
-            <h3>Pago</h3>
-            <label for="fname">Aceptacion de Tarjetas</label>
-            <div class="icon-container-check">
-              <i class="fa fa-cc-visa" style="color:navy;"></i>
-              <i class="fa fa-cc-amex" style="color:blue;"></i>
-              <i class="fa fa-cc-mastercard" style="color:red;"></i>
-              <i class="fa fa-cc-discover" style="color:orange;"></i>
-            </div>
-            <label for="cname">Nombre de la tarjeta</label>
-            <input type="text" id="cname" name="cardname" placeholder="John More Doe">
-            <label for="ccnum">tarjeta de credito numero</label>
-            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
-            <label for="expmonth">Mes de expiracion</label>
-            <input type="text" id="expmes" name="expmes" placeholder="September">
+	       	        <div class="mb-3">
+	          <label for="address">Dirección</label>
+	          <input type="text" class="form-control" id="address" placeholder="Av. de Los Lagos 123" required>
+	          <div class="invalid-feedback">
+	            Por favor ingresa la dirección de envío.
+	          </div>
+	        </div>
 
-            <div class="row-check">
-              <div class="col-50">
-                <label for="expyear">Año de expiracion</label>
-                <input type="text" id="expaño" name="expaño" placeholder="2018">
-              </div>
-              <div class="col-50">
-                <label for="cvv">CVV</label>
-                <input type="text" id="cvv" name="cvv" placeholder="352">
-              </div>
-            </div>
-          </div>
+	      	        <div class="row">
+	       	    <div class="col-md-3 mb-3">
+	            <label for="zip">Código Postal</label>
+	            <input type="text" class="form-control" id="zip" placeholder="1640" required>
+	            <div class="invalid-feedback">
+	              Campo requerido.
+	            </div>
+	          </div>
+	        </div>
+	        <hr class="mb-4">
+	       	        <div class="custom-control custom-checkbox">
+	          <input type="checkbox" class="custom-control-input" id="save-info">
+	          <label class="custom-control-label" for="save-info">Recordar información para próximas compras</label>
+	        </div>
+	        <hr class="mb-4">
 
-        </div>
-        <label>
-          <input type="checkbox" checked="checked" name="sameadr"> Direccion de envio igual que la facturacion
-        </label>
-        <input type="submit" value="Confirmar Compra" class="boton">
-      </form>
-    </div>
-  </div>
+	        <h4 class="mb-3">Medio de pago</h4>
 
-  <div class="col-25">
-    <div class="container-check">
-      <h4>CARRITO
-        <span class="price" style="color:black">
-          <i class="fa fa-shopping-cart"></i>
-          <b>4</b>
-        </span>
-      </h4>
-      <p><a href="#">Product 1</a> <span class="price">$15</span></p>
-      <p><a href="#">Product 2</a> <span class="price">$5</span></p>
-      <p><a href="#">Product 3</a> <span class="price">$8</span></p>
-      <p><a href="#">Product 4</a> <span class="price">$2</span></p>
-      <hr>
-      <p>Total <span class="price" style="color:black"><b>$30</b></span></p>
-    </div>
-  </div>
-</div>
+	        <div class="d-block my-3">
+	          <div class="custom-control custom-radio">
+	            <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked required>
+	            <label class="custom-control-label" for="credit">Tarjeta de Crédito</label>
+	          </div>
+	          <div class="custom-control custom-radio">
+	            <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required>
+	            <label class="custom-control-label" for="debit">Mercado Pago</label>
+	          </div>
+	          <div class="custom-control custom-radio">
+	            <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required>
+	            <label class="custom-control-label" for="paypal">Bitcoins</label>
+	          </div>
+	        </div>
+	        <div class="row">
+	          <div class="col-md-6 mb-3">
+	            <label for="cc-name">Nombre y Apellido en la tarjeta</label>
+	            <input type="text" class="form-control" id="cc-name" placeholder="" required>
+	            <small class="text-muted">Campo requerido</small>
+	            <div class="invalid-feedback">
+	              Campo requerido
+	            </div>
+	          </div>
+	          <div class="col-md-6 mb-3">
+	            <label for="cc-number">Numero de la tarjeta de crédito</label>
+	            <input type="text" class="form-control" id="cc-number" placeholder="" required>
+	            <div class="invalid-feedback">
+	                Campo requerido
+	            </div>
+	          </div>
+	        </div>
+	        <div class="row">
+	          <div class="col-md-3 mb-3">
+	            <label for="cc-expiration">Fecha de Vencimiento</label>
+	            <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+	            <div class="invalid-feedback">
+	              Campo requerido
+	            </div>
+	          </div>
+	          <div class="col-md-3 mb-3">
+	            <label for="cc-cvv">CVV</label>
+	            <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+	            <div class="invalid-feedback">
+	             Codigo de Seguridad requerido
+	            </div>
+	          </div>
+	        </div>
+	        <hr class="mb-12">
+	        <button class="btn btn-primary btn-lg btn-block" type="submit">Finalizar Compra</button>
+	      </form>
+	    </div>
+	  </div>
+
+
 <footer class="container">
 	<?php include_once 'footer.php'; ?>
 </footer>
@@ -121,5 +233,8 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+
 </body>
 </html>

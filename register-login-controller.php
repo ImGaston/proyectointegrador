@@ -83,6 +83,43 @@
 		return $errors;
 	}
 
+	function registerAlta(){
+		// Defino el array local de errores que voy a retornar
+		$errors = [];
+
+		// Definimos las variables locales que almacenan lo que nos llegó por $_POST y $_FILES
+		$modelo = trim($_POST['modelo']);
+		$marca = trim($_POST['marca']);
+		$img = $_FILES['avatar'];
+
+		// Si está vació el campo: $name
+		if ( empty($modelo) ) {
+			$errors['modelo'] = 'Campo obligatorio';
+		}
+
+		if ( empty($marca) ) {
+			$errors['marca'] = 'Campo obligatorio';
+		}
+
+		// Si está vació el campo: $email
+			// Si está vació el campo: $password
+
+				// Si no cargaron ningún archivo
+		if ( $img['error'] != UPLOAD_ERR_OK ) {
+		$errors['avatar'] = 'Subí la imagen del producto';
+	 } else {
+			// Si cargaron algún archivo, obtengo su extensión
+		$ext = pathinfo($img['name'], PATHINFO_EXTENSION);
+
+			// Si la extesión del archivo que cargaron NO está en mi array de formatos permitidos
+			if ( !in_array($ext, ALLOWED_IMAGE_FORMATS) ) {
+				$errors['avatar'] = 'Los formatos permitidos son JPG, PNG y GIF';
+			}
+		 }
+
+		// Finalmente retornamos el array de errores
+		return $errors;
+	}
 	function registerEdit(){
 		// Defino el array local de errores que voy a retornar
 		$errors = [];
@@ -197,6 +234,17 @@
 		return $allUsers;
 	}
 
+	function getAllProducts() {
+		// Obtengo el contenido del archivo JSON
+		$fileContent = file_get_contents("celulares.json");
+
+		// Decodifico el JSON a un array asociativo, importante el "true"
+		$allUsers = json_decode($fileContent, true);
+
+		// Retorno el array de usuarios
+		return $allUsers;
+	}
+
 
 	// Función para guardar al usuario
 	function saveUser() {
@@ -229,6 +277,26 @@
 		return $finalUser;
 	}
 
+	function saveProduct() {
+		// Trimeamos los valores que vinieron por $_POST
+		$_POST['modelo'] = trim($_POST['name']);
+		$_POST['marca'] = trim($_POST['lastName']);
+
+		// En la variable $finalUser guardo el array de $_POST
+		$finalUser = $_POST;
+
+		// Obtengo todos los usuarios
+		$allUsers = getAllProducts();
+
+		// En la última posición del array de usuarios, inserto al usuario nuevo
+		$allUsers[] = $finalUser;
+
+		// Guardo todos los usuarios de vuelta en el JSON
+		file_put_contents("celulares.json", json_encode($allUsers));
+
+		// Retorno al usuario que acabo de guardar para poder tenerlo listo y loguearlo
+		return $finalUser;
+	}
 
 	// Función para loguear al usuario
 	/*

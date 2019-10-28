@@ -66,6 +66,39 @@
 
              <?php include("navbar.php")?>
    </header>
+
+	 <main role="main" class="main">
+		 <div class="container">
+			 <div class="row">
+				 <div class="col-md-6">
+					 <br>
+					 <h2>Bienvenido, <?= $theUser['name'] ?></h2>
+					 <br>
+					 </div>
+			 </div>
+		 </div>
+		 <div class="container">
+			 <div class="nav-scroller py-1 mb-2">
+			 <nav class="nav d-flex justify-content-between">
+			 <div class="row">
+				 <ul class="nav nav-tabs ">
+						 <li class="nav-item">
+							 <a class="nav-link" href="perfil.php">Mi cuenta</a>
+						 </li>
+						 <li class="nav-item">
+							 <a class="nav-link active" href="perfil_datos">Datos personales</a>
+						 </li>
+						 <li class="nav-item">
+							 <a class="nav-link" href="preferencias.php">Mis preferencias</a>
+						 </li>
+						 <li class="nav-item">
+							 <a class="nav-link" href="checkout.php">Mi Carrito de Compras</a>
+						 </li>
+											 </ul>
+			 </div>
+		 </nav>
+		 </div>
+		 </div>
 	 <div class="container" style="margin-top:30px; margin-bottom: 30px;">
 		 <div class="row justify-content-center">
 			 <div class="col-md-10">

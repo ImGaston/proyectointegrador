@@ -50,6 +50,9 @@
                 <li class="nav-item">
                   <a class="nav-link active" href="preferencias.php">Mis preferencias</a>
                 </li>
+								<li class="nav-item">
+									<a class="nav-link" href="checkout.php">Mi Carrito de Compras</a>
+								</li>
                           </ul>
           </div>
         </nav>

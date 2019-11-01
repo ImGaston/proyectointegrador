@@ -10,7 +10,9 @@
   <head>
 	<!-- Bootstrap CSS -->
 		<link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
-    <meta charset="utf-8">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&display=swap" rel="stylesheet">  <link href="https://fonts.googleapis.com/css?family=Faster+One|IBM+Plex+Sans:400,700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:600&display=swap" rel="stylesheet">
+	  <meta charset="utf-8">
     <title>Preguntas frecuentes | Pitagoras'c</title>
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
       <link rel="stylesheet" href="css/estilos.css">
@@ -20,7 +22,10 @@
 <body>
          <?php include("navbar.php")?>
 <!--esto corresponde a la FAQ-->
-  <div class="container text-center" >
+  <div class="container text-center">
+		<br>
+		<br>
+		<h1>Preguntas frecuentes</h1>
         <br>
         <article class="">
 					  <br>
@@ -59,7 +64,7 @@
         <details>
               <summary>¿Con qué colegios trabajan?</summary>
               <br>
-              <p>Trabajamos con colegios de zona norte.</p>
+              <p>Trabajamos con colegios de Formosa.</p>
       </details>
    </div>
 </div>

@@ -15,8 +15,8 @@
                     <div class="single_footer_part">
                         <h4>Nosotros</h4>
                         <ul class="list-unstyled">
-                            <li><a class="text-dark" href="">Nosotros</a></li>
-                            <li><a class="text-dark" href="faq.php">FAQ</a></li>
+                            <li><a class="text-dark" href="nosotros.php">Nosotros</a></li>
+                            <li><a class="text-dark" href="faq.php">Preguntas frecuentes</a></li>
                             <li><a class="text-dark" href="contacto.php">Contacto</a></li>
                         </ul>
                     </div>

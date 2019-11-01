@@ -50,7 +50,7 @@ $pageTitle = 'Home';
         <div class="container">
           <div class="carousel-caption izquierda">
             <h1>Todos los modelos</h1>
-            <p>Tenemos los uniformes para todos los colegios de Zona Norte</p>
+            <p>Tenemos los uniformes para todos los colegios de Formosa</p>
             <p><a class="btn btn-lg btn-primary" href="#" role="button">Ver listado</a></p>
           </div>
         </div>
@@ -93,23 +93,23 @@ $pageTitle = 'Home';
     <div class="row justify-content-md-center">
       <div class="col-2 text-center">
         <img src="img/compra-1-1.png" class="mb-2" alt="">
-        <p>Los mejores precios y ofertas.</p>
+        <p>Los mejores precios y ofertas</p>
       </div>
       <div class="col-2 text-center">
         <img src="img/compra-2-1.png" class="mb-2" alt="">
-        <p>Compra online y retira en el local.</p>
+        <p>Compra online y retira en el local</p>
       </div>
       <div class="col-2 text-center">
         <img src="img/compra-3-1.png" class="mb-2" alt="">
-        <p>Servicio de entrega rápido y económico.</p>
+        <p>Servicio de entrega rápido y económico</p>
       </div>
       <div class="col-2 text-center">
         <img src="img/compra-6-1.png" class="mb-2" alt="">
-        <p>Cambios y devoluciones simples.</p>
+        <p>Cambios y devoluciones simples</p>
       </div>
       <div class="col-2 text-center">
         <img src="img/compra-5-1.png" class="mb-2" alt="">
-        <p>Compra facil y 100% seguro.</p>
+        <p>Compra facil y 100% seguro</p>
       </div>
     </div>
 
@@ -141,7 +141,7 @@ $pageTitle = 'Home';
         </div>
         <div class="info">
           <p>Desde el 2009 que nos propusimos ayudar desde nuestro trabajo y compromiso a mejorar la educación y la identidad de cada institución.</p>
-          <p>Nuestro objetivo es que cada día te sientas orgullosa al ver a tus hijos entrar al colegio.</p>
+          <p>Nuestro objetivo es que cada día te sientas orgullosx al ver a tus hijos entrar al colegio.</p>
         </div>
         <div class="gallery d-none d-sm-none d-md-block">
           <h4></h4>

@@ -32,7 +32,7 @@ $pageTitle = 'Home';
                 <!-- aca va el formulario -->
                 <form class="form-horizontal justify-content-center" method="post">
                     <fieldset>
-                        <legend class="text-center header">Conoce nuestro modelo de negocio mayorista</legend>
+                        <h4><legend class="text-center header">Conoce nuestro modelo de negocio mayorista</legend></h4>
                         <div class="form-group">
                             <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
                             <div class="col-md-12">
@@ -81,24 +81,24 @@ $pageTitle = 'Home';
     </div>
     <div class="container mb-4">
         <div class="row justify-content-md-center mt-4 mb-4">
-            <H3 class="mb-4 mt-6 text-center">Nuestros uniformes van a reflejar la identidad de tu Colegio:</H3>
+            <H3 class="mb-4 mt-6 text-center">Nuestros uniformes van a reflejar la identidad de tu colegio</H3>
         </div>
         <div class="row justify-content-md-center mt-4">
             <div class="col-12 col-sm-6 col-md-3 text-center mb-4">
                 <img src="img/mayorista-4.png" class="mb-2" alt="">
-                <p>Garantia de cambio.</p>
+                <p>Garantia de cambio</p>
             </div>
             <div class="col-12 col-sm-6 col-md-3 text-center mb-4">
                 <img src="img/mayorista-3.png" class="mb-2" alt="">
-                <p>Stock garantizado.</p>
+                <p>Stock garantizado</p>
             </div>
             <div class="col-12 col-sm-6 col-md-3 text-center mb-4">
                 <img src="img/mayorista-2.png" class="mb-2" alt="">
-                <p>10 años de experiencia.</p>
+                <p>10 años de experiencia</p>
             </div>
             <div class="col-12 col-sm-6 col-md-3 text-center mb-4">
                 <img src="img/mayorista-1.png" class="mb-2" alt="">
-                <p>Trato personalizado.</p>
+                <p>Trato personalizado</p>
             </div>
         </div>
     </div>

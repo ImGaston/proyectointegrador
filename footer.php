@@ -5,9 +5,9 @@
                     <div class="single_footer_part">
                         <h4>Categorías</h4>
                         <ul class="list-unstyled">
-                            <li><a class="text-dark" href="#">Colegios</a></li>
-                            <li><a class="text-dark" href="#">Egresados</a></li>
-                            <li><a class="text-dark" href="#">Hospitalario</a></li>
+                            <li><a class="text-dark" href="productos.php">Colegios</a></li>
+                            <li><a class="text-dark" href="productos.php">Egresados</a></li>
+                            <li><a class="text-dark" href="productos.php">Hospitalario</a></li>
                         </ul>
                     </div>
                 </div>
@@ -16,8 +16,8 @@
                         <h4>Nosotros</h4>
                         <ul class="list-unstyled">
                             <li><a class="text-dark" href="nosotros.php">Nosotros</a></li>
-                            <li><a class="text-dark" href="faq.php">Preguntas frecuentes</a></li>
-                            <li><a class="text-dark" href="contacto.php">Contacto</a></li>
+                            <li><a class="text-dark" href="faq.php">FAQ</a></li>
+                            <li><a href="#myModal" data-toggle="modal" data-target="#myModal" class="text-dark">Contacto</a></li>
                         </ul>
                     </div>
                 </div>

@@ -66,6 +66,8 @@
               <br>
               <p>Trabajamos con colegios de Formosa.</p>
       </details>
+			<br>
+			<br>
    </div>
 </div>
 

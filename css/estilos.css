@@ -168,8 +168,55 @@ col-12 {
         user-select: none;
       }
 
-
-
-
-
 .lh-condensed { line-height: 1.25; }
+
+/* productos-detalles CSS
+-------------------------------------------------- */
+
+
+.detalles-de-productos main {
+padding:60px 0;
+
+}
+.detalles-de-productos h1 {
+margin-bottom:30px;
+
+}
+#seleccion-color label {
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 10px;
+	font-family: sans-serif;
+}
+#seleccion-color label .circulo {
+	display: block;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+}
+
+#seleccion-color label .circulo:hover + .nombre-color
+{
+	display: block;
+}
+
+#seleccion-color label .nombre-color {
+	display: none;
+	position: absolute;
+	bottom: -2.5em;
+	text-transform: uppercase;
+	font-size: 10px;
+	border: 1px solid whitesmoke;
+	padding: 3px;
+}
+
+#seleccion-color label input {
+	position: absolute;
+	left: -9999px;
+}
+
+#seleccion-color label input:checked + span {
+	border: 2px solid ;
+	box-shadow: 0 0 5px;
+}

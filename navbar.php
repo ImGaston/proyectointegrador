@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container">
-    <a class="navbar-brand" href="home.php">
-      <img src="img/logo.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
+    <a class="navbar-brand" href="http://<?php echo $_SERVER['HTTP_HOST']?>/proyectointegrador/home.php">
+      <img src="http://<?php echo $_SERVER['HTTP_HOST']?>/proyectointegrador/img/logo.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
       Pitagoras'c
     </a>
 
@@ -12,22 +12,22 @@
     <div class="collapse navbar-collapse" id="navbarCollapse">
       <ul class="navbar-nav mr-auto justify-content-end">
         <li class="nav-item">
-          <a class="nav-link" href="nosotros.php">Nosotros</a>
+          <a class="nav-link" href="http://<?php echo $_SERVER['HTTP_HOST']?>/proyectointegrador/nosotros.php">Nosotros</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Tienda
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="productos.php">Ver todo</a>
+            <a class="dropdown-item" href="http://<?php echo $_SERVER['HTTP_HOST']?>/proyectointegrador/productos.php">Ver todo</a>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Colegios</a>
-            <a class="dropdown-item" href="#">Egresados</a>
-            <a class="dropdown-item" href="#">Hospitalario</a>
+            <a class="dropdown-item" href="http://<?php echo $_SERVER['HTTP_HOST']?>/proyectointegrador/productos.php#colegial">Colegios</a>
+            <a class="dropdown-item" href="http://<?php echo $_SERVER['HTTP_HOST']?>/proyectointegrador/productos.php#egresados">Egresados</a>
+            <a class="dropdown-item" href="http://<?php echo $_SERVER['HTTP_HOST']?>/proyectointegrador/productos.php#servicios">Hospitalario</a>
           </div>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="mayorista.php">Mayorista</a>
+          <a class="nav-link" href="http://<?php echo $_SERVER['HTTP_HOST']?>/proyectointegrador/mayorista.php">Mayorista</a>
         </li>
         <li class="nav-item">
           <a href="#myModal" data-toggle="modal" data-target="#myModal" class="nav-link">Contacto</a>
@@ -37,18 +37,18 @@
      <ul class="navbar-nav ml-auto" style="display: flex">
        <!-- Preguntamos si NO está logueado el usuario para mostrar los enlaces Register y Login -->
        <?php if ( !isLogged() ) : ?>
-         <li class="nav-item"><a class="nav-link" href="registro.php">Registrate</a></li>
-         <li class="nav-item"><a class="nav-link" href="login.php">Login</a></li>
+         <li class="nav-item"><a class="nav-link" href="http://<?php echo $_SERVER['HTTP_HOST']?>/proyectointegrador/registro.php">Registrate</a></li>
+         <li class="nav-item"><a class="nav-link" href="http://<?php echo $_SERVER['HTTP_HOST']?>/proyectointegrador/login.php">Login</a></li>
        <?php else: ?>
          <li class="nav-item dropdown">
            <a class="nav-link dropdown-toggle" href="#" id="dropNavBar" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-             <img src="data/avatars/<?= $_SESSION['userLoged']['avatar']; ?>" width="40" style="border-radius: 50%; background-color: #ffffff; padding: 5px;">
+             <img src="http://<?php echo $_SERVER['HTTP_HOST']?>/proyectointegrador/data/avatars/<?= $_SESSION['userLoged']['avatar']; ?>" width="40" style="border-radius: 50%; background-color: #ffffff; padding: 5px;">
              <?= $_SESSION['userLoged']['name'] ?>
            </a>
            <div class="dropdown-menu" aria-labelledby="dropNavBar">
-             <a class="dropdown-item" href="perfil.php">Mi perfil</a>
-             <a class="dropdown-item" href="checkout.php">Mi cuenta</a>
-             <a class="dropdown-item" href="logout.php">Salir</a>
+             <a class="dropdown-item" href="http://<?php echo $_SERVER['HTTP_HOST']?>/proyectointegrador/perfil.php">Mi perfil</a>
+             <a class="dropdown-item" href="http://<?php echo $_SERVER['HTTP_HOST']?>/proyectointegrador/checkout.php">Mi cuenta</a>
+             <a class="dropdown-item" href="http://<?php echo $_SERVER['HTTP_HOST']?>/proyectointegrador/logout.php">Salir</a>
            </div>
          </li>
        <?php endif ?>
@@ -93,7 +93,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-         <a href="gracias.php"> <button type="button" class="btn btn-primary">Enviar</button> </a>
+         <a href="http://<?php echo $_SERVER['HTTP_HOST']?>/proyectointegrador/gracias.php"> <button type="button" class="btn btn-primary">Enviar</button> </a>
       </div>
     </div>
   </div>

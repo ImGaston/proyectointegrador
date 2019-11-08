@@ -5,9 +5,9 @@
                     <div class="single_footer_part">
                         <h4>Categorías</h4>
                         <ul class="list-unstyled">
-                            <li><a class="text-dark" href="productos.php">Colegios</a></li>
-                            <li><a class="text-dark" href="productos.php">Egresados</a></li>
-                            <li><a class="text-dark" href="productos.php">Hospitalario</a></li>
+                            <li><a class="text-dark" href="http://<?php echo $_SERVER['HTTP_HOST']?>/proyectointegrador/productos.php#colegial">Colegios</a></li>
+                            <li><a class="text-dark" href="http://<?php echo $_SERVER['HTTP_HOST']?>/proyectointegrador/productos.php#egresados">Egresados</a></li>
+                            <li><a class="text-dark" href="http://<?php echo $_SERVER['HTTP_HOST']?>/proyectointegrador/productos.php#servicios">Hospitalario</a></li>
                         </ul>
                     </div>
                 </div>
@@ -15,8 +15,8 @@
                     <div class="single_footer_part">
                         <h4>Nosotros</h4>
                         <ul class="list-unstyled">
-                            <li><a class="text-dark" href="nosotros.php">Nosotros</a></li>
-                            <li><a class="text-dark" href="faq.php">FAQ</a></li>
+                            <li><a class="text-dark" href="http://<?php echo $_SERVER['HTTP_HOST']?>/proyectointegrador/nosotros.php">Nosotros</a></li>
+                            <li><a class="text-dark" href="http://<?php echo $_SERVER['HTTP_HOST']?>/proyectointegrador/faq.php">FAQ</a></li>
                             <li><a href="#myModal" data-toggle="modal" data-target="#myModal" class="text-dark">Contacto</a></li>
                         </ul>
                     </div>

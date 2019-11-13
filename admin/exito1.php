@@ -43,14 +43,14 @@ try {
      <div class="container text-center">
          <div class="">
              <div class="text-center">
-             <h1>¡Producto subido con éxito!</h1>
+             <h1>¡Producto borrado con éxito!</h1>
                  <!-- aca va el formulario -->
                  </div>
                  <br>
                <div class="text-center">
-             <h2>
-               <a href="index.php">¿Querés agregar otro producto?</a>
-             </h2>
+                 <h2>
+                   <a href="borrar.php">¿Querés borrar otro producto?</a>
+                 </h2>
                  </div>
 <br>
                  <h1>Listado de Productos</h1>
@@ -72,9 +72,11 @@ try {
                        </ul>
                        <?php endif; ?>
                      <?php endif; ?>
+
                      <h2>
-                       <a href="borrar.php">¿Querés borrar algún producto?</a>
+                       <a href="index.php">¿Querés agregar un nuevo producto?</a>
                      </h2>
+
          </div>
      </div>
      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

@@ -12,97 +12,29 @@ $error = false;
 
 $errorsInRegister = [];
 
-$categoria = '';
-$prenda = '';
-$talle = '';
-$descripcion = '';
-$precio = '';
-$cantidad = '';
-
-function registerValidate(){
-  $errors = [];
-
-  $categoria = trim($_POST["categoria"]);
-  $prenda = trim($_POST["prenda"]);
-  $talle = trim($_POST["talle"]);
-  $descripcion = trim($_POST["descripcion"]);
-  $precio = trim($_POST["precio"]);
-  $cantidad = trim($_POST["cantidad"]);
-
-  if ( empty($categoria) ) {
-    $errors['categoria'] = 'Campo obligatorio';
-  }
-
-  if ( empty($prenda) ) {
-    $errors['prenda'] = 'Campo obligatorio';
-    }
-
-  if ( empty($talle) ) {
-    $errors['talle'] = 'Campo obligatorio';
-  }
-
-  if ( empty($descripcion) ) {
-    $errors['descripcion'] = 'Campo obligatorio';
-  }
-
-  if ( empty($precio) ) {
-    $errors['precio'] = 'Campo obligatorio';
-  } elseif (!is_numeric($precio)) {
-      $errors['precio'] = 'El valor debe ser numérico';
-    } elseif ($precio < 0){
-      $errors['precio'] = 'El precio no puede ser negativo';
-    }
-
-
-  if ( empty($cantidad) ) {
-    $errors['cantidad'] = 'Campo obligatorio';
-  } elseif (!is_numeric($cantidad)) {
-      $errors['cantidad'] = 'El valor debe ser numérico';
-    } elseif ($cantidad < 0){
-      $errors['cantidad'] = 'La cantidad no puede ser negativo';
-    }
-
-  return $errors;
-}
-
+$producto = '';
 
 if ($_POST) {
 
-
-  $categoria = trim($_POST["categoria"]);
-  $prenda = trim($_POST["prenda"]);
-  $talle = trim($_POST["talle"]);
-  $descripcion = trim($_POST["descripcion"]);
-  $precio = trim($_POST["precio"]);
-  $cantidad = trim($_POST["cantidad"]);
-
-  $errorsInRegister = registerValidate();
-
-  if ( !$errorsInRegister ) {
+$producto = trim($_POST["producto"]);
 
     try {
       $db = new PDO($dsn, $user, $pass);
       $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-      $consulta = $db->prepare("INSERT into productos (descripcion, precio, cantidad, categoria_id, prenda_id, talle_id) values (:descripcion, :precio, :cantidad, :categoria_id, :prenda_id, :talle_id)");
-
-      $consulta -> bindValue(":descripcion", $descripcion);
-      $consulta -> bindValue(":precio", $precio);
-      $consulta -> bindValue(":cantidad", $cantidad);
-      $consulta -> bindValue(":categoria_id", $categoria);
-      $consulta -> bindValue(":prenda_id", $prenda);
-      $consulta -> bindValue(":talle_id", $talle);
-
+      $consulta = $db->prepare("DELETE FROM productos where id = :producto)");
+      $consulta -> bindValue(":producto", $producto);
       $consulta->execute();
-      	header('location: exito.php');
+      	header('location: exito1.php');
     } catch (Exception $e) {
       $error = true;
+      var_dump($e);exit;
       header('location: error.php');
 
     }
 
     }
 
-  }
+
 
 
 
@@ -111,7 +43,7 @@ if ($_POST) {
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Alta Productos | Pitagoras </title>
+	<title>Baja Productos | Pitagoras </title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->
@@ -152,21 +84,21 @@ if ($_POST) {
 
 	<div class="container-contact100">
 		<div class="wrap-contact100">
-			<form class="" action="index.php" method="post">
+			<form class="" action="borrar.php" method="post">
 				<span class="contact100-form-title">
-Alta Productos Pitágoras				</span>
+Baja Productos Pitágoras				</span>
 
 <div class="wrap-input100 input100-select">
-	<span class="label-input100">Categoría</span>
+	<span class="label-input100">Productos</span>
 	<div>
-		<select class="selection-2" name="categoria">
+		<select class="selection-2" name="producto">
 
       <?php
         $cates = [];
        try {
          $db = new PDO($dsn, $user, $pass);
          $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-         $consulta = $db->prepare("SELECT categoria, id FROM categorias");
+         $consulta = $db->prepare("SELECT descripcion, id FROM productos");
          $consulta->execute();
          $cates = $consulta->fetchAll(PDO::FETCH_ASSOC);
        } catch (Exception $e) {
@@ -174,9 +106,9 @@ Alta Productos Pitágoras				</span>
        }
        ?>
 
-       <option value="-1"> Seleccionar Categoría</option>
+       <option value="-1"> Seleccionar Producto a borrar</option>
        <?php foreach ($cates as $cate): ?>
-         <option value="<?= $cate["id"] ; ?>"><?= $cate["categoria"]; ?></option>
+         <option value="<?= $cate["id"] ; ?>"><?= $cate["descripcion"]; ?></option>
            <?php endforeach; ?>
 		</select>
 	</div>
@@ -186,97 +118,14 @@ Alta Productos Pitágoras				</span>
 
 
 
-<div class="wrap-input100 input100-select">
-	<span class="label-input100">Prenda</span>
-	<div>
-		<select name="prenda" class="selection-2" >
 
-      <?php
-        $prenditas = [];
-       try {
-         $db = new PDO($dsn, $user, $pass);
-         $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-         $consulta = $db->prepare("SELECT prenda, id FROM prendas");
-         $consulta->execute();
-         $prenditas = $consulta->fetchAll(PDO::FETCH_ASSOC);
-       } catch (Exception $e) {
-         $error = true;
-       }
-       ?>
-
-
-       <option value="-1"> Seleccionar Prenda</option>
-       <?php foreach ($prenditas as $prendita): ?>
-         <option value="<?= $prendita["id"] ; ?>"><?= $prendita["prenda"]; ?></option>
-           <?php endforeach; ?>
-		</select>
-	</div>
-	<span class="focus-input100"></span>
-</div>
-
-<div class="wrap-input100 input100-select">
-	<span class="label-input100">Talles</span>
-	<div>
-		<select class="selection-2" name="talle">
-
-      <?php
-        $tallos = [];
-       try {
-         $db = new PDO($dsn, $user, $pass);
-         $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-         $consulta = $db->prepare("SELECT talle, id FROM talles");
-         $consulta->execute();
-         $tallos = $consulta->fetchAll(PDO::FETCH_ASSOC);
-       } catch (Exception $e) {
-         $error = true;
-       }
-       ?>
-
-       <option value="-1"> Seleccionar Talle</option>
-       <?php foreach ($tallos as $tallo): ?>
-         <option value="<?= $tallo["id"] ; ?>"><?= $tallo["talle"]; ?></option>
-           <?php endforeach; ?>
-					</select>
-	</div>
-	<span class="focus-input100"></span>
-</div>
-
-				<div class="wrap-input100 validate-input" >
-					<span class="label-input100">Descripcipón del Producto</span>
-					<input type="text" name="descripcion" placeholder="Ingrese Descripción" class="form-control <?= isset($errorsInRegister['descripcion']) ? 'is-invalid' : null ?>"
-          value="<?= $descripcion; ?>"
-          >
-          <div class="invalid-feedback">
-           <?= isset($errorsInRegister['descripcion']) ? $errorsInRegister['descripcion'] : null; ?>
-         </div>
-          </div>
-
-				<div class="wrap-input100 validate-input">
-					<span class="label-input100">Precio del producto</span>
-					<input type="text" name="precio" placeholder="Ingrese Precio" class="form-control <?= isset($errorsInRegister['precio']) ? 'is-invalid' : null ?>"
-          value="<?= $precio; ?>"
-          >
-          <div class="invalid-feedback">
-           <?= isset($errorsInRegister['precio']) ? $errorsInRegister['precio'] : null; ?>
-         </div>
-          </div>
-
-				<div class="wrap-input100 validate-input" >
-					<span class="label-input100">Cantidad</span>
-					<input type="text" name="cantidad" placeholder="Ingrese Cantidad" class="form-control <?= isset($errorsInRegister['cantidad']) ? 'is-invalid' : null ?>"
-          value="<?= $cantidad; ?>"
-          >
-          <div class="invalid-feedback">
-           <?= isset($errorsInRegister['cantidad']) ? $errorsInRegister['cantidad'] : null; ?>
-         </div>
-          </div>
 
 					<div class="container-contact100-form-btn">
 					<div class="wrap-contact100-form-btn">
 						<div class="contact100-form-bgbtn"></div>
 						<button class="contact100-form-btn">
 							<span>
-								Confirmar
+								Borrar
 								<i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
 							</span>
 						</button>

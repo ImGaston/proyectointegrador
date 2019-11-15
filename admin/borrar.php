@@ -21,7 +21,7 @@ $producto = trim($_POST["producto"]);
     try {
       $db = new PDO($dsn, $user, $pass);
       $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-      $consulta = $db->prepare("DELETE FROM productos where id = :producto)");
+      $consulta = $db->prepare("DELETE FROM productos where id = :producto");
       $consulta -> bindValue(":producto", $producto);
       $consulta->execute();
       	header('location: exito1.php');

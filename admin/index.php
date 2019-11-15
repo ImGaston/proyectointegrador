@@ -31,6 +31,8 @@ function registerValidate(){
 
   if ( empty($categoria) ) {
     $errors['categoria'] = 'Campo obligatorio';
+  } elseif ($categoria==-1) {
+      $errors['categoria'] = 'Campo obligatorio';
   }
 
   if ( empty($prenda) ) {

@@ -38,8 +38,8 @@
                 <!-- TODA LA PARTE DE LOGIN ESTA COMENTADA PARA NO GENERAR ERROR -->
                 <!-- Preguntamos si NO está logueado el usuario para mostrar los enlaces Register y Login -->
 
-                    <li class="nav-item"><a class="nav-link" href="http://<?php echo $_SERVER['HTTP_HOST']?>/proyectointegrador/registro.php">Registrate</a></li>
-                    <li class="nav-item"><a class="nav-link" href="http://<?php echo $_SERVER['HTTP_HOST']?>/proyectointegrador/login.php">Login</a></li>
+                    <li class="nav-item"><a class="nav-link" href="http://<?php echo $_SERVER['HTTP_HOST']?>/registro">Registrate</a></li>
+                    <li class="nav-item"><a class="nav-link" href="http://<?php echo $_SERVER['HTTP_HOST']?>/login">Login</a></li>
 
                 </ul>
             </div>

@@ -34,3 +34,11 @@ Route::get('/mayoristas', function() {
 Route::get('/gracias', function() {
     return view('gracias');
 });
+
+Route::get('/registro', function() {
+    return view('registro');
+});
+
+Route::post('/registro', function() {
+    return view('registro');
+});

@@ -1,4 +1,4 @@
-<footer class="footer_part">
+<footer>
             <div class="container mt-4">
                 <div class="row justify-content-between">
                     <div class="col-sm-6 col-lg-2">
@@ -62,4 +62,4 @@
                     </div>
                 </div>
             </div>
-        </footer>
+</footer>

@@ -2,7 +2,7 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
             <a class="navbar-brand" href="http://<?php echo $_SERVER['HTTP_HOST']?>/proyectointegrador/home.php">
-            <img src="http://<?php echo $_SERVER['HTTP_HOST']?>/proyectointegrador/img/logo.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
+            <img src="{{URL::asset('/img/logo.jpg')}}" width="30" height="30" class="d-inline-block align-top" alt="">
             Pitagoras'c
             </a>
 

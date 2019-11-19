@@ -1,12 +1,12 @@
 <?php
 
 $host = '127.0.0.1';
-$port = 3306;
-$dbName = 'pitagoras';
+$port = 8889;
+$dbName = 'ecommerce';
 
 $dsn = "mysql:host=$host;port=$port;dbname=$dbName;charset=utf8";
 $user = 'root';
-$pass = '';
+$pass = 'root';
 
 $error = false;
 

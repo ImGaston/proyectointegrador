@@ -1,9 +1,10 @@
-
 @extends('layout')
 
-@section('title', 'Home')
+@section('title')
+Pitagoras | Home
+@endsection
 
-@section('content')
+@section('main')
 <div id="myCarousel" class="carousel slide d-none d-sm-none d-md-block" data-ride="carousel">
     <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -172,4 +173,4 @@
             </div>
         </div>
         </div>
-        @endsection
+            @endsection

@@ -11,10 +11,26 @@
 |
 */
 
-Route::get('/', function () {
-    return view('layout');
+// Route::get('/', function () {
+//     return view('layout');
+// });
+
+Route::get('/', function() {
+    return view('home');
 });
 
-Route::get('/home', function() {
-    return view('home');
+Route::get('/nosotros', function() {
+    return view('nosotros');
+});
+
+Route::get('/faq', function() {
+    return view('faq');
+});
+
+Route::get('/mayoristas', function() {
+    return view('mayoristas');
+});
+
+Route::get('/gracias', function() {
+    return view('gracias');
 });

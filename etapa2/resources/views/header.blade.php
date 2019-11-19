@@ -1,7 +1,6 @@
-
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <a class="navbar-brand" href="http://<?php echo $_SERVER['HTTP_HOST']?>/proyectointegrador/home.php">
+            <a class="navbar-brand" href="http://<?php echo $_SERVER['HTTP_HOST']?>/">
             <img src="{{URL::asset('/img/logo.jpg')}}" width="30" height="30" class="d-inline-block align-top" alt="">
             Pitagoras'c
             </a>
@@ -13,7 +12,7 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav mr-auto justify-content-end">
                     <li class="nav-item">
-                    <a class="nav-link" href="http://<?php echo $_SERVER['HTTP_HOST']?>/proyectointegrador/nosotros.php">Nosotros</a>
+                    <a class="nav-link" href="http://<?php echo $_SERVER['HTTP_HOST']?>/nosotros">Nosotros</a>
                     </li>
                     <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -28,7 +27,7 @@
                     </div>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="http://<?php echo $_SERVER['HTTP_HOST']?>/proyectointegrador/mayorista.php">Mayorista</a>
+                    <a class="nav-link" href="http://<?php echo $_SERVER['HTTP_HOST']?>/mayoristas">Mayorista</a>
                     </li>
                     <li class="nav-item">
                     <a href="#myModal" data-toggle="modal" data-target="#myModal" class="nav-link">Contacto</a>
@@ -38,10 +37,10 @@
                 <ul class="navbar-nav ml-auto" style="display: flex">
                 <!-- TODA LA PARTE DE LOGIN ESTA COMENTADA PARA NO GENERAR ERROR -->
                 <!-- Preguntamos si NO está logueado el usuario para mostrar los enlaces Register y Login -->
-               
+
                     <li class="nav-item"><a class="nav-link" href="http://<?php echo $_SERVER['HTTP_HOST']?>/proyectointegrador/registro.php">Registrate</a></li>
                     <li class="nav-item"><a class="nav-link" href="http://<?php echo $_SERVER['HTTP_HOST']?>/proyectointegrador/login.php">Login</a></li>
-                
+
                 </ul>
             </div>
         </div>
@@ -77,7 +76,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                <a href="http://<?php echo $_SERVER['HTTP_HOST']?>/proyectointegrador/gracias.php"> <button type="button" class="btn btn-primary">Enviar</button> </a>
+                <a href="http://<?php echo $_SERVER['HTTP_HOST']?>/gracias"> <button type="button" class="btn btn-primary">Enviar</button> </a>
             </div>
             </div>
         </div>

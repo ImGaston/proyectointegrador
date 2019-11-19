@@ -1,4 +1,3 @@
-<footer>
             <div class="container mt-4">
                 <div class="row justify-content-between">
                     <div class="col-sm-6 col-lg-2">
@@ -15,8 +14,8 @@
                         <div class="single_footer_part">
                             <h4>Nosotros</h4>
                             <ul class="list-unstyled">
-                                <li><a class="text-dark" href="http://<?php echo $_SERVER['HTTP_HOST']?>/proyectointegrador/nosotros.php">Nosotros</a></li>
-                                <li><a class="text-dark" href="http://<?php echo $_SERVER['HTTP_HOST']?>/proyectointegrador/faq.php">FAQ</a></li>
+                                <li><a class="text-dark" href="http://<?php echo $_SERVER['HTTP_HOST']?>/nosotros">Nosotros</a></li>
+                                <li><a class="text-dark" href="http://<?php echo $_SERVER['HTTP_HOST']?>/faq">FAQ</a></li>
                                 <li><a href="#myModal" data-toggle="modal" data-target="#myModal" class="text-dark">Contacto</a></li>
                             </ul>
                         </div>
@@ -62,4 +61,3 @@
                     </div>
                 </div>
             </div>
-</footer>

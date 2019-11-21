@@ -42,3 +42,11 @@ Route::get('/registro', function() {
 Route::post('/registro', function() {
     return view('registro');
 });
+
+Route::get('/newsletter', function() {
+    return view('newsletter');
+});
+
+Route::get('/test', 'ProductosController@list');
+
+Route::get('/test/{id}', 'ProductosController@detail');

@@ -14,7 +14,7 @@ Pitagoras | Gracias por tu Contacto!
               </div>
           <div class="row justify-content-md-center mt-4 mb-4">
               <!-- aca va la imagen -->
-              <img src="img/thankyou.jpg" class="img-thumbnail" alt="" style="width:50%">
+              <img src="{{URL::asset("/img/thankyou.jpg")}}" class="img-thumbnail" alt="" style="width:50%">
 
           </div>
       </div>

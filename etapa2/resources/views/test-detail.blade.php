@@ -15,6 +15,13 @@
   <p>Caterogia id: {{ $producto->categoria_id }}</p>
   <p>Caterogia id: {{ $producto->prenda_id }}</p>
   <p>Caterogia id: {{ $producto->talle_id }}</p>
+  <br>
+
+  <form action="/borrarproducto" method="POST">
+  {{csrf_field()}}
+  <input type="hidden" name="id" value="{{$producto->id}}">
+  <input type="submit" name="" value="BORRAR">
+</form>
 
   </div>
   <br>

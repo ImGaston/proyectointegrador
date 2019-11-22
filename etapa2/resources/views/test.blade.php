@@ -17,6 +17,11 @@ Listado de Productos
     @endforeach
   </ul>
   <br>
+  <div class="text-center">
+  <h2>  <a href="/altaproducto">Alta Productos</a> </h2>
+
+  </div>
+
     </div>
 
 @endsection

@@ -50,3 +50,13 @@ Route::get('/newsletter', function() {
 Route::get('/test', 'ProductosController@list');
 
 Route::get('/test/{id}', 'ProductosController@detail');
+
+Route::get('/altaproducto', function() {
+    return view('altaproducto');
+});
+
+Route::post('/altaproducto', 'ProductosController@altaproducto');
+
+Route::post('/borrarproducto', 'ProductosController@borrarproducto');
+
+Route::get('/borrarproducto', 'ProductosController@borrarproducto');

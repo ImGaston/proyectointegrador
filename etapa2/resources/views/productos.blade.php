@@ -4,7 +4,7 @@ Pitagoras |Productos
 @endsection
 
 
-
+@include header.blade.php
 
 
 
@@ -184,3 +184,4 @@ Pitagoras |Productos
 </main>
 
 @endsection
+@include footer.blade.php

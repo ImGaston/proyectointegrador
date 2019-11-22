@@ -45,3 +45,10 @@ Route::post('/registro', function() {
 Route::get('/productos', function(){
   return view('productos');
 })
+
+Route::get('/productos/{id}', 'ProductsController@detail');
+class ProductsController extends Controller {
+  public function detail($id) {
+    return view('productos-detail');
+  }
+}

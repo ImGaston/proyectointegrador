@@ -42,3 +42,6 @@ Route::get('/registro', function() {
 Route::post('/registro', function() {
     return view('registro');
 });
+Route::get('/productos', function(){
+  return view('productos');
+})

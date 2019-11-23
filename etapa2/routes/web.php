@@ -42,13 +42,29 @@ Route::get('/registro', function() {
 Route::post('/registro', function() {
     return view('registro');
 });
+
 Route::get('/productos', function(){
   return view('productos');
-})
+});
 
-Route::get('/productos/{id}', 'ProductsController@detail');
-class ProductsController extends Controller {
-  public function detail($id) {
-    return view('productos-detail');
-  }
-}
+Route::get('/productos/{id}', 'ProductosController@detail');
+
+
+
+Route::get('/newsletter', function() {
+    return view('newsletter');
+});
+
+Route::get('/test', 'ProductosController@list');
+
+Route::get('/test/{id}', 'ProductosController@detail');
+
+Route::get('/altaproducto', function() {
+    return view('altaproducto');
+});
+
+Route::post('/altaproducto', 'ProductosController@altaproducto');
+
+Route::post('/borrarproducto', 'ProductosController@borrarproducto');
+
+Route::get('/borrarproducto', 'ProductosController@borrarproducto');

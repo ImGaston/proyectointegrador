@@ -35,7 +35,7 @@
                             <h4>Newsletter</h4>
                             <div id="mc_embed_signup">
                                 <form target="home.php"
-                                    action="newsletter.php"
+                                    action="/newsletter"
                                     method="get" class="subscribe_form relative mail_part">
                                     <input type="email" name="email" id="newsletter-form-email" placeholder="Email"
                                         class="placeholder hide-on-focus" onfocus="this.placeholder = ''"

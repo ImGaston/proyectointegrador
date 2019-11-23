@@ -32,6 +32,10 @@
                     <li class="nav-item">
                     <a href="#myModal" data-toggle="modal" data-target="#myModal" class="nav-link">Contacto</a>
                     </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="http://<?php echo $_SERVER['HTTP_HOST']?>/test">Test Productos</a>
+                    </li>
+
                 </ul>
 
                 <ul class="navbar-nav ml-auto" style="display: flex">

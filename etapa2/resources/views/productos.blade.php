@@ -1,14 +1,10 @@
 @extends ("layout")
+
 @section ('title')
-Pitagoras |Productos
+	Pitagoras | Productos
 @endsection
 
-
-@include header.blade.php
-
-
-
-@section
+@section("main")
 <main>
 	<div class="container">
 
@@ -184,4 +180,3 @@ Pitagoras |Productos
 </main>
 
 @endsection
-@include footer.blade.php

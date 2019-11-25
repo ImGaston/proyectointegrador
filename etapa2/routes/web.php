@@ -39,9 +39,7 @@ Route::get('/registro', function() {
     return view('registro');
 });
 
-Route::post('/registro', function() {
-    return view('registro');
-});
+Route::post('/registro', 'UsuariosController@altausuario');
 
 Route::get('/newsletter', function() {
     return view('newsletter');
@@ -51,9 +49,7 @@ Route::get('/test', 'ProductosController@list');
 
 Route::get('/test/{id}', 'ProductosController@detail');
 
-Route::get('/altaproducto', function() {
-    return view('altaproducto');
-});
+Route::view('/altaproducto', 'altaproducto');
 
 Route::post('/altaproducto', 'ProductosController@altaproducto');
 

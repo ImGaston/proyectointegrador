@@ -25,6 +25,19 @@ class ProductosController extends Controller
     public function altaproducto(Request $req){
       $productoNuevo = new Productos();
 
+      $reglas = [
+        "descripcion" => "required|max:255",
+       "precio"=> "required|integer|min:0",
+       "cantidad"=> "required|numeric|min:0|max:10"
+
+      ];
+
+      $mensajes = [
+        "required" => "El campo es obligatorio"
+      ];
+
+      $this->validate($req, $reglas, $mensajes);
+
       $productoNuevo->descripcion = $req["descripcion"];
       $productoNuevo->Cantidad = $req["cantidad"];
       $productoNuevo->precio = $req["precio"];

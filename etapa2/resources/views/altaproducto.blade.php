@@ -5,6 +5,15 @@ Pitagoras | Alta de productos
 @endsection
 
 @section('main')
+
+<ul class="errores">
+  @foreach ($errors->all() as $error)
+    <li>
+      {{$error}}
+    </li>
+    @endforeach
+</ul>
+
   <form class="col-md-4 modal-dialog-centered mx-auto" action="/altaproducto" method="post" enctype="multipart/form-data">
     {{csrf_field()}}
     <div class= "container align-items-center">

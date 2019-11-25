@@ -41,6 +41,14 @@ Route::get('/registro', function() {
 
 Route::post('/registro', 'UsuariosController@altausuario');
 
+Route::get('/productos', function(){
+  return view('productos');
+});
+
+Route::get('/productos/{id}', 'ProductosController@detail');
+
+
+
 Route::get('/newsletter', function() {
     return view('newsletter');
 });

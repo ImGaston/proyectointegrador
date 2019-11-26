@@ -19,11 +19,11 @@
                         Tienda
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="http://<?php echo $_SERVER['HTTP_HOST']?>/proyectointegrador/productos.php">Ver todo</a>
+                        <a class="dropdown-item" href="http://<?php echo $_SERVER['HTTP_HOST']?>/productos">Ver todo</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="http://<?php echo $_SERVER['HTTP_HOST']?>/proyectointegrador/productos.php#colegial">Colegios</a>
-                        <a class="dropdown-item" href="http://<?php echo $_SERVER['HTTP_HOST']?>/proyectointegrador/productos.php#egresados">Egresados</a>
-                        <a class="dropdown-item" href="http://<?php echo $_SERVER['HTTP_HOST']?>/proyectointegrador/productos.php#servicios">Hospitalario</a>
+                        <a class="dropdown-item" href="http://<?php echo $_SERVER['HTTP_HOST']?>/productos#colegial">Colegios</a>
+                        <a class="dropdown-item" href="http://<?php echo $_SERVER['HTTP_HOST']?>/productos#egresados">Egresados</a>
+                        <a class="dropdown-item" href="http://<?php echo $_SERVER['HTTP_HOST']?>/productos#servicios">Hospitalario</a>
                     </div>
                     </li>
                     <li class="nav-item">

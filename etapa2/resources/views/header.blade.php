@@ -39,12 +39,35 @@
                 </ul>
 
                 <ul class="navbar-nav ml-auto" style="display: flex">
-                <!-- TODA LA PARTE DE LOGIN ESTA COMENTADA PARA NO GENERAR ERROR -->
-                <!-- Preguntamos si NO está logueado el usuario para mostrar los enlaces Register y Login -->
+                    <!-- Authentication Links -->
+                        @guest
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('login') }}">{{ __('Ingresa') }}</a>
+                            </li>
+                            @if (Route::has('register'))
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Registrate') }}</a>
+                                </li>
+                            @endif
+                        @else
+                            <li class="nav-item dropdown">
+                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                    {{ Auth::user()->name }} <span class="caret"></span>
+                                </a>
 
-                    <li class="nav-item"><a class="nav-link" href="http://<?php echo $_SERVER['HTTP_HOST']?>/registro">Registrate</a></li>
-                    <li class="nav-item"><a class="nav-link" href="http://<?php echo $_SERVER['HTTP_HOST']?>/login">Login</a></li>
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="{{ route('logout') }}"
+                                       onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                        {{ __('Logout') }}
+                                    </a>
 
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                        @csrf
+                                    </form>
+                                </div>
+                            </li>
+                        @endguest
                 </ul>
             </div>
         </div>

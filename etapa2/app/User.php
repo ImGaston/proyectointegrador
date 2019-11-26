@@ -37,3 +37,10 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 }
+
+
+/* COMENTARIO: 
+CONECTAR LA PAGINA A LA TABLA DE USUARIOS CON EL LOGIN.
+MODIFICAR Y AGREGAR LOS REGISTRO QUE SE NECESITAN 
+HACER PAGINA DE PERFIL 
+PUSH!!  */

@@ -64,3 +64,11 @@ Route::post('/altaproducto', 'ProductosController@altaproducto');
 Route::post('/borrarproducto', 'ProductosController@borrarproducto');
 
 Route::get('/borrarproducto', 'ProductosController@borrarproducto');
+
+Auth::routes();
+
+Route::get('/profile', 'ProfileController@index')->name('profile');
+
+Auth::routes();
+
+Route::get('/profile', 'ProfileController@index')->name('profile');

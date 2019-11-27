@@ -41,6 +41,8 @@ Route::get('/registro', function() {
 
 Route::post('/registro', 'UsuariosController@altausuario');
 
+Route::get ('/login', 'UsuariosController@iniciarsesion');
+
 Route::get('/productos', function(){
   return view('productos');
 });

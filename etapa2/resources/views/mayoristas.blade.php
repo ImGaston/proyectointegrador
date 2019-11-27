@@ -54,7 +54,7 @@ Pitagoras | Mayoristas
           <div class="col-12 col-sm-6">
               <!-- aca va la imagen -->
               <img src="{{URL::asset('/img/foto-colegial.png')}}" class="img-fluid" alt="">
-              
+
 
           </div>
       </div>
@@ -65,7 +65,7 @@ Pitagoras | Mayoristas
       </div>
       <div class="row justify-content-md-center mt-4">
           <div class="col-12 col-sm-6 col-md-3 text-center mb-4">
-            <img src="{{URL::asset("/img/mayorista-4.png")}}" lass="mb-2" alt=""> 
+            <img src="{{URL::asset("/img/mayorista-4.png")}}" lass="mb-2" alt="">
               <p>Garantia de cambio</p>
           </div>
           <div class="col-12 col-sm-6 col-md-3 text-center mb-4">
@@ -89,7 +89,7 @@ Pitagoras | Mayoristas
       </div>
       <div class="row justify-content-md-center">
           <div class="col-12 col-md-6 col-lg-3 mb-3 text-center">
-              <img src="img/colegio-1.png" alt="">  
+              <img src="img/colegio-1.png" alt="">
           </div>
           <div class="col-12 col-md-6 col-lg-3 mb-3 text-center">
               <img src="img/colegio-2.png" alt="">
@@ -113,4 +113,4 @@ Pitagoras | Mayoristas
           </div>
       </div>
   </div>
-            @endsection
+@endsection

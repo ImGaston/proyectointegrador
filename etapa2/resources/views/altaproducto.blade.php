@@ -38,11 +38,33 @@ Pitagoras | Alta de productos
 				name="cantidad" class="form-control"  value=""  >
 				</div>
 
+        <div class="form-group">
+          <label><b>Imagen de producto:</b></label>
+          <div class="custom-file">
+            <input
+              type="file"
+              name="foto"
+              class="custom-file-input"
+            >
+            <label class="custom-file-label">Subí la foto...</label>
+            <script type="application/javascript">
+            $('.custom-file-input').on('change', function(event) {
+                var inputFile = event.currentTarget;
+                $(inputFile).parent()
+                    .find('.custom-file-label')
+                    .html(inputFile.files[0].name);
+            });
+            </script>
+          </div>
+        </div>
+
       <div class="form-group text-center">
       <div class="col-md-12 text-center">
         <button type="submit" class="btn btn-primary btn-lg"> Enviar </button>
           </div>
       </div>
+
+
       <div class="container">
 
         </div>

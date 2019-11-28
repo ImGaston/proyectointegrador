@@ -28,7 +28,8 @@ class ProductosController extends Controller
       $reglas = [
         "descripcion" => "required|max:255",
        "precio"=> "required|integer|min:0",
-       "cantidad"=> "required|numeric|min:0|max:10"
+       "cantidad"=> "required|numeric|min:0|max:10",
+       "foto"=>"file"
 
       ];
 
@@ -38,12 +39,17 @@ class ProductosController extends Controller
 
       $this->validate($req, $reglas, $mensajes);
 
+      $ruta = $req->file("foto")->store("public");
+      $nombreFoto = basename($ruta);
+
+      $productoNuevo->foto = $nombreFoto;
       $productoNuevo->descripcion = $req["descripcion"];
       $productoNuevo->Cantidad = $req["cantidad"];
       $productoNuevo->precio = $req["precio"];
       $productoNuevo->categoria_id = 2;
       $productoNuevo->prenda_id = 2;
       $productoNuevo->talle_id = 2;
+
       $productoNuevo->save();
 
       return redirect("/test");

@@ -16,7 +16,13 @@
   <p>Caterogia id: {{ $producto->prenda_id }}</p>
   <p>Caterogia id: {{ $producto->talle_id }}</p>
   <br>
+  <div class="text-center">
+    <p>Y la foto de tu producto es esta:</p>
 
+    <img src="/storage/{{$producto->foto}}" alt="">
+  </div>
+<br>
+<br>
   <form action="/borrarproducto" method="POST">
   {{csrf_field()}}
   <input type="hidden" name="id" value="{{$producto->id}}">

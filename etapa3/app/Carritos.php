@@ -6,13 +6,13 @@ use Illuminate\Database\Eloquent\Model;
 
 class Carritos extends Model
 {
-    public function products() {
+    public function product() {
       return $this->hasMany('App\Product', 'product_id');
     }
 
-    public function users() {
-        return $this->belongsTo('App\Users', 'user_id');
+    public function user() {
+        return $this->hasMany('App\User', 'user_id');
     }
-  
+
 
 }

@@ -87,7 +87,7 @@ Pitagoras | Alta de productos
         <label for="talle_id">Talle</label>
 
         <select name="talle_id">
-          <option value="-1"> Seleccionar Prenda</option>
+          <option value="-1"> Seleccionar Talle</option>
           @foreach ($TalleMenu as $talle)
             <option value="{{$talle->id}}">{{$talle->name}}</option>
           @endforeach

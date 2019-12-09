@@ -32,25 +32,56 @@
     </nav>
     </div>
     </div>
-<!-- Aca es donde va la magia del php para cargar distintas paginas segun el nav -->
+
     <div class="container border mt-2 mb-1">
       <div class="row mt-2 mb-1">
         <div class="col">
           <h2 class="pedido mt-2">Mi pedido</h2><br>
-          <p>Tu compra total es de $....</p>
+          <p>Tu compra total es de "hay que sumar acá"</p>
         <hr class="featurette-divider">
         </div>
       </div>
-      <div class="row m-0 mt-2">
-              <div class="card w-50">
-            <div class="card-body">
-              <h5 class="card-title">Producto 1</h5>
-              <p class="card-text">Descrpción</p>
-              <p class="card-text">Precio: $1000</p>
-              <a href="" class="btn btn-primary">Quitar del Carrito</a>
+
+    <div class="col 12">
+            @foreach ($productos as $producto)
+                <div class="row m-0 mt-1">
+                <div class="card w-50">
+                <div class="card-body">
+                <h5 class="card-title">Producto ID {{ $producto->product_id }} </h5>
+                  <p class="card-text">Descrpción </p>
+                  <p class="card-text">Precio: </p>
+                  <p class="card-text"> Producto ID :{{ $producto->product_id }}</p>
+                    <a href="" class="btn btn-primary">Quitar del Carrito</a>
+                </div>
+                </div>
+                  </div>
+              @endforeach
+
             </div>
-        </div>
-      </div>
+
+      {{-- <div class="container">
+        <div class="row">
+            @foreach ($productos as $producto)
+            <a href="/productos/{{ $producto->id }}" class="col-12 col-md-4 col-lg-3 mb-4">
+              <div class="card">
+                @if ($producto->image_url)
+                <img src="{{ $producto->image_url }}" class="card-img-top" alt="{{ $producto->name }}">
+                <div class="card-body">
+                  <p class="card-text">{{ $producto->name }}</p>
+                </div>
+              @else
+                <img src="/storage/{{$producto->image_url}}" class="card-img-top" alt="{{ $producto->name }}">
+                <div class="card-body">
+                  <p class="card-text">{{ $producto->name }}</p>
+                </div>
+              @endif
+              </div>
+            </a>
+          @endforeach
+          </div>
+      </div> --}}
+
+
       <div class="row">
         <div class="col">
           <button type="button" class="btn btn-primary btn-lg btn-block mt-3 mb-3">Confirmar Compra<ion-icon name="cart"></ion-icon></ion-icon></button>

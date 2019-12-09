@@ -15,7 +15,7 @@ Listado Completo Productos
   <div class="container">
     <div class="row">
         @foreach ($productos as $producto)
-        <a href="/productos/{{ $producto->id }}" class="col-12 col-md-4 col-lg-3 mb-4">
+        <a href="/productos-borrar/{{ $producto->id }}" class="col-12 col-md-4 col-lg-3 mb-4">
           <div class="card">
             <img src="{{ $producto->image_url }}" class="card-img-top" alt="{{ $producto->name }}">
             <div class="card-body">

@@ -73,9 +73,16 @@ Route::get('/altaprendas', 'PrendasController@list');
 
 Route::post('/altaprendas', 'PrendasController@altaprendas');
 
+Route::get('/altatalles', 'TallesController@list');
+
+Route::post('/altatalles', 'TallesController@altatalles');
+
+
 Route::get('/productos/{id}', 'ProductosController@detail');
 
-Route::get('/agregarAlCarrito', 'CarritoController@agregarAlCarrito');
+Route::get('/productos-borrar/{id}', 'ProductosController@detailBorrar');
+
+Route::post('/agregarAlCarrito', 'CarritosController@agregarAlCarrito');
 
 Route::get('/{categorySlug}', 'CategoryController@detail')->name('category');
 

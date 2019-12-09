@@ -63,10 +63,11 @@
                                             <div class="dropdown-divider"></div>
 
 
-                                            <a class="dropdown-item" href="http://<?php echo $_SERVER['HTTP_HOST']?>/altaproducto">Alta Productos</a>
-                                            <a class="dropdown-item" href="http://<?php echo $_SERVER['HTTP_HOST']?>/productos-borrar">Borrar Productos</a>
-                                            <a class="dropdown-item" href="http://<?php echo $_SERVER['HTTP_HOST']?>/altacategoria">Alta Categoría Productos</a>
-                                            <a class="dropdown-item" href="http://<?php echo $_SERVER['HTTP_HOST']?>/altaprendas">Alta Prendas</a>
+                                            <a class="dropdown-item" href="/altaproducto">Alta Productos</a>
+                                            <a class="dropdown-item" href="/productos-borrar">Borrar Productos</a>
+                                            <a class="dropdown-item" href="/altacategoria">Alta Categoría Productos</a>
+                                            <a class="dropdown-item" href="/altaprendas">Alta Prendas</a>
+                                            <a class="dropdown-item" href="/altatalles">Alta Talles</a>
                                             <div class="dropdown-divider"></div>
 
                                           @endif

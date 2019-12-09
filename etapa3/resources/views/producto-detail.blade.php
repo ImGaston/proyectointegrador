@@ -35,28 +35,30 @@
           <br>
 
 
+          <form action="/agregarAlCarrito" method="post">
+                      {{csrf_field()}}
+                      @auth
+                      <input type="hidden" name="user_id" value="{{ Auth::user()->id }}">
+                      <input type="hidden" name="product_id" value="{{$producto -> id}}">
+                      <button type="submit" class="btn btn-primary">
+                        Agregar al carrito
+                      </button>
+                      @endauth
+                      </form>
 
-<a href="/agregarAlCarrito">
-  <button type="submit" class="btn btn-primary">Agregar al carrito</button>
-</a>
     </div>
+
+
+
 
 
 
       </div>
 
+
+
 <br>
 
-<div class="container center">
-
-
-
-      <form action="/borrarproducto" method="POST">
-      {{csrf_field()}}
-      <input type="hidden" name="id" value="{{$producto->id}}">
-      <input type="submit" name="" value="BORRAR">
-    </form>
-    </div>
     </div>
 
 @endsection

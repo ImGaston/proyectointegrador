@@ -28,7 +28,7 @@ Pitagoras | Home
                 <div class="carousel-caption izquierda">
                     <h1>Todos los modelos</h1>
                     <p>Tenemos los uniformes para todos los colegios de Formosa</p>
-                    <p><a class="btn btn-lg btn-primary" href="productos.php" role="button">Ver listado</a></p>
+                    <p><a class="btn btn-lg btn-primary" href="/productos" role="button">Ver listado</a></p>
                 </div>
             </div>
         </div>
@@ -37,7 +37,7 @@ Pitagoras | Home
             <div class="carousel-caption text-right izquierda">
                 <h1>Promociones</h1>
                 <p>Visite nuestra sección de promociones</p>
-                <p><a class="btn btn-lg btn-primary" href="productos.php" role="button">Visitar</a></p>
+                <p><a class="btn btn-lg btn-primary" href="/productos" role="button">Visitar</a></p>
             </div>
         </div>
     </div>

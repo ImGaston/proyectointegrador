@@ -62,6 +62,18 @@ class ProductosController extends Controller
       ]);
     }
 
+    public function detailBorrar($id) {
+$producto = Product::find($id);
+$TalleMenu = Talle::orderBy('name', 'asc')->get();
+
+return view('producto-detail-borrar', [
+  "producto" => $producto,
+  "TalleMenu" => $TalleMenu
+
+
+]);
+}
+
     public function altaproducto(Request $req){
         $productoNuevo = new Product();
 
@@ -100,7 +112,7 @@ class ProductosController extends Controller
       $producto = Product::find($id);
       $producto-> delete();
 
-      return redirect("/productos");
+      return redirect("/productos-borrar");
     }
 
 

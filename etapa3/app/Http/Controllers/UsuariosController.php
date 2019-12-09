@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Usuarios;
+use App\Carritos;
+use App\Product;
+
 
 class UsuariosController extends Controller
 {
@@ -19,18 +22,17 @@ class UsuariosController extends Controller
     return redirect("/");
   }
 
-//   public function index($id) {
-//   $usuario = Usuarios::find($id);
-//
-// return view('cuenta', [
-// "usuario" => $usuario
-// ]);
-// }
-
   public function carrito() {
-return view('cuenta', [
+  $productos = Carritos::orderBy('product_id', 'asc')->get();
+  //$productonombre = Product::find($productos)->get();
+  $user = Carritos::orderBy('user_id', 'asc')->get();
 
-]);
+
+    return view('cuenta', [
+         'productos' => $productos,
+          'user' => $user,
+                 ]);
+
 }
 
 public function index() {

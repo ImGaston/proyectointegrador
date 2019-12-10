@@ -37,20 +37,32 @@
       <div class="row mt-2 mb-1">
         <div class="col">
           <h2 class="pedido mt-2">Mi pedido</h2><br>
-          <p>Tu compra total es de "hay que sumar acá"</p>
+          {{-- @php
+            for ( $carrito as $flag){
+            $resultado = $flag->precio
+
+            }
+          @endphp --}}
+           <p>Tu compra total es de $
+             {{-- @php
+              dd($carrito);
+             @endphp --}}
+
+          </p>
         <hr class="featurette-divider">
         </div>
       </div>
 
     <div class="col 12">
-            @foreach ($productos as $producto)
+            @foreach ($carrito as $flag)
                 <div class="row m-0 mt-1">
                 <div class="card w-50">
                 <div class="card-body">
-                <h5 class="card-title">Producto ID {{ $producto->product_id }} </h5>
-                  <p class="card-text">Descrpción </p>
-                  <p class="card-text">Precio: </p>
-                  <p class="card-text"> Producto ID :{{ $producto->product_id }}</p>
+                <h5 class="card-title">Producto {{ $flag->name }} </h5>
+                <div class="col-sm">
+                  <img src="{{ $flag->image_url }}" width="125"alt="Chomba colegial">
+                </div>
+                  <p class="card-text">Precio ${{ $flag->precio }}</p>
                     <a href="" class="btn btn-primary">Quitar del Carrito</a>
                 </div>
                 </div>

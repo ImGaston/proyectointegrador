@@ -23,13 +23,13 @@ class UsuariosController extends Controller
   }
 
   public function carrito() {
-  $productos = Carritos::orderBy('product_id', 'asc')->get();
-  //$productonombre = Product::find($productos)->get();
+  $carrito = Carritos::orderBy('user_id', 'asc')->get();
+  //$productos = Carritos::orderBy('product_id', 'asc')->get();
   $user = Carritos::orderBy('user_id', 'asc')->get();
 
 
     return view('cuenta', [
-         'productos' => $productos,
+         'carrito' => $carrito,
           'user' => $user,
                  ]);
 

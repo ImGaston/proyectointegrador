@@ -11,7 +11,7 @@ class Carritos extends Model
     }
 
     public function user() {
-        return $this->hasMany('App\User', 'user_id');
+        return $this->belongsto('App\User', 'user_id');
     }
 
 

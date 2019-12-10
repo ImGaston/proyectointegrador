@@ -17,4 +17,8 @@ class Product extends Model
     public function Prenda() {
         return $this->belongsTo('App\Prenda', 'prenda_id');
     }
+
+    public function Carritos() {
+        return $this->hasMany('App\Carritos', 'product_id');
+    }
 }

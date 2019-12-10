@@ -40,6 +40,9 @@
                       @auth
                       <input type="hidden" name="user_id" value="{{ Auth::user()->id }}">
                       <input type="hidden" name="product_id" value="{{$producto -> id}}">
+                      <input type="hidden" name="name" value="{{$producto -> name}}">
+                      <input type="hidden" name="precio" value="{{$producto -> precio}}">
+                      <input type="hidden" name="image_url" value="{{$producto -> image_url}}">
                       <button type="submit" class="btn btn-primary">
                         Agregar al carrito
                       </button>

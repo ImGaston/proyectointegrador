@@ -13,7 +13,9 @@ class CarritosController extends Controller
 
               $carritonuevo->user_id = $req["user_id"];
               $carritonuevo->product_id = $req["product_id"];
-
+              $carritonuevo->name = $req["name"];
+              $carritonuevo->precio = $req["precio"];
+              $carritonuevo->image_url = $req["image_url"];
               $carritonuevo->save();
 
               return redirect("/cuenta");

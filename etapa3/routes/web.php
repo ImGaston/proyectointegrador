@@ -11,9 +11,16 @@
 |
 */
 
+/* PRUEBA DE IMAGENES  */
+
+Route::get('/foto', 'FotoController@index');
+
+
+
 Route::get('/', function() {
     return view('home');
 });
+
 
 
 //Route::get('/producto/{productId}', 'ProductController@index')->name('product');
@@ -43,10 +50,6 @@ Route::get('/newsletter', function() {
     return view('newsletter');
 });
 
-
-Route::get('/registro', function() {
-    return view('registro');
-});
 
 Route::get('/productos-todos', 'ProductosController@index');
 

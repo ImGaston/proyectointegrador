@@ -10,18 +10,6 @@ use App\Product;
 class UsuariosController extends Controller
 {
 
-  public function altausuario(Request $req){
-    $usuarionuevo = new Usuarios();
-
-    $usuarionuevo->nombre = $req["nombre"];
-    $usuarionuevo->apellido = $req["apellido"];
-    $usuarionuevo->email = $req["email"];
-    $usuarionuevo->password = $req["password"];
-    $usuarionuevo->save();
-
-    return redirect("/");
-  }
-
   public function carrito() {
   $carrito = Carritos::orderBy('user_id', 'asc')->get();
   //$productos = Carritos::orderBy('product_id', 'asc')->get();

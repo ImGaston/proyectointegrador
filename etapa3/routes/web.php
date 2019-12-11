@@ -11,11 +11,6 @@
 |
 */
 
-/* PRUEBA DE IMAGENES  */
-
-Route::get('/foto', 'FotoController@index');
-
-
 
 Route::get('/', function() {
     return view('home');

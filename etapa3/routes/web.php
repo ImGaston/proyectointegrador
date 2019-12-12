@@ -45,6 +45,9 @@ Route::get('/newsletter', function() {
     return view('newsletter');
 });
 
+/* NEWSLETTER */
+Route::post('/', 'HomeController@newsletter');
+
 
 Route::get('/productos-todos', 'ProductosController@index');
 

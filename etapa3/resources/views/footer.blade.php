@@ -33,16 +33,22 @@
             <div class="single_footer_part">
                 <h4>Newsletter</h4>
                 <div id="mc_embed_signup">
-                    <form target="home.php"
-                        action="/newsletter"
-                        method="get" class="subscribe_form relative mail_part">
-                        <input type="email" name="email" id="newsletter-form-email" placeholder="Email"
+
+                    <form 
+                        action="/"
+                        method="post" class="subscribe_form relative mail_part">
+                         {{csrf_field()}}
+                        <input type="email" name="email" id="newsletter" placeholder="Email"
                             class="placeholder hide-on-focus" onfocus="this.placeholder = ''"
                             onblur="this.placeholder = ' Email Address '">
-                        <button type="submit" class="btn btn-light" name="submit" id="newsletter-submit"
+                        
+                            <button type="submit" class="btn btn-light" name="submit" id="newsletter"
                             class="email_icon newsletter-submit button-contactForm">Suscribite</button>
-                        <div class="mt-10 info"></div>
+                       
+                            <div class="mt-10 info"></div>
+
                     </form>
+
                 </div>
                 <div class="social_icon">
                     <a href="#"><i class="ti-facebook"></i></a>

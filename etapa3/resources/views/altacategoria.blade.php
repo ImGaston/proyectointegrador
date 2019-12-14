@@ -29,7 +29,7 @@ Pitagoras | Alta de Categorias
     {{csrf_field()}}
     <div class= "container align-items-center">
     <fieldset>
-        <legend class="text-center header">Alta de la nueva Categoría</legend>
+        <legend class="text-center header">Alta de la nueva categoría</legend>
       <br>
 
       <div class="form-group">

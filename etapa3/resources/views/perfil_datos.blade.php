@@ -37,7 +37,7 @@
       <div class="row">
         <div class="col-md-12">
           <br>
-                    <h2>Estos son tus datos Personales: {{ Auth::user()->name }} </h2>
+                    <h2>Estos son tus datos personales: {{ Auth::user()->name }} </h2>
           </div>
           <div class="col-md-4">
           <img src="/storage/{{ Auth::user()->avatar }}" class="img-thumbnail" alt="imagen usuario">

@@ -1,14 +1,14 @@
 @extends('layout')
 
 @section('title')
-Pitagoras | Alta de Prendas
+Pitagoras | Alta de prendas
 @endsection
 
 @section('main')
 
   <div class="container">
 
-    <h1 class="my-4">Listado de Prendas</h1>
+    <h1 class="my-4">Listado de prendas</h1>
     <ul>
       @foreach ($prendaMenu as $flag)
       <li>
@@ -32,7 +32,7 @@ Pitagoras | Alta de Prendas
     {{csrf_field()}}
     <div class= "container align-items-center">
     <fieldset>
-        <legend class="text-center header">Alta de Prendas</legend>
+        <legend class="text-center header">Alta de prendas</legend>
       <br>
 
 
@@ -52,7 +52,7 @@ Pitagoras | Alta de Prendas
         </div> --}}
 
       <div class="form-group">
-      <label for="descripcion">Nombre de la Prenda</label>
+      <label for="descripcion">Nombre de la prenda</label>
       <input id = "name" type="text" placeholder="Ingresa el nombre"
       name="name" class="form-control"  value=""  >
       </div>

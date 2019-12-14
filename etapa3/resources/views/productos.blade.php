@@ -24,7 +24,7 @@ Listado de Productos
 
   <br>
 <a href="/productos-todos">
-  <button type="submit" class="btn btn-primary">Ver Todo</button>
+  <button type="submit" class="btn btn-primary">Ver todo</button>
 </a>
 </div>
 @endsection

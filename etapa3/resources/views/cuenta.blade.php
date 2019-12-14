@@ -63,7 +63,7 @@
                   <img src="{{ $flag->image_url }}" width="125"alt="Chomba colegial">
                 </div>
                   <p class="card-text">Precio ${{ $flag->precio }}</p>
-                    <a href="" class="btn btn-primary">Quitar del Carrito</a>
+                    <a href="" class="btn btn-primary">Quitar del carrito</a>
                 </div>
                 </div>
                   </div>
@@ -96,7 +96,9 @@
 
       <div class="row">
         <div class="col">
-          <button type="button" class="btn btn-primary btn-lg btn-block mt-3 mb-3">Confirmar Compra<ion-icon name="cart"></ion-icon></ion-icon></button>
+          <button type="button" class="btn btn-primary btn-lg btn-block mt-3 mb-3">
+            Confirmar compra <ion-icon name="cart"></ion-icon>
+          </button>
         </div>
       </div>
     </div>
@@ -116,8 +118,6 @@
     <!-- ENCUESTA -->
   </main>
 
-
-
 {{-- <main class="container">
   <h1>Detalle del producto "{{ $usuario->name }}"</h1>
     <div class="container">
@@ -128,3 +128,4 @@
       </div> --}}
 
   @endsection
+

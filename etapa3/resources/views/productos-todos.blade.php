@@ -1,13 +1,13 @@
 @extends('layout')
 
 @section('title')
-Listado Completo Productos
+Listado completo productos
 @endsection
 
 @section('main')
 
 <div class="container text-center">
-  <h1>Listado Completo de Productos</h1>
+  <h1>Listado completo de productos</h1>
 </div>
 
 <div class="container">
@@ -22,7 +22,7 @@ Listado Completo Productos
 
 
 <div class="container">
-  <h4>En este momento hay @php echo rand(100,200); @endphp personas viendo esto!! Apurate!</h4>
+  <h4>¡En este momento hay @php echo rand(100,200); @endphp personas viendo esto! ¡Apurate!</h4>
 </div>
 <br>
   <div class="container">

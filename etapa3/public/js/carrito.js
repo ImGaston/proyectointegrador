@@ -1,4 +1,4 @@
-var form = document.getElementById('agregarProductoForm');
+var form = document.getElementById('compraConfirmadaForm');
 
 form.onsubmit = EventoCarrito;
 

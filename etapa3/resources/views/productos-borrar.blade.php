@@ -7,7 +7,7 @@ Listado Completo Productos
 @section('main')
 
 <div class="container text-center">
-  <h1>Listado Completo de Productos</h1>
+  <h1>Listado completo de productos</h1>
   <h2>Seleccione uno para borrar</h2>
 </div>
 

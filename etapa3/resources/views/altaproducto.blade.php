@@ -18,7 +18,7 @@ Pitagoras | Alta de productos
     {{csrf_field()}}
     <div class= "container align-items-center">
     <fieldset>
-        <legend class="text-center header">Alta de Productos</legend>
+        <legend class="text-center header">Alta de productos</legend>
       <br>
 
       <div class="form-group">
@@ -65,7 +65,7 @@ Pitagoras | Alta de productos
         <label for="category_id">Categoría del producto</label>
         <select name="category_id">
 
-          <option value="-1"> Seleccionar Categoría</option>
+          <option value="-1"> Seleccionar categoría</option>
           @foreach ($categoryMenu as $cate)
             <option value="{{$cate->id}}">{{$cate->name}}</option>
           @endforeach
@@ -74,9 +74,9 @@ Pitagoras | Alta de productos
         </div>
 
         <div class="form-group">
-        <label for="prenda_id">Tipo de Prenda</label>
+        <label for="prenda_id">Tipo de prenda</label>
         <select name="prenda_id">
-          <option value="-1"> Seleccionar Prenda</option>
+          <option value="-1"> Seleccionar prenda</option>
           @foreach ($prendaMenu as $prend)
             <option value="{{$prend->id}}">{{$prend->name}}</option>
           @endforeach
@@ -87,7 +87,7 @@ Pitagoras | Alta de productos
         <label for="talle_id">Talle</label>
 
         <select name="talle_id">
-          <option value="-1"> Seleccionar Talle</option>
+          <option value="-1"> Seleccionar talle</option>
           @foreach ($TalleMenu as $talle)
             <option value="{{$talle->id}}">{{$talle->name}}</option>
           @endforeach

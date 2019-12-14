@@ -1,7 +1,7 @@
 @extends('layout')
 
 @section('title')
-Pitagoras | Gracias por tu Contacto!
+Pitagoras | ¡Gracias por tu contacto!
 @endsection
 
 @section('main')

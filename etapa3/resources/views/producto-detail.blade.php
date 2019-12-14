@@ -8,33 +8,18 @@
 
 <br>
 
-
   <main class="container">
   <h1>{{ $producto->name }}</h1>
     <div class="container">
       <div class="row">
         <div class="col-sm">
           <img src="{{ $producto->image_url }}" width="250"alt="Chomba colegial">
-
         </div>
   <div class="col-sm">
   <p>{{ $producto->description }}</p>
 
     </div>
         <div class="col-sm">
-
-          <h2>Selección de talles </h2>
-          <select>
-              <option value="-1"> Seleccionar Talle</option>
-              @foreach ($TalleMenu as $talle)
-                <option value="{{$talle->id}}">{{$talle->name}}</option>
-              @endforeach
-            </select>
-          </select>
-          <br>
-          <br>
-
-
           <form action="/agregarAlCarrito" method="post" id="agregarProductoForm">
             {{csrf_field()}}
             @auth

@@ -56,18 +56,18 @@
                                 </a>
 
                                       <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                                                          <a class="dropdown-item" href="/cuenta">Mi Cuenta</a>
-                                        <a class="dropdown-item" href="/perfil_datos">Mis Datos</a>
+                                                                          <a class="dropdown-item" href="/cuenta">Mi cuenta</a>
+                                        <a class="dropdown-item" href="/perfil_datos">Mis datos</a>
 
                                           @if (Auth::user()->isAdmin())
                                             <div class="dropdown-divider"></div>
 
 
-                                            <a class="dropdown-item" href="/altaproducto">Alta Productos</a>
-                                            <a class="dropdown-item" href="/productos-borrar">Borrar Productos</a>
-                                            <a class="dropdown-item" href="/altacategoria">Alta Categoría Productos</a>
-                                            <a class="dropdown-item" href="/altaprendas">Alta Prendas</a>
-                                            <a class="dropdown-item" href="/altatalles">Alta Talles</a>
+                                            <a class="dropdown-item" href="/altaproducto">Alta productos</a>
+                                            <a class="dropdown-item" href="/productos-borrar">Borrar productos</a>
+                                            <a class="dropdown-item" href="/altacategoria">Alta categoría productos</a>
+                                            <a class="dropdown-item" href="/altaprendas">Alta prendas</a>
+                                            <a class="dropdown-item" href="/altatalles">Alta talles</a>
                                             <div class="dropdown-divider"></div>
 
                                           @endif

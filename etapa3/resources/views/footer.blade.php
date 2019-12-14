@@ -4,7 +4,7 @@
             <div class="single_footer_part">
                 <h4>Categorías</h4>
                 <ul class="list-unstyled">
-                    <li><a class="text-dark text-center" href="/productos">Ver Todas</a></li>
+                    <li><a class="text-dark text-center" href="/productos">Ver todas</a></li>
 
                 </ul>
             </div>

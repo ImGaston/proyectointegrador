@@ -40,7 +40,7 @@ Pitagoras | Alta de Categorias
 
       <div class="form-group text-center">
       <div class="col-md-12 text-center">
-        <button type="submit" class="btn btn-primary btn-lg"> Enviar </button>
+        <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
           </div>
       </div>
 

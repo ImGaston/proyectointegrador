@@ -48,6 +48,7 @@ Route::get('/newsletter', function() {
 /* NEWSLETTER */
 Route::post('/', 'HomeController@newsletter');
 
+Route::post('/gracias', 'HomeController@contacto');
 
 Route::get('/productos-todos', 'ProductosController@index');
 

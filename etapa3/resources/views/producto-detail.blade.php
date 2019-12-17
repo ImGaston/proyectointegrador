@@ -19,6 +19,17 @@
   <p>{{ $producto->description }}</p>
 
     </div>
+
+      @guest
+
+        <div class="col-sm text-center">
+          <h3>¿Querés comprar?</h3>
+          <h2>Ingresá a tu cuenta!</h2>
+      <a href="/login" class="button">Ingresar</a>
+
+          </div>
+
+          @endguest
         <div class="col-sm">
           <form action="/agregarAlCarrito" method="post" id="agregarProductoForm">
             {{csrf_field()}}

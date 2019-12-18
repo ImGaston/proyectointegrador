@@ -7,8 +7,7 @@ use App\Category;
 use App\Newsletter;
 use App\Contacto;
 
-class HomeController extends Controller
-{
+class HomeController extends Controller{
     /**
      * Show the application dashboard.
      *
@@ -26,23 +25,24 @@ class HomeController extends Controller
     public function newsletter(Request $req)
     {
         $emailNuevo = new  Newsletter();
-        $emailNuevo->email = $req['email'];
+        $emailNuevo->email = $req['Email'];
         $emailNuevo->save();
 
-        return redirect('/');
+        return redirect('/newsletter');
 
     }
 
     public function contacto(Request $req)
     {
-        $consultaNueva = new  Contactos();
+        $consultaNueva = new Contacto();
         $consultaNueva->name = $req["nombre"];
-        $consultaNueva->name = $req["apellido"];
-        $consultaNueva->email = $req['email'];
-        $consultaNueva->name = $req["consilta"];
+        $consultaNueva->apellido = $req["apellido"];
+        $consultaNueva->email = $req["email"];
+        $consultaNueva->consulta = $req["consulta"];
         $consultaNueva->save();
 
         return redirect('/gracias');
 
 
+}
 }

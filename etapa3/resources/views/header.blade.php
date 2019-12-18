@@ -88,6 +88,10 @@
             </div>
         </div>
 </nav>
+<form class="" action="/contacto" method="post">
+      {{csrf_field()}}
+
+
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -100,27 +104,28 @@
             <div class="modal-body">
                 <div class="row">
                 <div class="col">
-                    <input type="text" class="form-control" placeholder="Nombre">
+                    <input type="text" class="form-control" name="nombre" placeholder="Nombre" required>
                 </div>
                 <div class="col">
-                    <input type="text" class="form-control" placeholder="Apellido">
+                    <input type="text" class="form-control" name="apellido" placeholder="Apellido" required>
                 </div>
                 </div>
                 <label for="consulta1"></label>
                 <div class="form-label-group">
-                <input type="Email" id="inputEmail" class="form-control" placeholder="Email" required>
+                <input type="Email" id="inputEmail" class="form-control"  name="email" placeholder="Email" required>
                 </div>
 
                 <div class="form-group">
                 <label for="consulta1"></label>
-                <textarea class="form-control" id="consulta1" rows="4" placeholder="Dejanos tu consulta aca"></textarea>
+                <textarea class="form-control" id="consulta1" rows="4" name="consulta" placeholder="Dejanos tu consulta acá" required></textarea>
                 </div>
 
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                <a href="http://<?php echo $_SERVER['HTTP_HOST']?>/gracias"> <button type="button" class="btn btn-primary">Enviar</button> </a>
+               <button type="submit" class="btn btn-primary">Enviar</button> </a>
             </div>
             </div>
         </div>
     </div>
+    </form>

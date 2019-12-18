@@ -34,22 +34,26 @@
                 <h4>Newsletter</h4>
                 <div id="mc_embed_signup">
 
-                    <form 
+                    <form
                         action="/"
                         method="post" class="subscribe_form relative mail_part">
                          {{csrf_field()}}
-                        <input type="email" name="email" id="newsletter" placeholder="Email"
-                            class="placeholder hide-on-focus" onfocus="this.placeholder = ''"
-                            onblur="this.placeholder = ' Email Address '">
-                        
-                            <button type="submit" class="btn btn-light" name="submit" id="newsletter"
-                            class="email_icon newsletter-submit button-contactForm">Suscribite</button>
-                       
-                            <div class="mt-10 info"></div>
+                         <div class="col-md-12 mb-2">
+                       <input type="email" class="form-control" id="validationServerUsername" name="Email" id="newsletter" placeholder="Email" aria-describedby="inputGroupPrepend3" required
+                      class="placeholder hide-on-focus" onfocus="this.placeholder = ''"
+                           onblur="this.placeholder = ' Email Address '">
+                         <div class="input-group">
+                                         </div>
+                      <button type="submit" class="btn btn-light blue required" name="submit" id="newsletter"
+                            class="email_icon newsletter-submit button-contactForm required">Suscribite</button>
 
+                            <div class="mt-10 info"></div>
+</div>
                     </form>
 
-                </div>
+                  </div>
+                  </div>
+                  </div>
                 <div class="social_icon">
                     <a href="#"><i class="ti-facebook"></i></a>
                     <a href="#"><i class="ti-twitter-alt"></i></a>

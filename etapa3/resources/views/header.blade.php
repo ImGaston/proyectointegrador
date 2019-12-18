@@ -98,24 +98,25 @@
                 </button>
             </div>
             <div class="modal-body">
-                <div class="row">
-                <div class="col">
-                    <input type="text" class="form-control" placeholder="Nombre">
-                </div>
-                <div class="col">
-                    <input type="text" class="form-control" placeholder="Apellido">
-                </div>
-                </div>
-                <label for="consulta1"></label>
-                <div class="form-label-group">
-                <input type="Email" id="inputEmail" class="form-control" placeholder="Email" required>
-                </div>
-
-                <div class="form-group">
-                <label for="consulta1"></label>
-                <textarea class="form-control" id="consulta1" rows="4" placeholder="Dejanos tu consulta aca"></textarea>
-                </div>
-
+                <form method="POST" enctype= "text/plain">
+                {{csrf_field()}}
+                    <div class="row">
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Nombre">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Apellido">
+                    </div>
+                    </div>
+                    <label for="consulta1"></label>
+                    <div class="form-label-group">
+                        <input type="Email" id="inputEmail" class="form-control" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                    <label for="consulta1"></label>
+                        <textarea class="form-control" id="consulta1" rows="4" placeholder="Dejanos tu consulta aca"></textarea>
+                    </div>
+                </form>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>

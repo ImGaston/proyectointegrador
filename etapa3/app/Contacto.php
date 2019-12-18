@@ -7,4 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 class Contacto extends Model
 {
     public $table = 'contacto';
+    public $guarted = [];   
+
 }

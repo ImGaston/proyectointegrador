@@ -98,12 +98,8 @@
                 </button>
             </div>
             <div class="modal-body">
-<<<<<<< HEAD
-                <form method= "POST" action>
-=======
                 <form method="POST" enctype= "text/plain">
                 {{csrf_field()}}
->>>>>>> Natalia
                     <div class="row">
                     <div class="col">
                         <input type="text" class="form-control" placeholder="Nombre">
@@ -114,20 +110,11 @@
                     </div>
                     <label for="consulta1"></label>
                     <div class="form-label-group">
-<<<<<<< HEAD
-                    <input type="Email" id="inputEmail" class="form-control" placeholder="Email" required>
-                    </div>
-
-                    <div class="form-group">
-                    <label for="consulta1"></label>
-                    <textarea class="form-control" id="consulta1" rows="4" placeholder="Dejanos tu consulta aca"></textarea>
-=======
                         <input type="Email" id="inputEmail" class="form-control" placeholder="Email" required>
                     </div>
                     <div class="form-group">
                     <label for="consulta1"></label>
                         <textarea class="form-control" id="consulta1" rows="4" placeholder="Dejanos tu consulta aca"></textarea>
->>>>>>> Natalia
                     </div>
                 </form>
             </div>

@@ -36,10 +36,10 @@ class HomeController extends Controller
     public function contacto(Request $req)
     {
         $consultaNueva = new  Contactos();
-        $consultaNueva->name = $req["nombre"];
-        $consultaNueva->name = $req["apellido"];
+        $consultaNueva->name = $req['nombre'];
+        $consultaNueva->name = $req['apellido'];
         $consultaNueva->email = $req['email'];
-        $consultaNueva->name = $req["consilta"];
+        $consultaNueva->name = $req['consulta'];
         $consultaNueva->save();
 
         return redirect('/gracias');

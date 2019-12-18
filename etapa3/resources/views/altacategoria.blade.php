@@ -37,14 +37,12 @@ Pitagoras | Alta de Categorias
       <input id = "name" type="text" placeholder="Ingresa el nombre"
       name="name" class="form-control"  value=""  >
       </div>
-
       <div class="form-group text-center">
       <div class="col-md-12 text-center">
         <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
           </div>
       </div>
-
-        </div>
-            </fieldset>
+      </div>
+      </fieldset>
   </form>
   @endsection

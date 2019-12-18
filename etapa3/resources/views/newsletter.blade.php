@@ -1,7 +1,7 @@
 @extends('layout')
 
 @section('title')
-Pitagoras | ¡Gracias por Suscribirte a nuestro newsletter!
+Pitagoras | ¡Gracias por suscribirte a nuestro newsletter!
 @endsection
 
 @section('main')

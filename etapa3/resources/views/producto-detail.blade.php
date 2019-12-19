@@ -14,6 +14,8 @@
       <div class="row">
         <div class="col-sm">
           <img src="{{ $producto->image_url }}" width="250"alt="Chomba colegial">
+          <img src="/storage/{{$producto->image_url}}" class="card-img-top">
+
         </div>
   <div class="col-sm">
   <p>{{ $producto->description }}</p>

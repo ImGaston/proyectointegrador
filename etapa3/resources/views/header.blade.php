@@ -102,46 +102,23 @@
                 </button>
             </div>
             <div class="modal-body">
-<<<<<<< HEAD
-                <div class="row">
-                <div class="col">
-                    <input type="text" class="form-control" name="nombre" placeholder="Nombre" required>
-                </div>
-                <div class="col">
-                    <input type="text" class="form-control" name="apellido" placeholder="Apellido" required>
-                </div>
-                </div>
-                <label for="consulta1"></label>
-                <div class="form-label-group">
-                <input type="Email" id="inputEmail" class="form-control"  name="email" placeholder="Email" required>
-                </div>
-
-                <div class="form-group">
-                <label for="consulta1"></label>
-                <textarea class="form-control" id="consulta1" rows="4" name="consulta" placeholder="Dejanos tu consulta acá" required></textarea>
-                </div>
-
-=======
-                <form method="POST" enctype= "text/plain">
-                {{csrf_field()}}
                     <div class="row">
                     <div class="col">
-                        <input type="text" class="form-control" placeholder="Nombre">
+                        <input type="text" class="form-control" placeholder="Nombre" name="nombre" required>
                     </div>
                     <div class="col">
-                        <input type="text" class="form-control" placeholder="Apellido">
+                        <input type="text" class="form-control" placeholder="Apellido" name="apellido" required>
                     </div>
                     </div>
                     <label for="consulta1"></label>
                     <div class="form-label-group">
-                        <input type="Email" id="inputEmail" class="form-control" placeholder="Email" required>
+                        <input type="Email" id="inputEmail" class="form-control" placeholder="Email" name="email" required>
                     </div>
                     <div class="form-group">
                     <label for="consulta1"></label>
-                        <textarea class="form-control" id="consulta1" rows="4" placeholder="Dejanos tu consulta aca"></textarea>
+                        <textarea class="form-control" id="consulta1" rows="4" placeholder="Dejanos tu consulta acá" name= "consulta" required></textarea>
                     </div>
                 </form>
->>>>>>> 30a0778f2433a8dd917d2137b7e276985775ac06
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>

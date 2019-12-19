@@ -30,17 +30,11 @@ Listado completo productos
         @foreach ($productos as $producto)
         <a href="/productos/{{ $producto->id }}" class="col-12 col-md-4 col-lg-3 mb-4">
           <div class="card">
-            @if ($producto->image_url)
-            <img src="{{ $producto->image_url }}" class="card-img-top" alt="{{ $producto->name }}">
+          <img src="{{$producto->image_url}}" class="card-img-top" alt="{{ $producto->name }}">
+            <img src="/storage/{{$producto->image_url}}" class="card-img-top">
             <div class="card-body">
               <p class="card-text">{{ $producto->name }}</p>
             </div>
-          @else
-            <img src="/storage/{{$producto->image_url}}" class="card-img-top" alt="{{ $producto->name }}">
-            <div class="card-body">
-              <p class="card-text">{{ $producto->name }}</p>
-            </div>
-          @endif
           </div>
         </a>
       @endforeach

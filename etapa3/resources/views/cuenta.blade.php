@@ -61,6 +61,8 @@
                 <h5 class="card-title">Producto {{ $flag->name }} </h5>
                 <div class="col-sm">
                   <img src="{{ $flag->image_url }}" width="125"alt="Chomba colegial">
+                  <img src="/storage/{{$flag->image_url}}" class="card-img-top">
+
                 </div>
                   <p class="card-text">Precio ${{ $flag->precio }}</p>
                     <a href="" class="btn btn-primary">Quitar del carrito</a>
@@ -128,4 +130,3 @@
       </div> --}}
 
   @endsection
-

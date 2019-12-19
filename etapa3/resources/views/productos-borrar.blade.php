@@ -18,6 +18,7 @@ Listado Completo Productos
         <a href="/productos-borrar/{{ $producto->id }}" class="col-12 col-md-4 col-lg-3 mb-4">
           <div class="card">
             <img src="{{ $producto->image_url }}" class="card-img-top" alt="{{ $producto->name }}">
+            <img src="/storage/{{$producto->image_url}}" class="card-img-top">
             <div class="card-body">
               <p class="card-text">{{ $producto->name }}</p>
             </div>

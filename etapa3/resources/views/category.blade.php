@@ -16,6 +16,7 @@
         <a href="/productos/{{ $product->id }}" class="col-12 col-md-4 col-lg-3 mb-4">
           <div class="card">
             <img src="{{ $product->image_url }}" class="card-img-top" alt="{{ $product->name }}">
+              <img src="/storage/{{$product->image_url}}" class="card-img-top">
             <div class="card-body">
               <p class="card-text">{{ $product->name }}</p>
             </div>

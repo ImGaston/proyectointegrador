@@ -8,14 +8,29 @@ use Auth;
 
 class CarritosController extends Controller
 {
-     public function agregarAlCarrito(Request $req){
-        
-           $carritonuevo = new Carritos();
-           $carritonuevo->product_id = $req["product_id"];
-           $carritonuevo->count = $req->count;
-           $carritonuevo->user_id = Auth::id();
-           $carritonuevo->save();
-           return redirect("/cuenta");
+
+  public function index() {
+      return view('cart');
+  }
+
+     public function agregarAlCarrito(Request $req, $productId){
+
+       $userId = Auth::user()->id;
+       $productInCart = Carritos::where('product_id', $productId)
+           ->where('user_id', $userId)
+           ->first();
+
+       if ($productInCart) {
+           $productInCart->count = $productInCart->count + $req->count;
+       } else {
+           $productInCart = new Carritos();
+           $productInCart->product_id = $req->product_id;
+           $productInCart->count = $req->count;
+           $productInCart->user_id = $userId;
+       }
+
+       $productInCart->save();
+      return redirect("/cuenta");
      }
 
      public function removeProduct(Request $req, $productId) {

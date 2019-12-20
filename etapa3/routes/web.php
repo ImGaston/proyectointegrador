@@ -85,12 +85,12 @@ Route::get('/borrarproducto', 'ProductosController@borrarproducto');
 
 /* PROCESO COMPRA */
 
-Route::post('/agregarAlCarrito', 'CarritosController@agregarAlCarrito')->name('agregarAlCarrito');
+Route::post('/agregarAlCarrito', 'CarritosController@agregarAlCarrito');//->name('agregarAlCarrito');
 
 Route::get('/{categorySlug}', 'CategoryController@detail')->name('category');
 
 Route::post('/compras', 'CompraController@agregarCompra')->name('compra');
- 
+
 /* AUTENTIFICACION DE USUARIOS */
 
 Auth::routes();

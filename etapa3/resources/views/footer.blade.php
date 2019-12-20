@@ -48,25 +48,24 @@
                             class="email_icon newsletter-submit button-contactForm required">Suscribite</button>
 
                             <div class="mt-10 info"></div>
-</div>
+                            </div>
                     </form>
 
                   </div>
-                  </div>
-                  </div>
+                </div>
+            </div>
                 <div class="social_icon">
                     <a href="#"><i class="ti-facebook"></i></a>
                     <a href="#"><i class="ti-twitter-alt"></i></a>
                     <a href="#"><i class="ti-instagram"></i></a>
                 </div>
+         </div>
+         <div class="row justify-content-center">
+             <div class="col-lg-12">
+                 <div class="copyright_text">
+                     <P>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Pitagoras'c</P>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="row justify-content-center">
-        <div class="col-lg-12">
-            <div class="copyright_text">
-                <P>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Pitagoras'c</P>
-            </div>
-        </div>
-    </div>
-</div>
+

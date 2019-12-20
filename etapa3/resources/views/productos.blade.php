@@ -9,7 +9,7 @@ Listado de Productos
 
 <div class="container">
 
-      <h1 class="my-4">Categorías</h1>
+      <h1 class="mt-2 mb-2 text-uppercase">Categorías</h1>
       <ul>
         @foreach ($categories as $category)
         <li>

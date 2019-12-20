@@ -68,28 +68,6 @@
                   </div>
               @endforeach
             </div>
-
-      {{-- <div class="container">
-        <div class="row">
-            @foreach ($productos as $producto)
-            <a href="/productos/{{ $producto->id }}" class="col-12 col-md-4 col-lg-3 mb-4">
-              <div class="card">
-                @if ($producto->image_url)
-                <img src="{{ $producto->image_url }}" class="card-img-top" alt="{{ $producto->name }}">
-                <div class="card-body">
-                  <p class="card-text">{{ $producto->name }}</p>
-                </div>
-              @else
-                <img src="/storage/{{$producto->image_url}}" class="card-img-top" alt="{{ $producto->name }}">
-                <div class="card-body">
-                  <p class="card-text">{{ $producto->name }}</p>
-                </div>
-              @endif
-              </div>
-            </a>
-          @endforeach
-          </div>
-      </div> --}}
       <div class="row">
         <div class="col">
           <form action="{{ route('compra') }}" method="post">

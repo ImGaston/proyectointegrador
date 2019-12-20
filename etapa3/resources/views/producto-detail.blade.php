@@ -25,7 +25,7 @@
 
         <div class="col-sm text-center">
           <h3>¿Querés comprar?</h3>
-          <h2>Ingresá a tu cuenta!</h2>
+          <h2>¡Ingresá a tu cuenta!</h2>
       <a href="/login" class="button">Ingresar</a>
 
           </div>

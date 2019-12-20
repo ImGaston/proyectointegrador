@@ -30,8 +30,7 @@ class ProductsSeeder extends Seeder
                    'precio' => 720,
                    'image_url' =>'/img/chomba.jpeg',
                    'category_id' => $colegial->id,
-                    'talle_id' => 1,
-                      'prenda_id' => 2
+                    
 
                ],
                [
@@ -40,8 +39,7 @@ class ProductsSeeder extends Seeder
                    'precio' => 920,
                    'image_url' => '/img/joggins.jpeg',
                    'category_id' => $colegial->id,
-                  'talle_id' => 1,
-                    'prenda_id' => 2
+                  
 
                ],
                [
@@ -50,8 +48,7 @@ class ProductsSeeder extends Seeder
                    'precio' => 1200,
                    'image_url' => '/img/egresados2.jpeg',
                    'category_id' => $colegial->id,
-                   'talle_id' => 1,
-                    'prenda_id' => 2
+                   
                ],
                [
                    'name' => 'buzo deportivo',
@@ -60,8 +57,7 @@ class ProductsSeeder extends Seeder
                    'precio' => 1800,
                    'image_url' => '/img/egresados.jpg',
                    'category_id' => $egresados->id,
-                  'talle_id' => 1,
-                  'prenda_id' => 2
+                  
                ],
                [
                    'name' => 'conjunto egresados',
@@ -70,8 +66,7 @@ class ProductsSeeder extends Seeder
                    'precio' => 2110,
                    'image_url' => '/img/egresados.jpeg',
                    'category_id' => $egresados->id,
-                   'talle_id' => 1,
-                   'prenda_id' => 2
+                   
                ],
                [
                    'name' => 'camperas egresados',
@@ -79,8 +74,7 @@ class ProductsSeeder extends Seeder
                    'precio' => 1499,
                    'image_url' => '/img/egresados-1.png',
                    'category_id' => $egresados->id,
-                  'talle_id' => 1,
-                    'prenda_id' => 2
+                  
 
 
                ],
@@ -90,8 +84,7 @@ class ProductsSeeder extends Seeder
                    'precio'=>980,
                    'image_url' => '/img/chaquetilla.jpeg',
                    'category_id' => $hospitalario->id,
-                  'talle_id' => 1,
-                    'prenda_id' => 2
+                  
 
                ],
                [
@@ -101,8 +94,7 @@ class ProductsSeeder extends Seeder
                    'precio' => 1290,
                    'image_url' => '/img/producto-3.jpg',
                    'category_id' => $hospitalario->id,
-                   'talle_id' => 1,
-                     'prenda_id' => 2
+                   
 
                ],
                [
@@ -111,8 +103,7 @@ class ProductsSeeder extends Seeder
                    'precio' => 1900,
                    'image_url' => '/img/amboliberty.jpeg',
                    'category_id' => $hospitalario->id,
-                   'talle_id' => 1,
-                     'prenda_id' => 2
+                   
                ],
 
            ];
@@ -123,8 +114,6 @@ class ProductsSeeder extends Seeder
                    'image_url' => $product['image_url'],
                    'precio' => $product['precio'],
                    'category_id' => $product['category_id'],
-                   'talle_id' => $product['talle_id'],
-                   'prenda_id' => $product['prenda_id'],
 
                ]);
            }

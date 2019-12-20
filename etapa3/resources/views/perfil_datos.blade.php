@@ -21,10 +21,13 @@
       <div class="row">
         <ul class="nav nav-tabs ">
             <li class="nav-item">
-              <a class="nav-link active" href="/cuenta">Mi cuenta</a>
+              <a class="nav-link" href="/cuenta">Mi cuenta</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link " href="/perfil_datos">Datos personales</a>
+              <a class="nav-link active" href="/perfil_datos">Datos personales</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/compras">Compras</a>
             </li>
 
         </ul>

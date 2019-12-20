@@ -40,4 +40,18 @@ class User extends Authenticatable
     public function isAdmin() {
         return $this->email == 'admin@digitalhouse.com';
     }
+    public function carritos(){
+        return $this->hasMany('App\Carritos'); 
+    }
+    public function cartTotal()
+    {
+        $total = $this->carritos->reduce(function ($acum, $productInCart) {
+            return $acum + ($productInCart->product->precio);
+        });
+
+        return $total;
+    }
+    public function compras(){
+        return $this->hasMany('App\Compra');
+    }
 }

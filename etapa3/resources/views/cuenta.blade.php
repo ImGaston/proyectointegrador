@@ -1,7 +1,7 @@
 @extends('layout')
 
 @section('title')
- {{-- Perfil de Usuario {{ $usuario->name }} --}}
+ Perfil de Usuario {{ Auth::user()->name }}
 @endsection
 
 @section('main')
@@ -26,6 +26,9 @@
             <li class="nav-item">
               <a class="nav-link " href="/perfil_datos">Datos personales</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/compras">Compras</a>
+            </li>
 
         </ul>
       </div>
@@ -43,34 +46,29 @@
 
             }
           @endphp --}}
-           <p>Tu compra total es de $
-             {{-- @php
-              dd($carrito);
-             @endphp --}}
-
-          </p>
+           <p>Tu compra total es de $ </p>
         <hr class="featurette-divider">
         </div>
       </div>
 
     <div class="col 12">
             @foreach ($carrito as $flag)
-                <div class="row m-0 mt-1">
+                <div class="row m-0 mt-1"> 
                 <div class="card w-50">
                 <div class="card-body">
-                <h5 class="card-title">Producto {{ $flag->name }} </h5>
+                <h5 class="card-title">Producto {{ $flag->product_id }} </h5>
                 <div class="col-sm">
+                  
                   <img src="{{ $flag->image_url }}" width="125"alt="Chomba colegial">
                   <img src="/storage/{{$flag->image_url}}" class="card-img-top">
 
                 </div>
                   <p class="card-text">Precio ${{ $flag->precio }}</p>
-                    <a href="" class="btn btn-primary">Quitar del carrito</a>
+                  <a href="" class="btn btn-primary">Quitar del carrito</a>
                 </div>
                 </div>
                   </div>
               @endforeach
-
             </div>
 
       {{-- <div class="container">
@@ -94,39 +92,34 @@
           @endforeach
           </div>
       </div> --}}
-
-
-      <div class="row">
-        <div class="col">
-          <button type="button" class="btn btn-primary btn-lg btn-block mt-3 mb-3">
-            Confirmar compra <ion-icon name="cart"></ion-icon>
-          </button>
-        </div>
-      </div>
-    </div>
-
-
-
-    <!-- SEGUIMIENTO PEDIDO -->
-    <div class="container">
-      <div class="row">
+      <div class="row">      
         <div class="col">
           <hr class="featurette-divider">
+            PRUEBA DE TRAER EL NOMBRE DE PRODUCTO
+
+              {{-- @foreach(Auth::user()->Carritos as $carrito)
+              <tr>
+                <td>
+                  <img src="{{ $carrito->product->image_url }}" alt="{{ $carrito->product->name }}" />
+                  <td>{{ $carrito->product->name }}</td>
+                </th>
+                <td>{{ $carrito->count }}</td>
+                <td>${{ $carrito->product->precio }}</td>
+              </tr>
+            @endforeach --}}
+
+
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <form action="{{ route('compra') }}" method="post">
+                    {{ csrf_field() }}
+                    <button class="btn btn-primary btn-lg btn-block mt-3 mb-3" type="submit">Comprar <ion-icon name="cart"></button>
+                  </form>
         </div>
       </div>
     </div>
-    <!-- RECOMENDACION -->
-
-    <!-- ENCUESTA -->
   </main>
-
-{{-- <main class="container">
-  <h1>Detalle del producto "{{ $usuario->name }}"</h1>
-    <div class="container">
-    <div class="row">
-      <div class="col-sm">
-          <img src="{{"/public $usuario->avatar }}">
-
-      </div> --}}
-
   @endsection

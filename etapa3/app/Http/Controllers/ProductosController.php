@@ -22,13 +22,9 @@ class ProductosController extends Controller
 
     public function list() {
     $categoryMenu = Category::orderBy('name', 'asc')->get();
-    $PrendaMenu = Prenda::orderBy('name', 'asc')->get();
-    $TalleMenu = Talle::orderBy('name', 'asc')->get();
 
       return view('altaproducto', [
            'categoryMenu' => $categoryMenu,
-            'prendaMenu' => $PrendaMenu,
-             'TalleMenu' => $TalleMenu,
         ]);
 
   }
@@ -52,11 +48,9 @@ class ProductosController extends Controller
 
           public function detail($id) {
       $producto = Product::find($id);
-      $TalleMenu = Talle::orderBy('name', 'asc')->get();
 
       return view('producto-detail', [
         "producto" => $producto,
-        "TalleMenu" => $TalleMenu
 
 
       ]);
@@ -64,11 +58,9 @@ class ProductosController extends Controller
 
     public function detailBorrar($id) {
 $producto = Product::find($id);
-$TalleMenu = Talle::orderBy('name', 'asc')->get();
 
 return view('producto-detail-borrar', [
   "producto" => $producto,
-  "TalleMenu" => $TalleMenu
 
 
 ]);
@@ -99,8 +91,6 @@ return view('producto-detail-borrar', [
       $productoNuevo->description = $req["description"];
       $productoNuevo->precio = $req["precio"];
       $productoNuevo->category_id =  $req["category_id"];
-      $productoNuevo->prenda_id =  $req["prenda_id"];
-      $productoNuevo->talle_id =  $req["talle_id"];
 
       $productoNuevo->save();
 

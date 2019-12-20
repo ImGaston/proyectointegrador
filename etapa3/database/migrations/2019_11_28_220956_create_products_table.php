@@ -20,13 +20,9 @@ class CreateProductsTable extends Migration
             $table->string('image_url', 2048);
             $table->integer('precio');            
             $table->unsignedBigInteger('category_id');
-            $table->unsignedBigInteger('talle_id');
-            $table->unsignedBigInteger('prenda_id');
             $table->timestamps();
 
             $table->foreign('category_id')->references('id')->on('categories');
-            $table->foreign('talle_id')->references('id')->on('talles');
-            $table->foreign('prenda_id')->references('id')->on('prendas');
         });
     }
 

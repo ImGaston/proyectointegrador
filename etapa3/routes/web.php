@@ -17,7 +17,6 @@ Route::get('/', function() {
 });
 
 
-
 //Route::get('/producto/{productId}', 'ProductController@index')->name('product');
 
 Auth::routes();
@@ -35,33 +34,38 @@ Route::get('/mayoristas', function() {
     return view('mayoristas');
 });
 
-
 Route::get('/gracias', function() {
     return view('gracias');
 });
 
+/* NEWSLETTER */
 
 Route::get('/newsletter', function() {
     return view('newsletter');
 });
 
-/* NEWSLETTER */
 Route::post('/', 'HomeController@newsletter');
 
 Route::post('/contacto', 'HomeController@contacto');
+
 
 Route::get('/productos-todos', 'ProductosController@index');
 
 Route::get('/productos-todos/search', 'ProductosController@search');
 
-Route::get('/productos-borrar', 'ProductosController@indexborrar');
+/* USUARIO */
 
 Route::get('/productos', 'CategoryController@index');
 
-Route::get('/cuenta', 'UsuariosController@carrito');
+Route::get('/cuenta', 'UsuariosController@carrito')->name('prueba');
 
 Route::get('/perfil_datos', 'UsuariosController@index');
 
+Route::get('/compras', 'UsuariosController@compra');
+
+/* FUNCIONES DEL ADMINISTRADOR */
+
+Route::get('/productos-borrar', 'ProductosController@indexborrar');
 
 Route::get('/altaproducto', 'ProductosController@list');
 
@@ -71,30 +75,26 @@ Route::get('/altacategoria', 'CategoryController@list');
 
 Route::post('/altacategoria', 'CategoryController@altacategoria');
 
-Route::get('/altaprendas', 'PrendasController@list');
-
-Route::post('/altaprendas', 'PrendasController@altaprendas');
-
-Route::get('/altatalles', 'TallesController@list');
-
-Route::post('/altatalles', 'TallesController@altatalles');
-
-
 Route::get('/productos/{id}', 'ProductosController@detail');
 
 Route::get('/productos-borrar/{id}', 'ProductosController@detailBorrar');
-
-Route::post('/agregarAlCarrito', 'CarritosController@agregarAlCarrito');
-
-Route::get('/{categorySlug}', 'CategoryController@detail')->name('category');
-
-
-
 
 Route::post('/borrarproducto', 'ProductosController@borrarproducto');
 
 Route::get('/borrarproducto', 'ProductosController@borrarproducto');
 
+/* PROCESO COMPRA */
+
+Route::post('/agregarAlCarrito', 'CarritosController@agregarAlCarrito')->name('agregarAlCarrito');
+
+Route::get('/{categorySlug}', 'CategoryController@detail')->name('category');
+
+Route::post('/compras', 'CompraController@agregarCompra')->name('compra');
+ 
+/* AUTENTIFICACION DE USUARIOS */
+
 Auth::routes();
 
 Route::get('/profile', 'ProfileController@index')->name('profile');
+
+Route::delete('/cart/{productId}', 'CarritosController@removeProduct')->name('removeProductFromCart');

@@ -73,31 +73,6 @@ Pitagoras | Alta de productos
         </select>
         </div>
 
-        <div class="form-group">
-        <label for="prenda_id">Tipo de prenda</label>
-        <select name="prenda_id">
-          <option value="-1"> Seleccionar prenda</option>
-          @foreach ($prendaMenu as $prend)
-            <option value="{{$prend->id}}">{{$prend->name}}</option>
-          @endforeach
-        </select>
-        </div>
-
-        <div class="form-group">
-        <label for="talle_id">Talle</label>
-
-        <select name="talle_id">
-          <option value="-1"> Seleccionar talle</option>
-          @foreach ($TalleMenu as $talle)
-            <option value="{{$talle->id}}">{{$talle->name}}</option>
-          @endforeach
-        </select>
-        </div>
-
-
-
-
-
       <div class="form-group text-center">
       <div class="col-md-12 text-center">
         <button type="submit" class="btn btn-primary btn-lg"> Enviar </button>

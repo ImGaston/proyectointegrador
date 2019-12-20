@@ -4,20 +4,34 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Carritos;
-
+use Auth;
 
 class CarritosController extends Controller
 {
-            public function agregarAlCarrito(Request $req){
-              $carritonuevo = new Carritos();
-              $carritonuevo->user_id = $req["user_id"];
-              $carritonuevo->product_id = $req["product_id"];
-              $carritonuevo->name = $req["name"];
-              $carritonuevo->precio = $req["precio"];
-              $carritonuevo->image_url = $req["image_url"];
-              $carritonuevo->save();
+     public function agregarAlCarrito(Request $req){
+        
+           $carritonuevo = new Carritos();
+           $carritonuevo->product_id = $req["product_id"];
+           $carritonuevo->count = $req->count;
+           $carritonuevo->user_id = Auth::id();
+           $carritonuevo->save();
+           return redirect("/cuenta");
+     }
 
-              return redirect("/cuenta");
-            }
+     public function removeProduct(Request $req, $productId) {
+        $userId = Auth::user()->id;
+        Carritos::where('product_id', $productId)
+            ->where('user_id', $userId)
+            ->delete();
 
-              }
+        return redirect()->route('cart');
+    }
+
+
+
+
+
+
+
+
+    }

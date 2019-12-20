@@ -66,8 +66,6 @@
                                             <a class="dropdown-item" href="/altaproducto">Alta productos</a>
                                             <a class="dropdown-item" href="/productos-borrar">Borrar productos</a>
                                             <a class="dropdown-item" href="/altacategoria">Alta categoría productos</a>
-                                            <a class="dropdown-item" href="/altaprendas">Alta prendas</a>
-                                            <a class="dropdown-item" href="/altatalles">Alta talles</a>
                                             <div class="dropdown-divider"></div>
 
                                           @endif

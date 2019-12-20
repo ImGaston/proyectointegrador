@@ -13,12 +13,14 @@ class CreateComprasProductosTable extends Migration
      */
     public function up()
     {
-        Schema::create('compras_productos', function (Blueprint $table) {
-            $table->bigIncrements('id');
+        Schema::create('compras_products', function (Blueprint $table) {
             $table->unsignedBigInteger('compra_id');
             $table->unsignedBigInteger('product_id');
+            $table->integer('count');
+            $table->float('precio');
             $table->timestamps();
 
+            $table->primary(['compra_id', 'product_id']);
             $table->foreign('compra_id')->references('id')->on('compras');
             $table->foreign('product_id')->references('id')->on('products');
         });

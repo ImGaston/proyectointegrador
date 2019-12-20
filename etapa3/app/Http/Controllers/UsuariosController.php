@@ -2,9 +2,12 @@
 
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
-use App\Usuarios;
 use App\Carritos;
 use App\Product;
+use Auth;
+use App\Compra;
+use App\ProductComprado;
+
 
 
 class UsuariosController extends Controller
@@ -21,13 +24,17 @@ class UsuariosController extends Controller
           'user' => $user,
                  ]);
 
-}
+  }
 
-public function index() {
-return view('perfil_datos', [
+  public function index() {
+  return view('perfil_datos', [
+  ]);
+  }
 
-]);
-}
+  public function compra()
+  {
+    return view('compras', []);
+  }
 
 
   }

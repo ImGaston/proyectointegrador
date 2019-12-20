@@ -26,7 +26,7 @@ class ProductsSeeder extends Seeder
            $products = [
                [
                    'name' => 'chomba colegial',
-                   'description' => 'chomba colegial',
+                   'description' => 'Corte clásico que se adapta al dia a diade tu hijo. 100% algodón',
                    'precio' => 720,
                    'image_url' =>'/img/chomba.jpeg',
                    'category_id' => $colegial->id,
@@ -35,7 +35,7 @@ class ProductsSeeder extends Seeder
                ],
                [
                    'name' => 'equipo infantil',
-                   'description' => 'chomba colegial',
+                   'description' => 'Conjunto de invierno reforzado en todas las costuras para los dias de actividad física',
                    'precio' => 920,
                    'image_url' => '/img/joggins.jpeg',
                    'category_id' => $colegial->id,

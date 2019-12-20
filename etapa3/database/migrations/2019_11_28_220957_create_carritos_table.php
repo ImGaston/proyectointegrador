@@ -14,12 +14,14 @@ class CreateCarritostable extends Migration
     public function up()
     {
         Schema::create('carritos', function (Blueprint $table) {
+            $table->bigIncrements('id');
             $table->unsignedBigInteger('user_id');
             $table->unsignedBigInteger('product_id');
-            $table->integer('count');
+            $table->string('name', 255);
+            $table->integer('precio');
+            $table->string('image_url', 2048);
             $table->timestamps();
 
-            $table->primary(['user_id', 'product_id']);
             $table->foreign('user_id')->references('id')->on('users');
             $table->foreign('product_id')->references('id')->on('products');
         });

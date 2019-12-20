@@ -87,6 +87,8 @@ Route::get('/borrarproducto', 'ProductosController@borrarproducto');
 
 Route::post('/agregarAlCarrito', 'CarritosController@agregarAlCarrito');//->name('agregarAlCarrito');
 
+Route::post('/borrarCarrito', 'CarritosController@borrarCarrito');
+
 Route::get('/{categorySlug}', 'CategoryController@detail')->name('category');
 
 Route::post('/compras', 'CompraController@agregarCompra')->name('compra');
@@ -97,4 +99,3 @@ Auth::routes();
 
 Route::get('/profile', 'ProfileController@index')->name('profile');
 
-Route::delete('/cart/{productId}', 'CarritosController@removeProduct')->name('removeProductFromCart');

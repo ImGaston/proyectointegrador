@@ -44,7 +44,7 @@
                            onblur="this.placeholder = ' Email Address '">
                          <div class="input-group">
                                          </div>
-                      <button type="submit" class="btn btn-light blue required" name="submit" id="newsletter"
+                      <button type="submit" class="btn btn-light blue required mt-2" name="submit" id="newsletter"
                             class="email_icon newsletter-submit button-contactForm required">Suscribite</button>
 
                             <div class="mt-10 info"></div>

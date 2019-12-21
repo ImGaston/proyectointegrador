@@ -20,6 +20,6 @@ class CompraController extends Controller
 
         Carritos::where('user_id', Auth::user()->id)->delete();
  
-        return redirect()->route('prueba');
+        return redirect()->route('compra');
     }
 }

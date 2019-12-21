@@ -1,7 +1,7 @@
 @extends('layout')
 
 @section('title')
-Listado de Productos
+Listado de Categorias
 @endsection
 
 @section('main')
@@ -10,15 +10,16 @@ Listado de Productos
 <div class="container">
 
       <h1 class="mt-2 mb-2 text-uppercase">Categorías</h1>
-      <ul>
+      <ul class="list-group list-group-horizontal">
         @foreach ($categories as $category)
-        <li>
-          <a href="{{ route('category', ['categorySlug' => $category->slug]) }}">
+        <li class="list-group-item flex-fill">
+          <a  href="{{ route('category', ['categorySlug' => $category->slug]) }}">
             {{ $category->name }}
           </a>
         </li>
         @endforeach
       </ul>
+
 
     
 

@@ -24,9 +24,7 @@
                           <a class="dropdown-item" href="http://<?php echo $_SERVER['HTTP_HOST']?>/productos-todos">Ver todo</a>
                           </div>
                     </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="http://<?php echo $_SERVER['HTTP_HOST']?>/mayoristas">Mayorista</a>
-                    </li>
+                    
                     <li class="nav-item">
                     <a href="#myModal" data-toggle="modal" data-target="#myModal" class="nav-link">Contacto</a>
                     </li>

@@ -61,7 +61,7 @@ Route::get('/cuenta', 'UsuariosController@carrito')->name('prueba');
 
 Route::get('/perfil_datos', 'UsuariosController@index');
 
-Route::get('/compras', 'UsuariosController@compra');
+Route::get('/compras', 'UsuariosController@compra')->name('compra');
 
 /* FUNCIONES DEL ADMINISTRADOR */
 

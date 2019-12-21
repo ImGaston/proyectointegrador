@@ -40,7 +40,7 @@
       <div class="row mt-2 mb-1">
         <div class="col">
           <h2 class="pedido mt-2">Mis compras</h2><br>
-            {{-- ACA ARRANCA EL CHOCLO PARA QUE APAREZCA EL LISTADO DE COMPRAS --}}
+            
 
         
           

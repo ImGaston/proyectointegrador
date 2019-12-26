@@ -11,6 +11,6 @@ class Product extends Model
     }
 
     public function Carritos() {
-        return $this->hasMany('App\Carritos', 'product_id');
+        return $this->hasMany('App\Carritos','product_id');
     }
 }

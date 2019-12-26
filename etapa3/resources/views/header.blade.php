@@ -56,6 +56,7 @@
                                       <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                                                                           <a class="dropdown-item" href="/cuenta">Mi cuenta</a>
                                         <a class="dropdown-item" href="/perfil_datos">Mis datos</a>
+                                        <a class="dropdown-item" href="/compras">Mis compras</a>
 
                                           @if (Auth::user()->isAdmin())
                                             <div class="dropdown-divider"></div>

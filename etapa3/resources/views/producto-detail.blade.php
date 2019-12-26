@@ -9,13 +9,12 @@
 <br>
 
   <main class="container">
-  <h1>{{ $producto->name }}</h1>
+  <h1 class="text-uppercase">{{ $producto->name }}</h1>
     <div class="container">
       <div class="row">
         <div class="col-sm">
           <img src="{{ $producto->image_url }}" width="250"alt="Chomba colegial">
           <img src="/storage/{{$producto->image_url}}" class="card-img-top">
-
         </div>
   <div class="col-sm">
   <p>{{ $producto->description }}</p>
@@ -26,7 +25,7 @@
 
         <div class="col-sm text-center">
           <h3>¿Querés comprar?</h3>
-          <h2>Ingresá a tu cuenta!</h2>
+          <h2>¡Ingresá a tu cuenta!</h2>
       <a href="/login" class="button">Ingresar</a>
 
           </div>

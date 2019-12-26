@@ -26,6 +26,10 @@ Route::get('/nosotros', function() {
     return view('nosotros');
 });
 
+Route::post('/robo', function () {
+    return view('robo');
+});
+
 Route::get('/faq', function() {
     return view('faq');
 });

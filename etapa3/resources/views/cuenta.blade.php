@@ -70,7 +70,7 @@
             </div>
       <div class="row">
         <div class="col">
-          <form action="{{ route('compra') }}" method="post">
+          <form action="/robo" method="post">
                     {{ csrf_field() }}
                     <button class="btn btn-primary btn-lg btn-block mt-3 mb-3" type="submit">Comprar Ahora<ion-icon name="cart"></button>
                   </form>

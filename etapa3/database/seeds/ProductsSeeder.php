@@ -25,8 +25,8 @@ class ProductsSeeder extends Seeder
            $hospitalario = Category::where('slug', 'hospitalario')->first();
            $products = [
                [
-                   'name' => 'chomba colegial',
-                   'description' => 'Corte clásico que se adapta al dia a diade tu hijo. 100% algodón',
+                   'name' => 'Chomba colegial',
+                   'description' => 'Corte clásico que se adapta al día a día de tu hijo. 100% algodón',
                    'precio' => 720,
                    'image_url' =>'/img/chomba.jpeg',
                    'category_id' => $colegial->id,
@@ -34,7 +34,7 @@ class ProductsSeeder extends Seeder
 
                ],
                [
-                   'name' => 'equipo infantil',
+                   'name' => 'Equipo infantil',
                    'description' => 'Conjunto de invierno reforzado en todas las costuras para los dias de actividad física',
                    'precio' => 920,
                    'image_url' => '/img/joggins.jpeg',
@@ -43,16 +43,16 @@ class ProductsSeeder extends Seeder
 
                ],
                [
-                   'name' => 'joggins deportivos',
-                   'description' => 'chomba colegial',
+                   'name' => 'Joggins deportivos',
+                   'description' => 'Pantalones todo tereno',
                    'precio' => 1200,
                    'image_url' => '/img/egresados2.jpeg',
                    'category_id' => $colegial->id,
                    
                ],
                [
-                   'name' => 'buzo deportivo',
-                   'description' => 'chomba colegial',
+                   'name' => 'Buzo deportivo',
+                   'description' => 'Para los días fríos de invierno',
 
                    'precio' => 1800,
                    'image_url' => '/img/egresados.jpg',
@@ -60,8 +60,8 @@ class ProductsSeeder extends Seeder
                   
                ],
                [
-                   'name' => 'conjunto egresados',
-                   'description' => 'chomba colegial',
+                   'name' => 'Conjunto egresados',
+                   'description' => 'Haz de tu último año el mejor',
 
                    'precio' => 2110,
                    'image_url' => '/img/egresados.jpeg',
@@ -69,8 +69,8 @@ class ProductsSeeder extends Seeder
                    
                ],
                [
-                   'name' => 'camperas egresados',
-                   'description' => 'chomba colegial',
+                   'name' => 'Camperas egresados',
+                   'description' => 'Las mejores de todo Formosa',
                    'precio' => 1499,
                    'image_url' => '/img/egresados-1.png',
                    'category_id' => $egresados->id,
